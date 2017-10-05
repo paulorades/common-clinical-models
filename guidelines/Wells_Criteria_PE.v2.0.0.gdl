@@ -147,7 +147,7 @@ Ref. 2: Wolf SJ, McCubbin TR, Feldhaus KM, Faragher JP, Adcock DM. Prospective v
 						path = <"/data[at0001]/items[at0003]">
 					>
 				>
-				predicates = <"/data[at0001]/items[at0002.1] is_a local::gt0033|Previous PE or DVT diagnosis|", "max(/data[at0001]/items[at0003])">
+				predicates = <"/data[at0001]/items[at0002.1] is_a local::gt0033|*(en) Previous PE or DVT diagnosis|", "max(/data[at0001]/items[at0003])">
 				template_id = <"diagnosis">
 			>
 		>
@@ -284,6 +284,9 @@ Ref. 2: Wolf SJ, McCubbin TR, Feldhaus KM, Faragher JP, Adcock DM. Prospective v
 						text = <"Hjärtfrekvens >100?">
 						description = <"*(en) *">
 					>
+					["gt0018"] = (TERM) <
+						text = <"Tidigare objektivt verifierad DVT eller lungemboli">
+					>
 					["gt0021"] = (TERM) <
 						text = <"Total poäng">
 						description = <"*(en) The total score of each individual item is added and then halved (as the individual scores have been doubled to handle decimal numbers">
@@ -301,8 +304,12 @@ Ref. 2: Wolf SJ, McCubbin TR, Feldhaus KM, Faragher JP, Adcock DM. Prospective v
 						text = <"Beräkna resultat">
 					>
 					["gt0033"] = (TERM) <
+						text = <"*(en) Previous PE or DVT diagnosis">
+						description = <"*(en) The index diagnosis">
 					>
 					["gt0034"] = (TERM) <
+						text = <"*(en) Previous PE or DVT date of initial onset">
+						description = <"*(en) The date that the problem began causing symptoms or signs">
 					>
 				>
 			>

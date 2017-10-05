@@ -162,7 +162,7 @@ Ref. 2: Wolf SJ, McCubbin TR, Feldhaus KM, Faragher JP, Adcock DM. Prospective v
 						description = <"PE likely or unlikely">
 					>
 					["gt0009"] = (TERM) <
-						text = <"Risk Prevelance">
+						text = <"Risk Prevalence">
 						description = <"*">
 					>
 					["gt0011"] = (TERM) <

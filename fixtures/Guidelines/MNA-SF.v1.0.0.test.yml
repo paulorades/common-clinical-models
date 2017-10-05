@@ -1,11 +1,14 @@
 guidelines:
-  3: BMI.v1
-  1: MNA-SF.v1.0.1
-  2: MNA-SF_Assessment.v1.0.0
+  1: BMI.v1
+  2: MNA-SF.v1.0.1
+  3: MNA-SF_Assessment.v1.0.0
 test_cases:
 - id: 1
   input:
     1:
+      gt0002|Weight:
+      gt0003|Height/Length:
+    2:
       gt0034|Calf circumference (CC): 0|local::at0031|<31 cm|
       gt0035|Cannot calculate BMI: true
       gt0007|Neuropsychological problems: 1|local::at0022|Mild dementia|
@@ -13,17 +16,17 @@ test_cases:
       gt0004|Weight loss during the last 3 months: 2|local::at0011|Weight loss between 1 and 3kg|
       gt0005|Mobility: 1|local::at0015|Able to get out of bed/chair but does not go out|
       gt0006|Has suffered psychological stress or acute disease in the past 3 months?: 2|local::at0019|No|
-    3:
-      gt0002|Weight:
-      gt0003|Height/Length:
   expected_output:
-    1:
-      gt0017|MNA score: 7
     2:
+      gt0017|MNA score: 7
+    3:
       gt0005|MNA-SF assessment: local::at0006|Malnourished - further assessment and intervention required|
 - id: 2
   input:
     1:
+      gt0002|Weight: 65,kg
+      gt0003|Height/Length: 170,cm
+    2:
       gt0034|Calf circumference (CC):
       gt0035|Cannot calculate BMI: false
       gt0007|Neuropsychological problems: 2|local::at0023|No psychological problems|
@@ -31,17 +34,17 @@ test_cases:
       gt0004|Weight loss during the last 3 months: 3|local::at0012|No weight loss|
       gt0005|Mobility: 2|local::at0016|Goes out|
       gt0006|Has suffered psychological stress or acute disease in the past 3 months?: 0|local::at0018|Yes|
-    3:
-      gt0002|Weight: 65,kg
-      gt0003|Height/Length: 170,cm
   expected_output:
-    1:
-      gt0017|MNA score: 11
     2:
+      gt0017|MNA score: 11
+    3:
       gt0005|MNA-SF assessment: local::at0004|At risk of malnutrition - further assessment required|
 - id: 3
   input:
     1:
+      gt0002|Weight: 80,kg
+      gt0003|Height/Length: 175,cm
+    2:
       gt0034|Calf circumference (CC):
       gt0035|Cannot calculate BMI: false
       gt0007|Neuropsychological problems: 2|local::at0023|No psychological problems|
@@ -49,11 +52,8 @@ test_cases:
       gt0004|Weight loss during the last 3 months: 3|local::at0012|No weight loss|
       gt0005|Mobility: 2|local::at0016|Goes out|
       gt0006|Has suffered psychological stress or acute disease in the past 3 months?: 2|local::at0019|No|
-    3:
-      gt0002|Weight: 80,kg
-      gt0003|Height/Length: 175,cm
   expected_output:
-    1:
-      gt0017|MNA score: 14
     2:
+      gt0017|MNA score: 14
+    3:
       gt0005|MNA-SF assessment: local::at0003|Normal - no need for further assessment|
