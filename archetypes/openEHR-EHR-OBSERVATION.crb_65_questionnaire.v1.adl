@@ -2,7 +2,7 @@ archetype (adl_version=1.4)
 	openEHR-EHR-OBSERVATION.crb_65_questionnaire.v1
 
 concept
-	[at0000]	-- CRB-65 questionnaire
+	[at0000]	-- CRB-65 frågeformulär
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
@@ -22,16 +22,6 @@ description
 		["date"] = <"2016-07-07">
 	>
 	details = <
-		["sv"] = <
-			language = <[ISO_639-1::sv]>
-			purpose = <"Att utvärdera svårighetsgraden, angiven i mortalitet inom 30 dagar, av samhällsförvärvad pneumoni och underlätta beslutsfattande gällande vårdnivå.">
-			use = <"Används till att utvärdera förekomst av faktorer av prognostisk betydelse hos patienter som söker med misstänkt samhällsförvärvad pneumoni.
-
-CRB-65 är en akronym för Confusion, Respiratory rate (≥30/min), Blood pressure (Systolic BP <90mmHg or diastolic BP ≤60mmHg) och age (over or equal to) 65.
-">
-			misuse = <"">
-			copyright = <"Cambio Healthcare Systems">
-		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To assess severity of community-acquired pneumonia measured in 30-day mortality, and aid in determining care level. ">
@@ -48,52 +38,62 @@ Total score ranges from 0-4 and is associated with a risk level, which is in tur
 			misuse = <"">
 			copyright = <"© Cambio Healthcare Systems">
 		>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			purpose = <"Att utvärdera svårighetsgraden, angiven i mortalitet inom 30 dagar, av samhällsförvärvad pneumoni och underlätta beslutsfattande gällande vårdnivå.">
+			use = <"Används till att utvärdera förekomst av faktorer av prognostisk betydelse hos patienter som söker med misstänkt samhällsförvärvad pneumoni.
+
+CRB-65 är en akronym för Confusion, Respiratory rate (≥30/min), Blood pressure (Systolic BP <90mmHg or diastolic BP ≤60mmHg) och age (over or equal to) 65.
+">
+			misuse = <"">
+			copyright = <"Cambio Healthcare Systems">
+		>
 	>
 	lifecycle_state = <"AuthorDraft">
 	other_contributors = <"Eneimi Allwell-Brown, Cambio Healthcare Systems", ...>
 	other_details = <
 		["references"] = <"McNally M, Curtain J, O'Brien K, Dimitrov B, Fahey T. \"Validity of British Thoracic Society guidance (the CRB-65 rule) for predicting the severity of pneumonia in general practice: systematic review and meta-analysis\". Br J Gen Pract. 2010 Oct;60(579):e423-33.">
-		["MD5-CAM-1.0.1"] = <"5E6D2C3577C57130FE0BC450BA974344">
+		["MD5-CAM-1.0.1"] = <"09ED47542546CB08655F54B7DBF88785">
 	>
 
 definition
-	OBSERVATION[at0000] matches {	-- CRB-65 questionnaire
+	OBSERVATION[at0000] matches {	-- CRB-65 frågeformulär
 		data matches {
-			HISTORY[at0001] matches {	-- Event Series
+			HISTORY[at0001] matches {	-- *Event Series(en)
 				events cardinality matches {1..*; unordered} matches {
-					EVENT[at0002] occurrences matches {0..1} matches {	-- Any event
+					EVENT[at0002] occurrences matches {0..1} matches {	-- *Any event(en)
 						data matches {
-							ITEM_TREE[at0003] matches {	-- Tree
+							ITEM_TREE[at0003] matches {	-- *Tree(en)
 								items cardinality matches {0..*; unordered} matches {
-									ELEMENT[at0004] occurrences matches {0..1} matches {	-- Confusion?
+									ELEMENT[at0004] occurrences matches {0..1} matches {	-- Konfusion?
 										value matches {
-											0|[local::at0007], 	-- Absent
-											1|[local::at0008]; 	-- Present
+											0|[local::at0007], 	-- Frånvarande
+											1|[local::at0008]; 	-- Föreligger
 											0  	-- assumed value
 										}
 									}
-									ELEMENT[at0005] occurrences matches {0..1} matches {	-- Respiratory rate ≥30/min?
+									ELEMENT[at0005] occurrences matches {0..1} matches {	-- Andningsfrekvens ≥30/min?
 										value matches {
-											0|[local::at0007], 	-- Absent
-											1|[local::at0008]; 	-- Present
+											0|[local::at0007], 	-- Frånvarande
+											1|[local::at0008]; 	-- Föreligger
 											0  	-- assumed value
 										}
 									}
-									ELEMENT[at0006] occurrences matches {0..1} matches {	-- Systolic BP <90mmHg or diastolic BP ≤60mmHg?
+									ELEMENT[at0006] occurrences matches {0..1} matches {	-- Systoliskt <90mmHg eller diastoliskt ≤60mmHg?
 										value matches {
-											0|[local::at0007], 	-- Absent
-											1|[local::at0008]; 	-- Present
+											0|[local::at0007], 	-- Frånvarande
+											1|[local::at0008]; 	-- Föreligger
 											0  	-- assumed value
 										}
 									}
-									ELEMENT[at0013] occurrences matches {0..1} matches {	-- Age ≥ 65 years?
+									ELEMENT[at0013] occurrences matches {0..1} matches {	-- Ålder ≥ 65 år?
 										value matches {
-											0|[local::at0007], 	-- Absent
-											1|[local::at0008]; 	-- Present
+											0|[local::at0007], 	-- Frånvarande
+											1|[local::at0008]; 	-- Föreligger
 											0  	-- assumed value
 										}
 									}
-									ELEMENT[at0016] occurrences matches {0..1} matches {	-- Comment
+									ELEMENT[at0016] occurrences matches {0..1} matches {	-- Kommentar
 										value matches {
 											DV_TEXT matches {*}
 										}
@@ -200,8 +200,8 @@ ontology
 					description = <"Patienten är över 65 år gammal. ">
 				>
 				["at0016"] = <
-					text = <"*New element(en)">
-					description = <"**(en)">
+					text = <"Kommentar">
+					description = <"Ev. tillägg">
 				>
 			>
 		>

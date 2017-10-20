@@ -2,7 +2,7 @@ archetype (adl_version=1.4)
 	openEHR-EHR-EVALUATION.crb_65_assessment.v1
 
 concept
-	[at0000]	-- CRB-65 assessment
+	[at0000]	-- CRB-65 utvärdering
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
@@ -22,13 +22,6 @@ description
 		["date"] = <"2016-07-11">
 	>
 	details = <
-		["sv"] = <
-			language = <[ISO_639-1::sv]>
-			purpose = <"Att utvärdera svårighetsgraden, angiven i mortalitet inom 30 dagar, av samhällsförvärvad pneumoni och underlätta beslutsfattande gällande vårdnivå.">
-			use = <"Används till att utvärdera förekomst av nyckelfaktorer av prognostisk betydelse hos patienter som söker med misstänkt samhällsförvärvad pneumoni.">
-			misuse = <"Använd med försiktighet i primärvårdsmiljö då majoriteten av validitetsstudierna är genomförda på sjukhus. Studieresultat visar hög tillförlitlighet i sjukhusmiljö men indikerar även en potentiell över-(något) i primärvårdsmiljö. ">
-			copyright = <"Cambio Healthcare Systems">
-		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To assess severity of community-acquired pneumonia measured in 30-day mortality, and aid in determining care level. 
@@ -44,36 +37,43 @@ Total score ranges from 0-4 and is associated with a risk level, which is in tur
 			misuse = <"Use with caution in community setting as most validation studies are hospital based. Study results show accurate performance in hospital settings and suggest a possible over-prediction in community settings.">
 			copyright = <"© Cambio Healthcare Systems">
 		>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			purpose = <"Att utvärdera svårighetsgraden, angiven i mortalitet inom 30 dagar, av samhällsförvärvad pneumoni och underlätta beslutsfattande gällande vårdnivå.">
+			use = <"Används till att utvärdera förekomst av nyckelfaktorer av prognostisk betydelse hos patienter som söker med misstänkt samhällsförvärvad pneumoni.">
+			misuse = <"Använd med försiktighet i primärvårdsmiljö då majoriteten av validitetsstudierna är genomförda på sjukhus. Studieresultat visar hög tillförlitlighet i sjukhusmiljö men indikerar även en potentiell över-(något) i primärvårdsmiljö. ">
+			copyright = <"Cambio Healthcare Systems">
+		>
 	>
 	lifecycle_state = <"AuthorDraft">
 	other_contributors = <"Eneimi Allwell-Brown, Cambio Healthcare Systems", ...>
 	other_details = <
 		["references"] = <"McNally M, Curtain J, O'Brien K, Dimitrov B, Fahey T. \"Validity of British Thoracic Society guidance (the CRB-65 rule) for predicting the severity of pneumonia in general practice: systematic review and meta-analysis\". Br J Gen Pract. 2010 Oct;60(579):e423-33.">
-		["MD5-CAM-1.0.1"] = <"6844B389678E490B1C98C348AE828EB5">
+		["MD5-CAM-1.0.1"] = <"DA008BE72E90BB0DDB5703286F3DE1DD">
 	>
 
 definition
-	EVALUATION[at0000] matches {	-- CRB-65 assessment
+	EVALUATION[at0000] matches {	-- CRB-65 utvärdering
 		data matches {
-			ITEM_TREE[at0001] matches {	-- Tree
+			ITEM_TREE[at0001] matches {	-- *Tree(en)
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0002] occurrences matches {0..1} matches {	-- Risk assessment
+					ELEMENT[at0002] occurrences matches {0..1} matches {	-- Risknivå
 						value matches {
-							0|[local::at0005], 	-- Low risk group
-							1|[local::at0006], 	-- Moderate risk group
-							2|[local::at0007]; 	-- Severe risk group
+							0|[local::at0005], 	-- Låg riskgrupp
+							1|[local::at0006], 	-- Måttlig riskgrupp
+							2|[local::at0007]; 	-- Hög riskgrupp
 							0  	-- assumed value
 						}
 					}
-					ELEMENT[at0003] occurrences matches {0..1} matches {	-- Recommendation
+					ELEMENT[at0003] occurrences matches {0..1} matches {	-- Rekommendation
 						value matches {
-							0|[local::at0008], 	-- Consider home treatment
-							1|[local::at0009], 	-- Consider hospital care
-							2|[local::at0010]; 	-- Urgent hospital admission
+							0|[local::at0008], 	-- Överväg hembehandling
+							1|[local::at0009], 	-- Överväg sjukhusvård
+							2|[local::at0010]; 	-- Sjukhusvård, överväg IVA
 							0  	-- assumed value
 						}
 					}
-					ELEMENT[at0004] occurrences matches {0..1} matches {	-- 30-day mortality
+					ELEMENT[at0004] occurrences matches {0..1} matches {	-- 30-dagars mortalitet
 						value matches {
 							0|[local::at0011], 	-- 1,2 %
 							1|[local::at0012], 	-- 8,2 %
@@ -81,7 +81,7 @@ definition
 							0  	-- assumed value
 						}
 					}
-					ELEMENT[at0014] occurrences matches {0..1} matches {	-- Comment
+					ELEMENT[at0014] occurrences matches {0..1} matches {	-- Kommentar
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -181,43 +181,43 @@ ontology
 				>
 				["at0005"] = <
 					text = <"Låg riskgrupp">
-					description = <"**(en)">
+					description = <"*">
 				>
 				["at0006"] = <
 					text = <"Måttlig riskgrupp">
-					description = <"**(en)">
+					description = <"*">
 				>
 				["at0007"] = <
 					text = <"Hög riskgrupp">
-					description = <"**(en)">
+					description = <"*">
 				>
 				["at0008"] = <
 					text = <"Överväg hembehandling">
-					description = <"**(en)">
+					description = <"*">
 				>
 				["at0009"] = <
 					text = <"Överväg sjukhusvård">
-					description = <"**(en)">
+					description = <"*">
 				>
 				["at0010"] = <
 					text = <"Sjukhusvård, överväg IVA">
-					description = <"**(en)">
+					description = <"*">
 				>
 				["at0011"] = <
 					text = <"1,2 %">
-					description = <"**(en)">
+					description = <"*">
 				>
 				["at0012"] = <
 					text = <"8,2 %">
-					description = <"**(en)">
+					description = <"*">
 				>
 				["at0013"] = <
 					text = <"31,3 %">
-					description = <"**(en)">
+					description = <"*">
 				>
 				["at0014"] = <
-					text = <"*New element(en)">
-					description = <"**(en)">
+					text = <"Kommentar">
+					description = <"Ev. tillägg">
 				>
 			>
 		>

@@ -123,7 +123,7 @@ Ref. 2: Birnbaum A, Esses D, Bijur P, Wollowitz A, Gallagher EJ. Failure to vali
 						path = <"/data[at0001]/items[at0003]">
 					>
 				>
-				predicates = <"/data[at0001]/items[at0002.1] is_a local::gt0028|Congestive heart failure diagnosis|", "max(/data[at0001]/items[at0003])">
+				predicates = <"/data[at0001]/items[at0002.1] is_a local::gt0028|Hjärtsvikt diagnos|", "max(/data[at0001]/items[at0003])">
 				template_id = <"diagnosis">
 			>
 		>
@@ -302,20 +302,30 @@ Ref. 2: Birnbaum A, Esses D, Bijur P, Wollowitz A, Gallagher EJ. Failure to vali
 						description = <"*(en) Peak systemic arterial blood pressure  - measured in systolic or contraction phase of the heart cycle.">
 					>
 					["gt0028"] = (TERM) <
+						text = <"Hjärtsvikt diagnos">
+						description = <"*(en) The index diagnosis">
 					>
 					["gt0029"] = (TERM) <
+						text = <"Ange hjärtsvikt diagnos">
 					>
 					["gt0030"] = (TERM) <
+						text = <"Ange hematokrit">
 					>
 					["gt0031"] = (TERM) <
+						text = <"Ange patologiskt EKG">
 					>
 					["gt0032"] = (TERM) <
+						text = <"Ange dyspné">
 					>
 					["gt0033"] = (TERM) <
+						text = <"Ange systoliskt blodtryck <90 mmHg">
 					>
 					["gt0034"] = (TERM) <
+						text = <"Ange någon faktor föreligger">
 					>
 					["gt0035"] = (TERM) <
+						text = <"Hjärtsvikt inledningsdatum">
+						description = <"*(en) The date that the problem began causing symptoms or signs">
 					>
 				>
 			>

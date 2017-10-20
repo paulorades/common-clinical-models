@@ -190,14 +190,14 @@ Bradley KA, et. al. AUDIT-C as a brief screen for alcohol misuse in primary care
 						text = <"Beräkna total poäng">
 					>
 					["gt0017"] = (TERM) <
-						text = <"*(en) Gender">
+						text = <"Kön">
 						description = <"*(en) The patient's gender.">
 					>
 					["gt0018"] = (TERM) <
-						text = <"*(en) Set male">
+						text = <"Ange man">
 					>
 					["gt0022"] = (TERM) <
-						text = <"*(en) Gender">
+						text = <"Kön">
 						description = <"*(en) The patient's gender.">
 					>
 				>

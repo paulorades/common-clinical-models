@@ -110,7 +110,7 @@ The ATRIA stroke risk score is further used in evaluating the 1-year risk of str
 						path = <"/data[at0001]/items[at0003]">
 					>
 				>
-				predicates = <"/data[at0001]/items[at0002.1] is_a local::gt0018|Stroke diagnosis|", "max(/data[at0001]/items[at0003])">
+				predicates = <"/data[at0001]/items[at0002.1] is_a local::gt0018|Stroke diagnos|", "max(/data[at0001]/items[at0003])">
 				template_id = <"diagnosis">
 			>
 			["gt0019"] = (ARCHETYPE_BINDING) <
@@ -124,7 +124,7 @@ The ATRIA stroke risk score is further used in evaluating the 1-year risk of str
 						path = <"/data[at0001]/items[at0003]">
 					>
 				>
-				predicates = <"/data[at0001]/items[at0002.1] is_a local::gt0020|Diabetes diagnosis|", "max(/data[at0001]/items[at0003])">
+				predicates = <"/data[at0001]/items[at0002.1] is_a local::gt0020|Diabetes diagnos|", "max(/data[at0001]/items[at0003])">
 				template_id = <"diagnosis">
 			>
 			["gt0021"] = (ARCHETYPE_BINDING) <
@@ -138,7 +138,7 @@ The ATRIA stroke risk score is further used in evaluating the 1-year risk of str
 						path = <"/data[at0001]/items[at0003]">
 					>
 				>
-				predicates = <"/data[at0001]/items[at0002.1] is_a local::gt0022|CHF diagnosis|", "max(/data[at0001]/items[at0003])">
+				predicates = <"/data[at0001]/items[at0002.1] is_a local::gt0022|CHF diagnos|", "max(/data[at0001]/items[at0003])">
 				template_id = <"diagnosis">
 			>
 			["gt0023"] = (ARCHETYPE_BINDING) <
@@ -152,7 +152,7 @@ The ATRIA stroke risk score is further used in evaluating the 1-year risk of str
 						path = <"/data[at0001]/items[at0003]">
 					>
 				>
-				predicates = <"/data[at0001]/items[at0002.1] is_a local::gt0024|Hypertension diagnosis|", "max(/data[at0001]/items[at0003])">
+				predicates = <"/data[at0001]/items[at0002.1] is_a local::gt0024|Hypertoni diagnos|", "max(/data[at0001]/items[at0003])">
 				template_id = <"diagnosis">
 			>
 			["gt0025"] = (ARCHETYPE_BINDING) <
@@ -526,12 +526,20 @@ The ATRIA stroke risk score is further used in evaluating the 1-year risk of str
 						text = <"Beräkna totalpoäng">
 					>
 					["gt0042"] = (TERM) <
+						text = <"CHF inledningsdatum">
+						description = <"*(en) The date that the problem began causing symptoms or signs">
 					>
 					["gt0043"] = (TERM) <
+						text = <"Hypertoni inledningsdatum">
+						description = <"*(en) The date that the problem began causing symptoms or signs">
 					>
 					["gt0044"] = (TERM) <
+						text = <"Diabetes inledningsdatum">
+						description = <"*(en) The date that the problem began causing symptoms or signs">
 					>
 					["gt0045"] = (TERM) <
+						text = <"Stroke inledningsdatum">
+						description = <"*(en) The date that the problem began causing symptoms or signs">
 					>
 				>
 			>

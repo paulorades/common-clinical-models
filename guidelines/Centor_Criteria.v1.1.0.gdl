@@ -316,8 +316,12 @@ https://lakemedelsverket.se/upload/halso-och-sjukvard/behandlingsrekommendatione
 						text = <"Beräkna total poäng">
 					>
 					["gt0034"] = (TERM) <
+						text = <"Temperatur">
+						description = <"*(en) The measured body temperature (as a surrogate for the whole body).">
 					>
 					["gt0036"] = (TERM) <
+						text = <"Födelsedatum">
+						description = <"*(en) The patient's date of birth.">
 					>
 				>
 			>

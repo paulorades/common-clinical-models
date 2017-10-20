@@ -14,7 +14,7 @@
 				purpose = <"For clinical situations that require adjustment based on MAP rather than systolic blood pressure, as well as for patients with acute conditions where there is a concern for appropriate organ perfusion.">
 				use = <"Calculates MAP using a formula of the systolic blood pressure and the diastolic blood pressure.">
 			>
-			["se"] = (RESOURCE_DESCRIPTION_ITEM) <
+			["sv"] = (RESOURCE_DESCRIPTION_ITEM) <
 				copyright = <"Cambio Healthcare Systems">
 				keywords = <"tryck", "blodtryck", "medel", "genomsnitt", "medelartärtryck">
 				misuse = <"Använd inte för att beräkna medelartärtrycket med hjälp av andra formler.">
@@ -90,13 +90,9 @@
 					["gt0008"] = (TERM) <
 						text = <"Calculate MAP">
 					>
-					["gt0009"] = (TERM) <
-						text = <"MAP Time">
-						description = <"The exact time of a single timed event during the Observation. Can represent either a specific point-in-time or an interval event.">
-					>
 				>
 			>
-			["se"] = (TERM_DEFINITION) <
+			["sv"] = (TERM_DEFINITION) <
 				terms = <
 					["gt0001"] = (TERM) <
 						text = <"Beräkning av Medelartärtryck">
@@ -116,10 +112,6 @@
 					>
 					["gt0008"] = (TERM) <
 						text = <"Beräkna medelartärtryck">
-					>
-					["gt0009"] = (TERM) <
-						text = <"*MAP Time (en)">
-						description = <"*The exact time of a single timed event during the Observation. Can represent either a specific point-in-time or an interval event. (en)">
 					>
 				>
 			>

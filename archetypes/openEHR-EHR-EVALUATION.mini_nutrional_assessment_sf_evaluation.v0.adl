@@ -2,9 +2,17 @@ archetype (adl_version=1.4)
 	openEHR-EHR-EVALUATION.mini_nutrional_assessment_sf_evaluation.v0
 
 concept
-	[at0000]	-- Mini Nutrional Assessment - Short Form (MNA-SF) Evaluation
+	[at0000]	-- Mini Nutrional Assessment - Short Form (MNA-SF) Evaluation(en)
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+				["name"] = <"">
+			>
+		>
+	>
 description
 	original_author = <
 		["name"] = <"Eneimi Allwell-Brown">
@@ -27,32 +35,49 @@ If greater specificity is desired consider 10 points or below as possible malnut
 			misuse = <"">
 			copyright = <"© Cambio Healthcare Systems">
 		>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			purpose = <"För att utvärdera den totala poängen för Mini Nutritional Assessment">
+			use = <"Används på geriatriska patienter i åldern 65 eller över.
+The 6 items include:
+ - food intake in the last 3 months (score 0-2), 
+ - weight loss in the last 3 months (score 0-3), 
+ - mobility (0-2), 
+ - psychological stress/acute diseas in the last 3 months (0-2), 
+ - neuropsychological problems (0-2) and 
+ - body mass index (or calf circumference, 0-3)
+Higher scores are indicative of better nutritional status. Maximum score possible is 14, and a score of ≥12 points = normal (no need for further assessment), score 8 - 11 = at risk of malnutrition and score <8 = malnourished. A score <12 requires further assessment and possible intervention.
+If greater specificity is desired consider 10 points or below as possible malnutrition.">
+			keywords = <"MNA-SF", "näring", "undernäring">
+			misuse = <"">
+			copyright = <"© Cambio Healthcare Systems">
+		>
 	>
 	lifecycle_state = <"AuthorDraft">
 	other_contributors = <>
 	other_details = <
 		["references"] = <"Rubenstein LZ, Harker JO, Salva A, Guigoz Y, Vellas B. Screening for Undernutrition in Geriatric Practice: Developing the Short-Form Mini Nutritional Assessment (MNA-SF).">
-		["MD5-CAM-1.0.1"] = <"9ED7E0B619ADF3EA32814351536F33B7">
+		["MD5-CAM-1.0.1"] = <"4E7C4ADDB67BD536356470EA51796DFC">
 	>
 
 definition
-	EVALUATION[at0000] matches {	-- Mini Nutrional Assessment - Short Form (MNA-SF) Evaluation
+	EVALUATION[at0000] matches {	-- Mini Nutrional Assessment - Short Form (MNA-SF) Evaluation(en)
 		data matches {
-			ITEM_TREE[at0001] matches {	-- Tree
+			ITEM_TREE[at0001] matches {	-- *Tree(en)
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0002] occurrences matches {0..1} matches {	-- MNA-SF assessment
+					ELEMENT[at0002] occurrences matches {0..1} matches {	-- MNA-SF utvärdering
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
 									[local::
-									at0003, 	-- Normal - no need for further assessment
-									at0004, 	-- At risk of malnutrition - further assessment required
-									at0006]	-- Malnourished - further assessment and intervention required
+									at0003, 	-- Normal - ingen mer utvärdering behövs
+									at0004, 	-- Med risk för undernäring - ytterligare utvärdering behövs
+									at0006]	-- Undernäring -  ytterligare utvärdering och behandling behövs
 								}
 							}
 						}
 					}
-					ELEMENT[at0005] occurrences matches {0..1} matches {	-- Comment
+					ELEMENT[at0005] occurrences matches {0..1} matches {	-- Kommentar
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -93,6 +118,38 @@ ontology
 				["at0006"] = <
 					text = <"Malnourished - further assessment and intervention required">
 					description = <"MNA-SF score <8">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"Mini Nutrional Assessment - Short Form (MNA-SF) Evaluation(en)">
+					description = <"Mini Nutritional Assessment (MNA) är ett verktyg för riskbedömning av undernäring. Verktyget är validerat och hjälper upptäcka geriatriska patienter i åldern 65 år och äldre som är undernärda eller löper risk för att utveckla undernäring.">
+				>
+				["at0001"] = <
+					text = <"*Tree(en)">
+					description = <"*@ internal @(en)">
+				>
+				["at0002"] = <
+					text = <"MNA-SF utvärdering">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Normal - ingen mer utvärdering behövs">
+					description = <"MNA-SF poäng ≥12">
+				>
+				["at0004"] = <
+					text = <"Med risk för undernäring - ytterligare utvärdering behövs">
+					description = <"MNA-SF poäng 8-11">
+				>
+				["at0005"] = <
+					text = <"Kommentar">
+					description = <"Ev. tillägg">
+				>
+				["at0006"] = <
+					text = <"Undernäring -  ytterligare utvärdering och behandling behövs">
+					description = <"MNA-SF poäng <8">
 				>
 			>
 		>

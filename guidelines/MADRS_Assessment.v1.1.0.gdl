@@ -30,6 +30,28 @@ Total score ranges between 0 to 60. Scores 0 to 6 = normal/symptom absent, 7 to 
 
 The rating should be based on a clinical interview moving from broadly phrased questions about symptoms to more detailed ones which allow a precise rating of severity. The interviewer must decide whether the rating correlates to the defined scale steps (0, 2, 4, 6) or the ones between them (1, 3, 5). The items should be rated with regards to how the patient has done over the past week. ">
 			>
+			["sv"] = (RESOURCE_DESCRIPTION_ITEM) <
+				copyright = <"© Cambio Healthcare Systems">
+				keywords = <"MADRS", "Depression">
+				misuse = <"Använd inte till självskattning skala (MADRS-S)">
+				purpose = <"Att bedöma grad av depression hos patienter med affektiva störningar.">
+				use = <"Använd för att bedöma grad av depression hos patienter med affektiva störningar.
+
+Montgomery-Åsberg Depression Rating Scale är en skala utvecklad från Comprehensive Psychopathological Rating Scale, och består av tio faktorer;
+
+- Nedstämdhet
+- Sänkt grundstämning
+- Ångestkänslor
+- Minskad nattsömn
+- Nedsatt aptit
+- Koncentrationssvårigheter
+- Initiativlöshet
+- Minskad känslomässigt engagemang
+- Depressivt tankeinnehåll
+- Livsleda och självmordstankar
+
+Värderingen ska ske baserat på en klinisk intervju där den som utför testet måste bedöma om svaret korrelerar till de definierade värdena (0, 2, 4, 6) eller mellan dem (1, 3 ,5). Svaren ska anges i hänsyn till hur patienten mått den senaste veckan.">
+			>
 		>
 		lifecycle_state = <"Author draft">
 		original_author = <
@@ -120,6 +142,34 @@ Williams JBW, Kobak KA. Development and reliability of a structured interview gu
 					["gt0013"] = (TERM) <
 						text = <"Grade of depression">
 						description = <"*">
+					>
+				>
+			>
+			["sv"] = (TERM_DEFINITION) <
+				terms = <
+					["gt0001"] = (TERM) <
+						text = <"MADRS Utvärdering">
+						description = <"Syftet med testet är att ge en detaljerad bedöming av en patients nuvarande sinnestillstånd. Värderingen ska ske baserat på en klinisk intervju där den som utför testet måste bedöma om svaret ska ligga på de definierade värdena (0, 2, 4, 6) eller mellan dem (1, 3 ,5). Svaren ska anges i hänsyn till hur patienten mått den senaste veckan.">
+					>
+					["gt0006"] = (TERM) <
+						text = <"Ange ingen eller mycket lätt depression">
+					>
+					["gt0007"] = (TERM) <
+						text = <"Ange lätt depression">
+					>
+					["gt0008"] = (TERM) <
+						text = <"Ange måttlig depression">
+					>
+					["gt0009"] = (TERM) <
+						text = <"Ange svår depression">
+					>
+					["gt0011"] = (TERM) <
+						text = <"Total poäng">
+						description = <"*(en) *">
+					>
+					["gt0013"] = (TERM) <
+						text = <"Grad av depression">
+						description = <"*(en) *">
 					>
 				>
 			>

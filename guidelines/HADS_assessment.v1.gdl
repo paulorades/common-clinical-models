@@ -21,6 +21,21 @@ Depression (HADS-D):  0-7 points = no depression, 8-10 = possible depression, �
 
 Another HADS categorization has 0-7 = non-case, 8-10 = mild, 11-14 = moderate, 15-21 = severe, for both anxiety and depression subscales.">
 			>
+			["sv"] = (RESOURCE_DESCRIPTION_ITEM) <
+				copyright = <"© Cambio Healthcare Systems">
+				keywords = <"HADS skala", "ångest", "depression">
+				misuse = <"Använd ej för annat än ovan beskrivna tillämpning. Skalan är avsedd att användas som screening och är ej att betrakta som diagnostisk.">
+				purpose = <"Att upptäcka och värdera nivå av ångest och/eller depression hos patienter i somatisk vård. Skalan är avsedd att användas som screening och är ej att betrakta som diagnostisk.">
+				use = <"Använd som screening för att utvärdera patientens sinnesstämning genom bedömning av potentiell ångest och depression. 
+
+Hospital Anxiety and Depression Scale (HADS) utvecklades av Zigmond and Snaith (1983). Skalan värderar ångest och depression med hjälp av ett självskattningsformulär om totalt 14 frågor. Hälften av frågorna är relaterade till ångest och depression vardera, och bedöms separat för respektive tillstånd. Varje enskild fråga kan ge mellan noll och tre poäng, varför maximal summa uppgår till 21 för vardera tillstånd. Totala poängen bedöms enligt:
+
+0-7 poäng - ångest/depression är ej sannolikt.
+8-10 poäng - potentiell förekomst av ångest/depression.
+≥11 poäng - ångest/depression föreligger sannolikt.
+
+Skalan är avsedd att användas som screening och är ej att betrakta som diagnostisk.">
+			>
 		>
 		lifecycle_state = <"Author draft">
 		original_author = <
@@ -139,6 +154,48 @@ Stern AF. The hospital anxiety and depression scale. Occupational Medicine. 2014
 					>
 					["gt0019"] = (TERM) <
 						text = <"Set definite anxiety">
+					>
+				>
+			>
+			["sv"] = (TERM_DEFINITION) <
+				terms = <
+					["gt0001"] = (TERM) <
+						text = <"Hospital Anxiety and Depression Scale (HADS) utvärdering">
+						description = <"Hospital Anxiety and Depression Scale utgörs av ett självskattningsformulär om totalt 14 frågor, och används i klinik som screening för upptäckt och värdering av ångest och/eller depression hos patienter i somatisk vård. Tillstånden har sju frågor vardera vilka genererar ett maximum om 21 poäng. Potentiell förekomst av ångest/depression föreligger vid 8-10 poäng, medan ≥11 poäng indikerar att ångest/depression sannolikt föreligger. Skalan är avsedd att användas som screening och är ej att betrakta som diagnostisk.">
+					>
+					["gt0009"] = (TERM) <
+						text = <"Utvärdering av depression">
+						description = <"*(en) From the total score of 21 derived from the  HADS scale calculation, each category of depression is indicated.">
+					>
+					["gt0010"] = (TERM) <
+						text = <"Utvärdering av ångest">
+						description = <"*(en) From the total score of 21 derived from the  HADS scale calculation, each category of anxiety is indicated.">
+					>
+					["gt0011"] = (TERM) <
+						text = <"Ange depression är ej sannolikt">
+					>
+					["gt0012"] = (TERM) <
+						text = <"Ange ångest är ej sannolikt">
+					>
+					["gt0013"] = (TERM) <
+						text = <"Ange potentiell förekomst av depression">
+					>
+					["gt0015"] = (TERM) <
+						text = <"Depression total poäng">
+						description = <"*(en) *">
+					>
+					["gt0016"] = (TERM) <
+						text = <"Ångest total poäng">
+						description = <"*(en) *">
+					>
+					["gt0017"] = (TERM) <
+						text = <"Ange depression föreligger sannolikt">
+					>
+					["gt0018"] = (TERM) <
+						text = <"Ange potentiell förekomst av ångest">
+					>
+					["gt0019"] = (TERM) <
+						text = <"Ange ångest föreligger sannolikt">
 					>
 				>
 			>

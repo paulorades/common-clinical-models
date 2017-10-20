@@ -21,6 +21,20 @@ Total score ranges from 0-4 and is associated with a risk level, which is in tur
 * 1-2 points, moderate risk group. Consider hospital admission. 30-day mortality: 8,2 %.
 * 3-4 points, severe risk group. Urgent hospital admission, consider ICU admission. 30-day mortality: 31,3 %.">
 			>
+			["sv"] = (RESOURCE_DESCRIPTION_ITEM) <
+				copyright = <"© Cambio Healthcare Systems">
+				keywords = <"CRB-65", "lunginflammation", "samhällsförvärvad pneumoni">
+				misuse = <"Använd med försiktighet i primärvårdsmiljö då majoriteten av validitetsstudierna är genomförda på sjukhus. Studieresultat visar hög tillförlitlighet i sjukhusmiljö men indikerar även en potentiell över-(något) i primärvårdsmiljö">
+				purpose = <"Att utvärdera svårighetsgraden, angiven i mortalitet inom 30 dagar, av samhällsförvärvad pneumoni och underlätta beslutsfattande gällande vårdnivå.">
+				use = <"Används till att utvärdera förekomst av faktorer av prognostisk betydelse hos patienter som söker med misstänkt samhällsförvärvad pneumoni.
+
+CRB-65 är en akronym för Confusion, Respiratory rate (≥30/min), Blood pressure (Systolic BP <90mmHg or diastolic BP ≤60mmHg) och age (over or equal to) 65. Varje enskild faktor tillför en (1) poäng.
+
+Totala poängen har ett spann mellan 0-4 och är beroende på resultat associerad med en viss risknivå, vilken i sin tur är associerad med rekommendationer kring åtgärd och vårdnivå. 
+*0 poäng, låg risk. Överväg hembehandling. 30-dagars mortalitet: 1,2 %
+*1-2 poäng, måttlig risk. Överväg sjukhusvård. 30-dagars mortalitet: 8,2 %
+*3-4 poäng, hög risk. Skyndsam inläggning, överväg IVA-vård. 30-dagars mortalitet: 31,3 %">
+			>
 		>
 		lifecycle_state = <"Author draft">
 		original_author = <
@@ -110,6 +124,39 @@ Total score ranges from 0-4 and is associated with a risk level, which is in tur
 					>
 					["gt0012"] = (TERM) <
 						text = <"Set severe risk">
+					>
+				>
+			>
+			["sv"] = (TERM_DEFINITION) <
+				terms = <
+					["gt0001"] = (TERM) <
+						text = <"CRB-65 Assessment">
+						description = <"Kliniskt poängsystem för prognostisk uppskattning av svårighetsgrad hos patienter med misstänkt samhällsförvärvad pneumoni, angivet i mortalitet inom 30 dagar.">
+					>
+					["gt0003"] = (TERM) <
+						text = <"Risknivå">
+						description = <"*(en) Evaluation of score generated in accordance with CRB-65.">
+					>
+					["gt0004"] = (TERM) <
+						text = <"Rekommendation">
+						description = <"*(en) Care level recommendation.">
+					>
+					["gt0005"] = (TERM) <
+						text = <"30-dagars mortalitet">
+						description = <"*(en) Estimated proportion of patients dying within 30 days">
+					>
+					["gt0009"] = (TERM) <
+						text = <"Total poäng">
+						description = <"*(en) Sum of all factors ">
+					>
+					["gt0010"] = (TERM) <
+						text = <"Sätt risknivå till låg">
+					>
+					["gt0011"] = (TERM) <
+						text = <"Sätt risknivå till måttlig">
+					>
+					["gt0012"] = (TERM) <
+						text = <"Sätt risknivå till hög">
 					>
 				>
 			>

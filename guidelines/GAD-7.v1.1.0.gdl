@@ -21,6 +21,24 @@ The GAD-7 scale consists of 7 questions with answers scored on a 4-point Likert 
 The total score is the sum of the scores on all 7 items and gives a minimum score of 0 and maximum score of 21. 
 Scores of 5, 10 and 15 are cut-off points for mild, moderate and severe anxiety respectively. Further evaluation of the individual is recommended with a total score of 10 or greater.">
 			>
+			["sv"] = (RESOURCE_DESCRIPTION_ITEM) <
+				copyright = <"© Cambio Healthcare Systems">
+				keywords = <"generaliserat ångestsyndrom", "GAD-7", "panikångest", "socialt ångestsyndrom", "post-traumatiskt stressyndrom", "PTSD", "paniksyndrom", "social fobi">
+				misuse = <"Är ej avsedd att användas diagnostiskt. Användning av GAD-7 ger endast indikation om förekomst av ångestsyndrom och måste bekräftas med vidare utredning.">
+				purpose = <"Att utvärdera poäng genererad i enlighet med Generalized Anxiety Disorder score (GAD-7), ett screeningtest bestående av sju faktorer för identifiering av individer med generaliserat ångestsyndrom.">
+				use = <"Använd för att utvärdera poäng genererad i enlighet med Generalized Anxiety Disorder score (GAD-7), ett screeningtest bestående av sju faktorer för identifiering av individer med genwhispereraliserat desirereviewångestsyndrom.
+
+Testet baseras på individens psykiska hälsostatus under senaste två veckorna. Används även för att utvärdera och gradera ångestrelaterade symtom och deras förändring över tid. Ytterligare användningsområden inkluderar screening för paniksyndrom, social fobi (socialt ångestsyndrom) och post-traumatiskt stressyndrom. 
+
+GAD-7-formuläret består av sju frågor som besvaras med ett av fyra alternativ (Likert-skala): 0 = Inte alls, 1 = Flera dagar, 2 = Mer än hälften av dagarna, 3 = Nästan varje dag.
+
+Maximal poäng är 21. Resultatet tolkas enligt:
+5-9p - mild ångest
+10-14p - måttlig ångest
+15 eller mer - svår ångest
+
+Vidare, utvidgad utredning är indicerad vid en genererad poäng om tio eller mer.">
+			>
 		>
 		lifecycle_state = <"Author draft">
 		original_author = <
@@ -127,6 +145,50 @@ Kroenke K, Spitzer RL, Williams JB, Monahan PO, Löwe B. Anxiety disorders in pr
 					["gt0055"] = (TERM) <
 						text = <"GAD-7 Total score">
 						description = <"Sum of the ordinal scores recorded for each of the 7 GAD questionnaire responses.">
+					>
+				>
+			>
+			["sv"] = (TERM_DEFINITION) <
+				terms = <
+					["gt0001"] = (TERM) <
+						text = <"Generalized Anxiety Disorder Score">
+						description = <"Utvärdering av poäng genererad i enlighet med Generalized Anxiety Disorder score (GAD-7), ett screeningtest bestående av sju faktorer för identifiering av individer med generaliserat ångestsyndrom.">
+					>
+					["gt0002"] = (TERM) <
+						text = <"Beräkna GAD-7 poäng">
+						description = <"*(en) This rule contains the expression logic for calculating the GAD-7 score.">
+					>
+					["gt0008"] = (TERM) <
+						text = <"Känt mig nervös, orolig, spänd">
+						description = <"*(en) Instantiates the EHR element Feeling nervous, anxious or on edge.">
+					>
+					["gt0009"] = (TERM) <
+						text = <"Inte kunnat låta bli att ängslas">
+						description = <"*(en) Instantiates the EHR element Not being able to stop or control worrying">
+					>
+					["gt0010"] = (TERM) <
+						text = <"Ängslats för mycket om olika saker">
+						description = <"*(en) Instantiates the EHR element Worrying too much about different things.">
+					>
+					["gt0011"] = (TERM) <
+						text = <"Haft svårt att koppla av">
+						description = <"*(en) Instantiates the EHR element Trouble relaxing.">
+					>
+					["gt0012"] = (TERM) <
+						text = <"Varit så rastlös att det varit svårt att sitta still">
+						description = <"*(en) Instantiates the EHR element Being so restless that it is hard to sit still.">
+					>
+					["gt0013"] = (TERM) <
+						text = <"Varit retlig och lättstörd">
+						description = <"*(en) Instantiates the EHR element Becoming easily annoyed or irritable.">
+					>
+					["gt0014"] = (TERM) <
+						text = <"Varit rädd, som om något förfärligt skulle hända">
+						description = <"*(en) Instantiates the EHR element Feeling afraid as if something awful might happen.">
+					>
+					["gt0055"] = (TERM) <
+						text = <"GAD-7 Total poäng">
+						description = <"*(en) Sum of the ordinal scores recorded for each of the 7 GAD questionnaire responses.">
 					>
 				>
 			>

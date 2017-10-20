@@ -23,6 +23,28 @@ Minimum score = 0 and maximum score = 10.
 Individuals with total score <4 are at low risk (0.8%) of warfarin-associated hemorrhage, score of 4 is intermediate risk (2.6%) and score >4 is classified as high risk (5.8%).
 The score is used in the determination of whether to commence warfarin anticoagulation, as well as during re-evaluation of anticoagulation therapy, in patients with atrial fibrillation. The risk prediction is performed by a separate ATRIA_score_risk_score_Assessment application.">
 			>
+			["sv"] = (RESOURCE_DESCRIPTION_ITEM) <
+				copyright = <"Cambio Healthcare Systems">
+				keywords = <"antikoagulantia", "förmaksflimmer", "warfarin", "blödning", "blödningsrisk">
+				misuse = <"Endast avsedd för patienter med förmaksflimmer.">
+				purpose = <"Att hos patienter med förmaksflimmer uppskatta risken för warfarin-associerad blödning.">
+				use = <"Använd för registrering av data i enlighet med Anticoagulation and Risk Factors in Atrial Fibrillation Score (ATRIA). Instrumentet baseras på förekomst av följande faktorer:
+
+- Anemi
+- Svår njursjukdom (eGFR <30 ml/min alternativt dialys)
+- Ålder ≥75 år
+- Tidigare blödning
+- Hypertoni
+
+Resultatet uppgår till maximalt 10p, och tolkas med avseende på risk för warfarin-associerad blödning enligt:
+<4p - låg risk (0,8%)
+4p - mellanrisk (2,6%)
+>4p - hög risk (5,8%)
+
+Utfallet definieras som blödning med dödlig utgång, behov av minst två enheter blodtransfusion eller blödning i kritisk anatomisk lokal såsom intrakraniellt eller retroperitonealt.
+
+Instrumentet kan användas som stöd för beslut kring huruvida behandling med warfarin är lämplig samt för att utvärdera behandling med antikoagulantia hos patienter med förmaksflimmer. Utvärdering av poängen görs med openEHR-EHR-EVALUATION.atria_bleeding_risk.v1.">
+			>
 		>
 		lifecycle_state = <"Initial">
 		original_author = <
@@ -34,7 +56,9 @@ The score is used in the determination of whether to commence warfarin anticoagu
 		other_contributors = <"Dennis Forslund", "Jimmy Axelsson", "Eneimi Allwell-Brown">
 		other_details = <
 			["references"] = <"1. Fang MC, Go AS, Chang Y, Borowsky LH, Pomernacki NK, Udaltsova N, Singer DE. A new risk scheme to predict warfarin-associated hemorrhage: The ATRIA (Anticoagulation and Risk Factors in Atrial Fibrillation) Study. Journal of the American College of Cardiology. 2011 Jul 19;58(4):395-401.
+
 2. Apostolakis S, Lane DA, Guo Y, Buller H, Lip GY. Performance of the HEMORR 2 HAGES, ATRIA, and HAS-BLED Bleeding Risk–Prediction Scores in Patients With Atrial Fibrillation Undergoing Anticoagulation: The AMADEUS (Evaluating the Use of SR34006 Compared to Warfarin or Acenocoumarol in Patients With Atrial Fibrillation) Study. Journal of the American College of Cardiology. 2012 Aug 28;60(9):861-7.
+
 3. Roldán V, Marín F, Fernández H, Manzano-Fernandez S, Gallego P, Valdés M, Vicente V, Lip GY. Predictive value of the HAS-BLED and ATRIA bleeding scores for the risk of serious bleeding in a “real-world” population with atrial fibrillation receiving anticoagulant therapy. CHEST Journal. 2013 Jan 1;143(1):179-84.">
 		>
 	>
@@ -255,6 +279,88 @@ The score is used in the determination of whether to commence warfarin anticoagu
 					["gt0027"] = (TERM) <
 						text = <"Hypertension date of initial onset">
 						description = <"The date that the problem began causing symptoms or signs">
+					>
+				>
+			>
+			["sv"] = (TERM_DEFINITION) <
+				terms = <
+					["gt0001"] = (TERM) <
+						text = <"ATRIA Bleeding Risk Score Calculator">
+						description = <"Anticoagulation and Risk Factors in Atrial Fibrillation (ATRIA) bleeding risk score uppskattar blödningsrisk hos warfarinbehandlade patienter med förmaksflimmer baserat på fem faktorer. En poäng om <4 indikerar låg risk, 4p mellanrisk och >4p hög risk för blödning. Utfallet definieras som blödning med dödlig utgång, behov av minst två enheter blodtransfusion eller blödning i kritisk anatomisk lokal såsom intrakraniellt eller retroperitonealt.">
+					>
+					["gt0003"] = (TERM) <
+						text = <"Resultat">
+						description = <"Summan av samtliga faktorer">
+					>
+					["gt0004"] = (TERM) <
+						text = <"Anemi">
+						description = <"Hemoglobin <13 g/dl (man) eller <12 g/dl (kvinna)">
+					>
+					["gt0005"] = (TERM) <
+						text = <"Svår njursjukdom">
+						description = <"eGFR <30 ml/min eller dialyskrävande">
+					>
+					["gt0006"] = (TERM) <
+						text = <"Ålder ≥75 years">
+						description = <"Individen är 75 år eller äldre">
+					>
+					["gt0007"] = (TERM) <
+						text = <"Tidigare blödning">
+						description = <"Tidigare intern eller extern (större) blödning">
+					>
+					["gt0008"] = (TERM) <
+						text = <"Historik med hypertoni">
+						description = <"Diagnosticerad hypertoni">
+					>
+					["gt0010"] = (TERM) <
+						text = <"Födelsedatum">
+						description = <"Patientens födelsedatum">
+					>
+					["gt0011"] = (TERM) <
+						text = <"Kön">
+						description = <"Patientens kön">
+					>
+					["gt0013"] = (TERM) <
+						text = <"Estimated Glomerular Filtration Rate">
+						description = <"eGFR">
+					>
+					["gt0015"] = (TERM) <
+						text = <"Hemoglobin">
+						description = <"Hemoglobin-koncentration">
+					>
+					["gt0017"] = (TERM) <
+						text = <"Hypertoni">
+						description = <"Diagnosticerad hypertoni.">
+					>
+					["gt0019"] = (TERM) <
+						text = <"Blödningsdiagnos">
+						description = <"Tidigare intern eller extern (större) blödning">
+					>
+					["gt0020"] = (TERM) <
+						text = <"CDS anemi till 3">
+					>
+					["gt0021"] = (TERM) <
+						text = <"CDS svår njursjukdom till 3">
+					>
+					["gt0022"] = (TERM) <
+						text = <"CDS ålder ≥75 år">
+					>
+					["gt0023"] = (TERM) <
+						text = <"CDS hypertoni till 1">
+					>
+					["gt0024"] = (TERM) <
+						text = <"CDS tidigare blödning till 1">
+					>
+					["gt0025"] = (TERM) <
+						text = <"Beräkna resultat">
+					>
+					["gt0026"] = (TERM) <
+						text = <"Blödningsdiagnos inledningsdatum">
+						description = <"*(en) The date that the problem began causing symptoms or signs">
+					>
+					["gt0027"] = (TERM) <
+						text = <"Hypertoni inledningsdatum">
+						description = <"*(en) The date that the problem began causing symptoms or signs">
 					>
 				>
 			>

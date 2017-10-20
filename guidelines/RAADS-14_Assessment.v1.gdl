@@ -15,6 +15,21 @@
 				use = <"To be used in adult psychiatric outpatients. The RAADS-14 screen tool consists of 14 questions each scored 0, 1, 2 or 3 and the total score ranges from a minimum of 0 to a maximum of 42. Three main subdomains are included: Mentalizing deficits, Social anxiety and Sensory reactivity. 
 The total score is assessed as: ≥31 = autism very likely; 14 – 30 = autism likely; 0 – 13 No autism symptoms (autism unlikely).">
 			>
+			["sv"] = (RESOURCE_DESCRIPTION_ITEM) <
+				copyright = <"© Cambio Healthcare Systems">
+				keywords = <"RAADS-14", "autism", "ASD", "Asperger syndrom">
+				misuse = <"Använd endast för screening av autismspektrumtillstånd hos vuxna, och ej för att registrera data för ursprungliga formuläret RAADS-R">
+				purpose = <"Utvädering för att identifiera autismspektrumtillstånd (AST) hos vuxna.">
+				use = <"Använd som screening för att identifiera autismspektrumtillstånd (AST) hos vuxna. RAADS-14 är en förkortad version av urpsrungliga formuläret Ritvo Autism and Asperger Diagnostic Scale-Revised (RAADS-R). Skalan varierar mellan 0p (min) och 42p (max). RAADS-14 består av tre kategorier: 
+- Mentaliseringssvårigheter
+- Social ångest 
+- Sensorisk reaktivitet 
+
+Resultatet tolkas enligt:
+0-13p - Autismspektrumtillstånd osannolikt
+14-30p - Möjligt autismspektrumtillstånd
+ >31p - Sannolikt autismspektrumtillstånd">
+			>
 		>
 		lifecycle_state = <"Author draft">
 		original_author = <
@@ -96,6 +111,31 @@ Hoekstra RA, Vinkhuyzen AAE, Wheelwright S, Bartels M, Boomsma DI, Baron-Cohen S
 					>
 					["gt0008"] = (TERM) <
 						text = <"Set autism very likely">
+					>
+				>
+			>
+			["sv"] = (TERM_DEFINITION) <
+				terms = <
+					["gt0001"] = (TERM) <
+						text = <"Ritvo Autism and Asperger Diagnostic Scale 14 (RAADS-14) Utvärdering">
+						description = <"Ritvo Autism and Asperger Diagnostic Scale 14 (RAADS-14) är en förkortad version av ursprungsformuläret (RAADS-R) och används som screening för att identifiera autismspektrumtillstånd (AST) hos vuxna. Det är ett patient självskattningsformulär med frågar inom tre katogorier: mentaliseringssvårigheter, social ångest och sensorisk reaktivitet. Skalan varierar mellan 0p (min) och 42p (max) och resultatet tolkas enligt: 0-13p - Autismspektrumtillstånd osannolikt, 14-30p - Möjligt autismspektrumtillstånd, >31p - Sannolikt autismspektrumtillstånd.">
+					>
+					["gt0003"] = (TERM) <
+						text = <"Total poäng">
+						description = <"*(en) RAADS-14 screen score">
+					>
+					["gt0005"] = (TERM) <
+						text = <"RAADS-14 utvärdering">
+						description = <"*(en) *">
+					>
+					["gt0006"] = (TERM) <
+						text = <"Ange autismspektrumtillstånd osannolikt">
+					>
+					["gt0007"] = (TERM) <
+						text = <"Ange möjligt autismspektrumtillstånd">
+					>
+					["gt0008"] = (TERM) <
+						text = <"Ange sannolikt autismspektrumtillstånd">
 					>
 				>
 			>

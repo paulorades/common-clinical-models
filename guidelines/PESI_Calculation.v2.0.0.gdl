@@ -28,6 +28,28 @@ Class V        >125                  Very high risk           10-24.5%
 
 Risk level and 30-day mortality are evaluated using a separate PESI_Assessment application.">
 			>
+			["sv"] = (RESOURCE_DESCRIPTION_ITEM) <
+				copyright = <"© Cambio Healthcare Systems">
+				keywords = <"lungemboli", "PE", "blodproppssjukdomar">
+				misuse = <"Ej avsedd att användas som stöd i diagnosticering av lungemboli utan enbart riskstratifiering efter bekräftad diagnos.">
+				purpose = <"Skattning av 30-dagarsmortalitet bland patienter med lungemboli samt differentiering mellan lågriskpatienter potentiellt lämpliga för öppenvård och högriskpatienter som kan vara i behov av intensivvård.">
+				use = <"Att registrera data i enlighet med Pulmonary Embolism Severity Index (PESI). Verktyget baseras på elva viktade faktorer enligt;
+- demografi; ålder (poäng = antal år), kön (manligt = 10p)
+- komorbiditet; cancer (30p), hjärtsvikt (10p), kronisk lungsjukdom (10p)
+- kliniska fynd; puls (≥110 = 20p), systoliskt blodtryck (<100mmHg = 30p), andningsfrekvens (≥30 = 20p), temperatur (<36°C = 20p), kognitiv påverkan (desorienterad, letargisk, stupor, koma = 60p), arteriell syresaturation (<90% = 20p)
+Ingen av ovanstående = 0p.
+
+Resultatet tolkas med avseende på riskstratifiering enligt:
+
+KLASS         Poäng              Risknivå               30-dagarsmortalitet
+Klass I          ≤ 65                Mycket låg risk            0.0-1.6%
+Klass II         66-85               Låg risk                       1.7-3.5%
+Klass III        86-105             Mellanrisk                    3.2-7.1%
+Klass IV       106-125             Hög risk                       4.0-11.4%
+Klass V        >125                 Mycket hög risk           10.0-24.5%
+
+Utvärdering av poäng genererad i enlighet med PESI görs separat.">
+			>
 		>
 		lifecycle_state = <"Author draft">
 		original_author = <
@@ -173,7 +195,7 @@ Fraga M, Taffé P, Méan M, Hugli O, Witzig S, Waeber G, Aujesky D. The inter-ra
 						path = <"/data[at0001]/items[at0003]">
 					>
 				>
-				predicates = <"/data[at0001]/items[at0002.1] is_a local::gt0048|Heart failure diagnosis|", "max(/data[at0001]/items[at0003])">
+				predicates = <"/data[at0001]/items[at0002.1] is_a local::gt0048|Hjärtsvikt diagnos|", "max(/data[at0001]/items[at0003])">
 				template_id = <"diagnosis">
 			>
 			["gt0050"] = (ARCHETYPE_BINDING) <
@@ -187,7 +209,7 @@ Fraga M, Taffé P, Méan M, Hugli O, Witzig S, Waeber G, Aujesky D. The inter-ra
 						path = <"/data[at0001]/items[at0003]">
 					>
 				>
-				predicates = <"/data[at0001]/items[at0002.1] is_a local::gt0051|Cancer diagnosis|", "max(/data[at0001]/items[at0003])">
+				predicates = <"/data[at0001]/items[at0002.1] is_a local::gt0051|Cancer diagnos|", "max(/data[at0001]/items[at0003])">
 				template_id = <"diagnosis">
 			>
 			["gt0053"] = (ARCHETYPE_BINDING) <
@@ -201,7 +223,7 @@ Fraga M, Taffé P, Méan M, Hugli O, Witzig S, Waeber G, Aujesky D. The inter-ra
 						path = <"/data[at0001]/items[at0003]">
 					>
 				>
-				predicates = <"/data[at0001]/items[at0002.1] is_a local::gt0054|Chronic lung disease diagnosis|", "max(/data[at0001]/items[at0003])">
+				predicates = <"/data[at0001]/items[at0002.1] is_a local::gt0054|Kronisk lungsjukdom disease diagnos|", "max(/data[at0001]/items[at0003])">
 				template_id = <"diagnosis">
 			>
 		>
@@ -434,6 +456,154 @@ Fraga M, Taffé P, Méan M, Hugli O, Witzig S, Waeber G, Aujesky D. The inter-ra
 					["gt0055"] = (TERM) <
 						text = <"Chronic lung disease date of initial onset">
 						description = <"The date that the problem began causing symptoms or signs">
+					>
+				>
+			>
+			["sv"] = (TERM_DEFINITION) <
+				terms = <
+					["gt0001"] = (TERM) <
+						text = <"Pulmonary Embolism Severity Index (PESI) Räknare">
+						description = <"Pulmonary Embolism Severity Index (PESI) är ett instrument för skattning av 30-dagarsmortalitet bland patienter med lungemboli. Verktyget baseras på elva viktade faktorer och resultatet tolkas med avseende på riskklassificering enligt; klass I (0-65p) = mycket låg risk, klass II (66-85p) = låg risk, klass III (86-105p) = mellanrisk, klass IV (106-125p) = hög risk och klass V (>125p) = mycket hög risk. Till dessa klasser hör 30-dagarsmortalitet uttryckt i procent: 0.0-1.6% respektiv 1.7-3.5%, 3.2-7.1%, 4.0-11.4% and 10.0-24.5%. PESI har hög intern och extern validitet med hög sensitivitet för 30-dagarsmortalitet och identifiering av patienter med låg risk som är potentiella kandidater för öppenvård.">
+					>
+					["gt0003"] = (TERM) <
+						text = <"Födelsedatum">
+						description = <"*(en) The patient's date of birth.">
+					>
+					["gt0004"] = (TERM) <
+						text = <"Kön">
+						description = <"*(en) The patient's gender.">
+					>
+					["gt0010"] = (TERM) <
+						text = <"Hjärtfrekvens">
+						description = <"*(en) The rate, measured in beats per minute.">
+					>
+					["gt0012"] = (TERM) <
+						text = <"Systolisk BP">
+						description = <"*(en) Peak systemic arterial blood pressure  - measured in systolic or contraction phase of the heart cycle.">
+					>
+					["gt0014"] = (TERM) <
+						text = <"Andningsfrekvens">
+						description = <"*(en) Rate of respiration.">
+					>
+					["gt0016"] = (TERM) <
+						text = <"Temperatur">
+						description = <"*(en) The measured body temperature (as a surrogate for the whole body).">
+					>
+					["gt0018"] = (TERM) <
+						text = <"Syresaturation">
+						description = <"*(en) Measured via pulse oximetry, the saturation of oxygen in the peripheral blood.">
+					>
+					["gt0020"] = (TERM) <
+						text = <"Kognitiv påverkan">
+						description = <"*(en) PESI score for altered mental status (disorientation, lethargy, stupor or coma).">
+					>
+					["gt0022"] = (TERM) <
+						text = <"Ålder">
+						description = <"*(en) PESI score for age (age of individual in years).">
+					>
+					["gt0023"] = (TERM) <
+						text = <"Manligt kön">
+						description = <"*(en) PESI score for male patient.">
+					>
+					["gt0024"] = (TERM) <
+						text = <"Cancer (komorbiditet)">
+						description = <"*(en) PESI score for current history of cancer.">
+					>
+					["gt0025"] = (TERM) <
+						text = <"Hjärtsvikt (komorbiditet)">
+						description = <"*(en) PESI score for current history of heart failure.">
+					>
+					["gt0026"] = (TERM) <
+						text = <"Kronisk lungsjukdom (komorbiditet)">
+						description = <"*(en) PESI score for current history of chronic lung disease.">
+					>
+					["gt0027"] = (TERM) <
+						text = <"Puls ≥ 110/min">
+						description = <"*(en) PESI score for pulse rate ≥ 100/min.">
+					>
+					["gt0028"] = (TERM) <
+						text = <"Systoliskt blodtryck < 100 mmHg">
+						description = <"*(en) PESI score for systolic blood pressure < 100 mmHg.">
+					>
+					["gt0029"] = (TERM) <
+						text = <"Andningsfrekvens ≥ 30/min">
+						description = <"*(en) PESI score for respiratory rate ≥ 30/min.">
+					>
+					["gt0030"] = (TERM) <
+						text = <"Temperatur < 36°C">
+						description = <"*(en) PESI score for body temperature < 36°C.">
+					>
+					["gt0031"] = (TERM) <
+						text = <"Kognitiv påverkan">
+						description = <"*(en) PESI score for altered mental status (disorientation, lethargy, stupor or coma).">
+					>
+					["gt0032"] = (TERM) <
+						text = <"Arteriell syresaturation < 90%">
+						description = <"*(en) PESI score for arterial oxygen saturation < 90% (with and without supplemental oxygen).">
+					>
+					["gt0033"] = (TERM) <
+						text = <"Total poäng">
+						description = <"*(en) Sum total of points assigned for the 11 PESI variables.">
+					>
+					["gt0035"] = (TERM) <
+						text = <"Ange ålder">
+					>
+					["gt0036"] = (TERM) <
+						text = <"Ange kön">
+					>
+					["gt0037"] = (TERM) <
+						text = <"Ange cancer (komorbiditet)">
+					>
+					["gt0038"] = (TERM) <
+						text = <"Ange hjärtsvikt (komorbiditet)">
+					>
+					["gt0039"] = (TERM) <
+						text = <"Ange kronisk lungsjukdom (komorbiditet)">
+					>
+					["gt0040"] = (TERM) <
+						text = <"Ange puls ⩾ 110/min">
+					>
+					["gt0041"] = (TERM) <
+						text = <"Ange sytolisk BP < 100 mmHg">
+					>
+					["gt0042"] = (TERM) <
+						text = <"Ange andningsfrekvens ⩾ 30/min">
+					>
+					["gt0043"] = (TERM) <
+						text = <"Ange temperatur < 36°C">
+					>
+					["gt0044"] = (TERM) <
+						text = <"Ange kognitiv påverkan">
+					>
+					["gt0045"] = (TERM) <
+						text = <"Ange arteriell syresaturation < 90%">
+					>
+					["gt0046"] = (TERM) <
+						text = <"Beräkna total poäng">
+					>
+					["gt0048"] = (TERM) <
+						text = <"Hjärtsvikt diagnos">
+						description = <"*(en) The index diagnosis">
+					>
+					["gt0049"] = (TERM) <
+						text = <"Hjärtsvikt inledningsdatum">
+						description = <"*(en) The date that the problem began causing symptoms or signs">
+					>
+					["gt0051"] = (TERM) <
+						text = <"Cancer diagnos">
+						description = <"*(en) The index diagnosis">
+					>
+					["gt0052"] = (TERM) <
+						text = <"Cancer inledningsdatum">
+						description = <"*(en) The date that the problem began causing symptoms or signs">
+					>
+					["gt0054"] = (TERM) <
+						text = <"Kronisk lungsjukdom disease diagnos">
+						description = <"*(en) The index diagnosis">
+					>
+					["gt0055"] = (TERM) <
+						text = <"Kronisk lungsjukdom inledningsdatum">
+						description = <"*(en) The date that the problem began causing symptoms or signs">
 					>
 				>
 			>

@@ -167,7 +167,7 @@ Fraga M, Taffé P, Méan M, Hugli O, Witzig S, Waeber G, Aujesky D. The inter-ra
 				terms = <
 					["gt0001"] = (TERM) <
 						text = <"Pulmonary Embolism Severity Index (PESI) - utvärdering">
-						description = <"Pulmonary Embolism Severity Index (PESI) är ett instrument för skattning av 30-dagarsmortalitet bland patienter med lungemboli. Verktyget baseras på elva viktade faktorer och resultatet tolkas med avseende på riskklassificering enligt; klass I (0-65p) = mycket låg risk, klass II (66-85p) = låg risk, klass III (86-105p) = mellanrisk, klass IV (106-125p) = hög risk och klass V (>125p) = mycket hög risk. Till dessa klasser hör 30-dagarsmortalitet uttryckt i procent, vilka registreras med separat arketyp. PESI har hög intern och extern validitet med hög sensitivitet för 30-dagarsmortalitet och identifiering av patienter med låg risk som är potentiella kandidater för öppenvård.">
+						description = <"Pulmonary Embolism Severity Index (PESI) är ett instrument för skattning av 30-dagarsmortalitet bland patienter med lungemboli. Verktyget baseras på elva viktade faktorer och resultatet tolkas med avseende på riskklassificering enligt; klass I (0-65p) = mycket låg risk, klass II (66-85p) = låg risk, klass III (86-105p) = mellanrisk, klass IV (106-125p) = hög risk och klass V (>125p) = mycket hög risk. Till dessa klasser hör 30-dagarsmortalitet uttryckt i procent: 0.0-1.6% respektiv 1.7-3.5%, 3.2-7.1%, 4.0-11.4% and 10.0-24.5%. PESI har hög intern och extern validitet med hög sensitivitet för 30-dagarsmortalitet och identifiering av patienter med låg risk som är potentiella kandidater för öppenvård.">
 					>
 					["gt0003"] = (TERM) <
 						text = <"Total poäng">

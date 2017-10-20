@@ -251,14 +251,34 @@ Simple rear-end motor vehicle collision (MVC) not simple if: pushed into traffic
 						text = <"CDS låg risk">
 					>
 					["gt0018"] = (TERM) <
+						text = <"Risknivå">
+						description = <"*(en) *">
 					>
 					["gt0020"] = (TERM) <
+						text = <"Födelsedatum">
+						description = <"*(en) The patient's date of birth.">
 					>
 					["gt0021"] = (TERM) <
+						text = <"Ange ålder ≥65 år">
 					>
 					["gt0023"] = (TERM) <
+						text = <"Q1. Ålder ≥ 65 år, extremitetsparestesi eller farlig mekanism? (om nej - gå vidare till Q2)">
+						description = <"*(en) Is the patient ≥ 65 years, are they exhibiting extremity paresthesias or subjected to a dangerous mechanism (IF no go to Q2).  [Dangerous mechanism: 
+
+Fall from elevation >= 3 feet/5 stairs, 
+Axial load to head e.g. diving, 
+MVC (motor vehicle collision) high speed (>100km/hr), rollover, ejection, 
+Motorized recreational vehicles
+Bicycle collision]">
 					>
 					["gt0024"] = (TERM) <
+						text = <"Rekommendation">
+						description = <"*(en) If a patient has a clinically significant c-spine injury identified on imaging:
+•Maintain cervical spine protection with an appropriate collar.
+•Consult neurosurgery.
+•Keep patient non-ambulatory and NPO until treatment plan is complete.
+•Patient may require emergent operative stabilization and/or admission to Neurosurgical ICU.
+">
 					>
 				>
 			>

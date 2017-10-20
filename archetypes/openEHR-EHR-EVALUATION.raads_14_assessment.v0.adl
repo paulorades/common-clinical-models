@@ -2,9 +2,17 @@ archetype (adl_version=1.4)
 	openEHR-EHR-EVALUATION.raads_14_assessment.v0
 
 concept
-	[at0000]	-- Ritvo Autism and Asperger Diagnostic Scale 14 (RAADS-14) Assessment
+	[at0000]	-- Ritvo Autism and Asperger Diagnostic Scale 14 (RAADS-14) Utvärdering
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+				["name"] = <"">
+			>
+		>
+	>
 description
 	original_author = <
 		["name"] = <"Eneimi Allwell-Brown">
@@ -22,6 +30,22 @@ The total score is assessed as: ≥31 = autism very likely; 14 – 30 = autism l
 			misuse = <"This is not a diagnostic tool but only intended for screening purposes.">
 			copyright = <"© Cambio Healthcare Systems">
 		>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			purpose = <"Utvädering för att identifiera autismspektrumtillstånd (AST) hos vuxna.">
+			use = <"Använd som screening för att identifiera autismspektrumtillstånd (AST) hos vuxna. RAADS-14 är en förkortad version av urpsrungliga formuläret Ritvo Autism and Asperger Diagnostic Scale-Revised (RAADS-R). Skalan varierar mellan 0p (min) och 42p (max). RAADS-14 består av tre kategorier: 
+- Mentaliseringssvårigheter
+- Social ångest 
+- Sensorisk reaktivitet 
+
+Resultatet tolkas enligt:
+0-13p - Autismspektrumtillstånd osannolikt
+14-30p - Möjligt autismspektrumtillstånd
+ >31p - Sannolikt autismspektrumtillstånd">
+			keywords = <"RAADS-14", "autism", "ASD", "Asperger syndrom">
+			misuse = <"Använd endast för screening av autismspektrumtillstånd hos vuxna, och ej för att registrera data för ursprungliga formuläret RAADS-R">
+			copyright = <"© Cambio Healthcare Systems">
+		>
 	>
 	lifecycle_state = <"AuthorDraft">
 	other_contributors = <>
@@ -33,27 +57,27 @@ The total score is assessed as: ≥31 = autism very likely; 14 – 30 = autism l
 3-Andersen LMJ, Näswall K, Manouilenko I, Nylander L, Edgar J, Ritvo RA, Ritvo E, Bejerot S: The Swedish version of the Ritvo Autism and Asperger Diagnostic Scale: revised (RAADS-R). A validation study of a rating scale for adults. J Autism Dev Disord. 2011, 41: 1635-1645. 10.1007/s10803-011-1191-3.
 
 4-Hoekstra RA, Vinkhuyzen AAE, Wheelwright S, Bartels M, Boomsma DI, Baron-Cohen S, Posthuma D, van der Sluis S: The construction and validation of an abridged version of the Autism-Spectrum Quotient (AQ-Short). J Autism Dev Disord. 2011, 41: 589-596. 10.1007/s10803-010-1073-0.">
-		["MD5-CAM-1.0.1"] = <"20D63C007FB29C69C5F1878E5CE09F6F">
+		["MD5-CAM-1.0.1"] = <"04C2E39B99D9BD46B44FDC1EAEF8DE92">
 	>
 
 definition
-	EVALUATION[at0000] matches {	-- Ritvo Autism and Asperger Diagnostic Scale 14 (RAADS-14) Assessment
+	EVALUATION[at0000] matches {	-- Ritvo Autism and Asperger Diagnostic Scale 14 (RAADS-14) Utvärdering
 		data matches {
-			ITEM_TREE[at0001] matches {	-- Tree
+			ITEM_TREE[at0001] matches {	-- *Tree(en)
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0002] occurrences matches {0..1} matches {	-- RAADS-14 assessment
+					ELEMENT[at0002] occurrences matches {0..1} matches {	-- RAADS-14 utvärdering
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
 									[local::
-									at0004, 	-- Autism unlikely
-									at0005, 	-- Autism likely
-									at0006]	-- Autism very likely
+									at0004, 	-- Ange autismspektrumtillstånd osannolikt
+									at0005, 	-- Ange möjligt autismspektrumtillstånd
+									at0006]	-- Ange sannolikt autismspektrumtillstånd
 								}
 							}
 						}
 					}
-					ELEMENT[at0003] occurrences matches {0..1} matches {	-- Comment
+					ELEMENT[at0003] occurrences matches {0..1} matches {	-- Kommentar
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -94,6 +118,38 @@ ontology
 				["at0006"] = <
 					text = <"Autism very likely">
 					description = <"RAADS-14 screen score ≥31">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"Ritvo Autism and Asperger Diagnostic Scale 14 (RAADS-14) Utvärdering">
+					description = <"Ritvo Autism and Asperger Diagnostic Scale 14 (RAADS-14) är en förkortad version av ursprungsformuläret (RAADS-R) och används som screening för att identifiera autismspektrumtillstånd (AST) hos vuxna. Det är ett patient självskattningsformulär med frågar inom tre katogorier: mentaliseringssvårigheter, social ångest och sensorisk reaktivitet. Skalan varierar mellan 0p (min) och 42p (max) och resultatet tolkas enligt: 0-13p - Autismspektrumtillstånd osannolikt, 14-30p - Möjligt autismspektrumtillstånd, >31p - Sannolikt autismspektrumtillstånd.">
+				>
+				["at0001"] = <
+					text = <"*Tree(en)">
+					description = <"*@ internal @(en)">
+				>
+				["at0002"] = <
+					text = <"RAADS-14 utvärdering">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Kommentar">
+					description = <"Ev tillägg">
+				>
+				["at0004"] = <
+					text = <"Ange autismspektrumtillstånd osannolikt">
+					description = <"RAADS-14 total poäng = 0 - 13">
+				>
+				["at0005"] = <
+					text = <"Ange möjligt autismspektrumtillstånd">
+					description = <"RAADS-14 total poäng = 14 - 30">
+				>
+				["at0006"] = <
+					text = <"Ange sannolikt autismspektrumtillstånd">
+					description = <"RAADS-14 total poäng ≥31">
 				>
 			>
 		>

@@ -28,7 +28,7 @@ The individual score ranges from 1 to 4 with a higher score relating to a lower 
 			["sv"] = (RESOURCE_DESCRIPTION_ITEM) <
 				keywords = <"MNS", "Modified", "Norton", "Skala", "Trycksår">
 				purpose = <"För att räkna ut den totala poängen i MNS.">
-				use = <"">
+				use = <"Den modifierade Nortonskalan bör användas som ett komplement till den kliniska bedömningen.">
 			>
 		>
 		lifecycle_state = <"Author draft">
@@ -143,35 +143,35 @@ The individual score ranges from 1 to 4 with a higher score relating to a lower 
 						description = <"Modified Norton Scale är ett specialinstrument för riskbedömning för att utvärdera om en person löper risk att utveckla trycksår. Maximal total poäng är 28 och minsta möjliga är 7, där lägre poäng innebär en större risk för en person för att utveckla trycksår. Observera att den modifierade Nortonskalan bör användas som ett komplement till den kliniska bedömningen.">
 					>
 					["gt0003"] = (TERM) <
-						text = <"*Mental condition (en)">
+						text = <"Psykisk status">
 						description = <"** (en)">
 					>
 					["gt0004"] = (TERM) <
-						text = <"*Physical activity (en)">
+						text = <"Fysisk status">
 						description = <"** (en)">
 					>
 					["gt0005"] = (TERM) <
-						text = <"*Mobility (en)">
+						text = <"Rörelseförmåga">
 						description = <"** (en)">
 					>
 					["gt0006"] = (TERM) <
-						text = <"*Food intake (en)">
+						text = <"Födointag">
 						description = <"** (en)">
 					>
 					["gt0007"] = (TERM) <
-						text = <"*Fluid intake (en)">
+						text = <"Vätskeintag">
 						description = <"** (en)">
 					>
 					["gt0008"] = (TERM) <
-						text = <"*Incontinence (en)">
+						text = <"Inkontinens">
 						description = <"** (en)">
 					>
 					["gt0009"] = (TERM) <
-						text = <"*Physical condition (en)">
+						text = <"Allmäntillstånd">
 						description = <"** (en)">
 					>
 					["gt0018"] = (TERM) <
-						text = <"*Modified Norton Scale score (en)">
+						text = <"Total poäng">
 						description = <"** (en)">
 					>
 					["gt0042"] = (TERM) <

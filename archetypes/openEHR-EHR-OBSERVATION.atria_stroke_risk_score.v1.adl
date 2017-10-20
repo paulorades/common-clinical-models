@@ -22,20 +22,6 @@ description
 		["date"] = <"2016-11-30">
 	>
 	details = <
-		["sv"] = <
-			language = <[ISO_639-1::sv]>
-			purpose = <"Att registrera poäng genererad i enlighet med ATRIA stroke risk score. Instrumentet baseras på åtta faktorer; tidigare stroke, ålder, kön, komorbiditet, proteinuri och eGFR < 45ml/min (alt terminal njursvikt). Instrumentet är validerat, och används för uppskattning av strokerisk och som riktlinje för optimal behandling med antikoagulantia hos patienter med förmaksflimmer. ">
-			use = <"Registrera poäng genererad i enlighet med ATRIA stroke risk score, samt enskilda poäng för varje inkluderad faktor;
- - förekomst av diabetes mellitus, hjärtsvikt, hypertoni, proteinuri (U-albumin ≥30 mg/dl eller U-albumin:kreatinin-kvot ≥30 mg/g), eGFR < 45ml/min (eller terminal njursvikt) = 1 poäng vardera, och 0p om ej föreliggande;
- - kvinnligt kön = 1 poäng, och 0p om manligt; 
- - ålder <65 år (utan tidigare stroke = 0p, med tidigare stroke = 8p), 65-74 år (utan tidigare stroke = 3p, med tidigare stroke = 7p), 75-84 år (utan tidigare stroke = 5p, med tidigare stroke = 7 p), ≥85 år (utan tidigare stroke = 6p, med tidigare stroke = 9p).
-
-Råvärden genereras med hjälp av separata arketyper för respektive faktor. Själva utvärderingen i enlighet med ATRIA stroke risk score återfinns även den i en separat arketyp - openEHR-EHR-EVALUATION.atria_stroke_risk.v1.
-">
-			keywords = <"förmaksflimmer", "stroke", "ATRIA">
-			misuse = <"Endast avsedd för patienter med diagnosticerat förmaksflimmer.">
-			copyright = <"© Cambio Healthcare Systems">
-		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To record the ATRIA stroke risk score as well as the points assigned for each of the following 8 (eight) assessed variables: prior stroke, age, sex, comorbidities (diabetes mellitus, congestive heart failure, hypertension), proteinuria, and eGFR <45ml/min (or ESRD - end stage renal disease). ATRIA stroke risk score has been validated as performing better than the CHADS2 and CHA2DS2-VASc risk models and provides more accurate and reliable stroke risk/thromboembolism prediction, as well as guides optimal anticoagulation decision-making, in individuals with atrial fibrillation.
@@ -50,12 +36,26 @@ The ATRIA stroke risk score is further used in evaluating the 1-year risk of str
 			misuse = <"Do not use if the patient does not have atrial fibrillation.">
 			copyright = <"© Cambio Healthcare Systems">
 		>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			purpose = <"Att registrera poäng genererad i enlighet med ATRIA stroke risk score. Instrumentet baseras på åtta faktorer; tidigare stroke, ålder, kön, komorbiditet, proteinuri och eGFR < 45ml/min (alt terminal njursvikt). Instrumentet är validerat, och används för uppskattning av strokerisk och som riktlinje för optimal behandling med antikoagulantia hos patienter med förmaksflimmer. ">
+			use = <"Registrera poäng genererad i enlighet med ATRIA stroke risk score, samt enskilda poäng för varje inkluderad faktor;
+ - förekomst av diabetes mellitus, hjärtsvikt, hypertoni, proteinuri (U-albumin ≥30 mg/dl eller U-albumin:kreatinin-kvot ≥30 mg/g), eGFR < 45ml/min (eller terminal njursvikt) = 1 poäng vardera, och 0p om ej föreliggande;
+ - kvinnligt kön = 1 poäng, och 0p om manligt; 
+ - ålder <65 år (utan tidigare stroke = 0p, med tidigare stroke = 8p), 65-74 år (utan tidigare stroke = 3p, med tidigare stroke = 7p), 75-84 år (utan tidigare stroke = 5p, med tidigare stroke = 7 p), ≥85 år (utan tidigare stroke = 6p, med tidigare stroke = 9p).
+
+Råvärden genereras med hjälp av separata arketyper för respektive faktor. Själva utvärderingen i enlighet med ATRIA stroke risk score återfinns även den i en separat arketyp - openEHR-EHR-EVALUATION.atria_stroke_risk.v1.
+">
+			keywords = <"förmaksflimmer", "stroke", "ATRIA">
+			misuse = <"Endast avsedd för patienter med diagnosticerat förmaksflimmer.">
+			copyright = <"© Cambio Healthcare Systems">
+		>
 	>
 	lifecycle_state = <"AuthorDraft">
 	other_contributors = <>
 	other_details = <
 		["references"] = <"Singer DE, Chang Y, Borowsky LH, Fang MC, Pomernacki NK, Udaltsova N, Reynolds K, Go AS. A new risk scheme to predict ischemic stroke and other thromboembolism in atrial fibrillation: the ATRIA study stroke risk score. Journal of the American Heart Association. 2013 Jun 18;2(3):e000250.">
-		["MD5-CAM-1.0.1"] = <"F31C834FF7B62C32CAE3D0EF40F382D5">
+		["MD5-CAM-1.0.1"] = <"6C88E71332F27098660C0948CC327199">
 	>
 
 definition
@@ -270,11 +270,11 @@ ontology
 				>
 				["at0005"] = <
 					text = <"Nej">
-					description = <"*(en)">
+					description = <"*">
 				>
 				["at0006"] = <
 					text = <"Ja">
-					description = <"*(en)">
+					description = <"*">
 				>
 				["at0007"] = <
 					text = <"Ålder">

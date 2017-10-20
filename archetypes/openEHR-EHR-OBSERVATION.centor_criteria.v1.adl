@@ -2,7 +2,7 @@ archetype (adl_version=1.4)
 	openEHR-EHR-OBSERVATION.centor_criteria.v1
 
 concept
-	[at0000]	-- Centor Criteria
+	[at0000]	-- Centorkriterierna
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
@@ -23,9 +23,7 @@ description
 	details = <
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
-			purpose = <"Att värdera nytta av provtagning och behandling av patienter som söker med halsont.
-
-">
+			purpose = <"Att värdera nytta av provtagning och behandling av patienter som söker med halsont.">
 			use = <"Använd som stöd för att värdera nytta av provtagning och behandling av patienter med halsont.
 
 De modifierade Centorkriterierna består av flertalet faktorer som vardera bidrar till totala poängen enligt;
@@ -70,60 +68,60 @@ Chiappini E, Regoli M, Bonsignori F, et al. Analysis of different recommendation
 
 Handläggning av faryngotonsilliter i öppen vård – ny rekommendation. Information från Läkemedelsverket. 2012;6:18-25
 (https://lakemedelsverket.se/malgrupp/Halso---sjukvard/Behandlingsrekommendationer-arkiv/Behandlingsrekommendation---arkivlista/Faryngotonsilliter/)">
-		["MD5-CAM-1.0.1"] = <"6A41A099F6CF4A790E28F8DD63895223">
+		["MD5-CAM-1.0.1"] = <"E6EFE82382E30157ADF0C507F0C78AD8">
 	>
 
 definition
-	OBSERVATION[at0000] matches {	-- Centor Criteria
+	OBSERVATION[at0000] matches {	-- Centorkriterierna
 		data matches {
-			HISTORY[at0001] matches {	-- Event Series
+			HISTORY[at0001] matches {	-- *Event Series(en)
 				events cardinality matches {1..*; unordered} matches {
-					EVENT[at0002] occurrences matches {0..1} matches {	-- Any event
+					EVENT[at0002] occurrences matches {0..1} matches {	-- *Any event(en)
 						data matches {
-							ITEM_TREE[at0003] matches {	-- Tree
+							ITEM_TREE[at0003] matches {	-- *Tree(en)
 								items cardinality matches {0..*; unordered} matches {
-									ELEMENT[at0004] occurrences matches {0..1} matches {	-- Cough?
+									ELEMENT[at0004] occurrences matches {0..1} matches {	-- Hosta?
 										value matches {
-											0|[local::at0010], 	-- Present
-											1|[local::at0011]; 	-- Absent
+											0|[local::at0010], 	-- Föreligger
+											1|[local::at0011]; 	-- Frånvarande
 											0  	-- assumed value
 										}
 									}
-									ELEMENT[at0005] occurrences matches {0..1} matches {	-- Swollen/tender anterior cervical nodes?
+									ELEMENT[at0005] occurrences matches {0..1} matches {	-- Svullna/ömmande anteriora cervikala adeniter?
 										value matches {
-											0|[local::at0011], 	-- Absent
-											1|[local::at0010]; 	-- Present
+											0|[local::at0011], 	-- Frånvarande
+											1|[local::at0010]; 	-- Föreligger
 											0  	-- assumed value
 										}
 									}
-									ELEMENT[at0006] occurrences matches {0..1} matches {	-- Temperature >38° C?
+									ELEMENT[at0006] occurrences matches {0..1} matches {	-- Temperatur >38° C?
 										value matches {
-											0|[local::at0011], 	-- Absent
-											1|[local::at0010]; 	-- Present
+											0|[local::at0011], 	-- Frånvarande
+											1|[local::at0010]; 	-- Föreligger
 											0  	-- assumed value
 										}
 									}
-									ELEMENT[at0007] occurrences matches {0..1} matches {	-- Tonsillar exudate or swelling?
+									ELEMENT[at0007] occurrences matches {0..1} matches {	-- Beläggning på/svullen tonsill?
 										value matches {
-											0|[local::at0011], 	-- Absent
-											1|[local::at0010]; 	-- Present
+											0|[local::at0011], 	-- Frånvarande
+											1|[local::at0010]; 	-- Föreligger
 											0  	-- assumed value
 										}
 									}
-									ELEMENT[at0008] occurrences matches {0..1} matches {	-- Age?
+									ELEMENT[at0008] occurrences matches {0..1} matches {	-- Ålder
 										value matches {
-											-1|[local::at0018], 	-- 45+ years
-											0|[local::at0019], 	-- 15-44 years
-											1|[local::at0020]; 	-- 3-14 years
+											-1|[local::at0018], 	-- 45+ år
+											0|[local::at0019], 	-- 15-44 år
+											1|[local::at0020]; 	-- 3-14 år
 											-1  	-- assumed value
 										}
 									}
-									ELEMENT[at0009] occurrences matches {0..1} matches {	-- Total score
+									ELEMENT[at0009] occurrences matches {0..1} matches {	-- Total poäng
 										value matches {
 											DV_COUNT matches {*}
 										}
 									}
-									ELEMENT[at0021] occurrences matches {0..1} matches {	-- Comment
+									ELEMENT[at0021] occurrences matches {0..1} matches {	-- Kommentar
 										value matches {
 											DV_TEXT matches {*}
 										}
@@ -271,8 +269,8 @@ ontology
 					description = <"*">
 				>
 				["at0021"] = <
-					text = <"*New element(en)">
-					description = <"**(en)">
+					text = <"Kommentar">
+					description = <"Mer information om den här dokumentationen">
 				>
 			>
 		>

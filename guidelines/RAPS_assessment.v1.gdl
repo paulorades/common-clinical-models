@@ -126,9 +126,6 @@ En total poäng om 31 eller mindre indikerar hög risk för utveckling av trycks
 					["gt0007"] = (TERM) <
 						text = <"CDS high risk">
 					>
-					["gt0008"] = (TERM) <
-						text = <"Default">
-					>
 				>
 			>
 			["sv"] = (TERM_DEFINITION) <
@@ -150,8 +147,6 @@ En total poäng om 31 eller mindre indikerar hög risk för utveckling av trycks
 					>
 					["gt0007"] = (TERM) <
 						text = <"CDS hög risk">
-					>
-					["gt0008"] = (TERM) <
 					>
 				>
 			>

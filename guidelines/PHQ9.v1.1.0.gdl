@@ -135,7 +135,7 @@ Ref. 2: Arroll B, Goodyear-Smith F, Crengle S, Gunn J, Kerse N, Fishman T, Fallo
 				>
 			>
 		>
-		default_actions = <"$gt0055=0|local::at0019|Not at all|", "$gt0053=0|local::at0015|Not at all|">
+		default_actions = <"$gt0055=0|local::at0019|Not at all|", "$gt0053=0|local::at0019|Not at all|">
 		rules = <
 			["gt0028"] = (RULE) <
 				when = <"!fired($gt0028)", "$gt0026==null">
@@ -279,12 +279,18 @@ Ref. 2: Arroll B, Goodyear-Smith F, Crengle S, Gunn J, Kerse N, Fishman T, Fallo
 						description = <"*(en) How difficult have these problems made it for you to do your work, take care of things at home, or get along with other people? ">
 					>
 					["gt0053"] = (TERM) <
+						text = <"Hur stora svårigheter har dessa problem förorsakat i livet">
+						description = <"*(en) How difficult have these problems made it for you to do your work, take care of things at home, or get along with other people? ">
 					>
 					["gt0054"] = (TERM) <
+						text = <"Ange svårigheter med dessa problem">
 					>
 					["gt0055"] = (TERM) <
+						text = <"Självmordstankar">
+						description = <"*(en) Thoughts that you would be better off dead, or thoughts of hurting yourself in some way ">
 					>
 					["gt0056"] = (TERM) <
+						text = <"Ange ja till fråga om självmordstankar">
 					>
 				>
 			>

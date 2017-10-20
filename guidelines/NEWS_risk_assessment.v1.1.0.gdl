@@ -192,26 +192,6 @@ National Early Warning Score (NEWS). [Internet]. London, UK: Royal College of Ph
 						text = <"Total score">
 						description = <"The total sum of all the NEWS parameter ordinals.">
 					>
-					["gt0005"] = (TERM) <
-						text = <"NEWS Assessment">
-						description = <"Risk assessment of score generated in accordance with NEWS protocol">
-					>
-					["gt0006"] = (TERM) <
-						text = <"Frequency of monitoring">
-						description = <"Recommended frequency of monitoring in accordance with NEWS Assessment">
-					>
-					["gt0007"] = (TERM) <
-						text = <"Set zero points">
-					>
-					["gt0008"] = (TERM) <
-						text = <"Set low-score">
-					>
-					["gt0009"] = (TERM) <
-						text = <"Set medium score">
-					>
-					["gt0010"] = (TERM) <
-						text = <"Set assessment">
-					>
 					["gt0012"] = (TERM) <
 						text = <"NEWS Assessment">
 						description = <"Risk assessment of score generated in accordance with NEWS protocol">
@@ -290,95 +270,77 @@ National Early Warning Score (NEWS). [Internet]. London, UK: Royal College of Ph
 						description = <"NEWS (National Early Warning Score) är en standardiserad metod utvecklad för att objekt gradera och utvärdera vitala parametrar. Den aktuella versionen är utvecklad av UK Royal College of Physicians.">
 					>
 					["gt0004"] = (TERM) <
-						text = <"*(en) Total score">
+						text = <"Total poäng">
 						description = <"*(en) The total sum of all the NEWS parameter ordinals.">
 					>
-					["gt0005"] = (TERM) <
-						text = <"*(en) NEWS Assessment">
-						description = <"*(en) Risk assessment of score generated in accordance with NEWS protocol">
-					>
-					["gt0006"] = (TERM) <
-						text = <"*(en) Frequency of monitoring">
-						description = <"*(en) Recommended frequency of monitoring in accordance with NEWS Assessment">
-					>
-					["gt0007"] = (TERM) <
-						text = <"*(en) Set zero points">
-					>
-					["gt0008"] = (TERM) <
-						text = <"*(en) Set low-score">
-					>
-					["gt0009"] = (TERM) <
-						text = <"*(en) Set medium score">
-					>
-					["gt0010"] = (TERM) <
-						text = <"*(en) Set assessment">
-					>
 					["gt0012"] = (TERM) <
-						text = <"*(en) NEWS Assessment">
+						text = <"NEWS utvärdering">
 						description = <"*(en) Risk assessment of score generated in accordance with NEWS protocol">
 					>
 					["gt0013"] = (TERM) <
-						text = <"*(en) Set zero points">
+						text = <"Ange noll poäng">
 					>
 					["gt0014"] = (TERM) <
-						text = <"*(en) Set low-score">
+						text = <"Ange låg risk">
 					>
 					["gt0015"] = (TERM) <
-						text = <"*(en) Set medium-score">
+						text = <"Ange medelhög risk">
 					>
 					["gt0016"] = (TERM) <
-						text = <"*(en) Set high-score">
+						text = <"Ange hög risk">
 					>
 					["gt0017"] = (TERM) <
-						text = <"*(en) Set medium risk special case 1">
+						text = <"Ange medelhög risk speciellt fall 1">
 					>
 					["gt0018"] = (TERM) <
-						text = <"*(en) Set medium risk special case 2">
+						text = <"Ange medelhög risk speciellt fall 2">
 					>
 					["gt0019"] = (TERM) <
-						text = <"*(en) Set medium risk special case 3">
+						text = <"Ange medelhög risk speciellt fall 3">
 					>
 					["gt0020"] = (TERM) <
-						text = <"*(en) Set frequency of monitoring to 12 hourly">
+						text = <"Ange observation frekvens på minimum två gånger per dygn">
 					>
 					["gt0021"] = (TERM) <
-						text = <"*(en) Set frequency of monitoring to minimum 4-6 hourly">
+						text = <"Ange observation frekvens på minimum var 4-6:e timme">
 					>
 					["gt0022"] = (TERM) <
-						text = <"*(en) Set frequency of monitoring to minimum 1 hourly">
+						text = <"Ange observation frekvens på minst en gång i timmen">
 					>
 					["gt0023"] = (TERM) <
-						text = <"*(en) Set frequency of monitoring to continuous">
+						text = <"Ange observation frekvens på kontinuerlig kontroll av vitala parametrar">
 					>
 					["gt0024"] = (TERM) <
-						text = <"*(en) Respiration rate">
+						text = <"Andningsfrekvens">
 						description = <"*(en) Range category for the respiratory rate (RR) measurement of a patient.">
 					>
 					["gt0025"] = (TERM) <
-						text = <"*(en) Oxygen saturation">
+						text = <"Syrgaskoncentration">
 						description = <"*(en) Range category for the oxygen saturation measurement of a patient.">
 					>
 					["gt0026"] = (TERM) <
-						text = <"*(en) Body temperature">
+						text = <"Temperatur">
 						description = <"*(en) Range category for the body temperature (Temp) measurement of a patient.">
 					>
 					["gt0027"] = (TERM) <
-						text = <"*(en) Systolic blood pressure">
+						text = <"Systolisk BP">
 						description = <"*(en) Range category for the systolic blood pressure (SBP) measurement of a patient.">
 					>
 					["gt0028"] = (TERM) <
-						text = <"*(en) Heart rate">
+						text = <"Hjärtfrekvens">
 						description = <"*(en) Range category for the heart rate (HR) measurement of a patient.">
 					>
 					["gt0029"] = (TERM) <
-						text = <"*(en) Level of consciousness">
+						text = <"Vakenhet">
 						description = <"*(en) Observed category for the AVPU scale rating of a patient's conscious state.">
 					>
 					["gt0030"] = (TERM) <
-						text = <"*(en) Frequency of monitoring">
+						text = <"Observation frekvens">
 						description = <"*(en) Recommended frequency of monitoring in accordance with NEWS Assessment">
 					>
 					["gt0031"] = (TERM) <
+						text = <"Rekommendation">
+						description = <"*(en) Recommended clinical response to NEWS assessment">
 					>
 				>
 			>

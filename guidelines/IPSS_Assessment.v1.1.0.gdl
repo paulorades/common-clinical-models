@@ -174,27 +174,32 @@ Denna guideline utvärderar resultat genererade i enlighet med IPSS.
 ">
 					>
 					["gt0004"] = (TERM) <
-						text = <"*(en) IPSS Assessment">
+						text = <"IPSS utvärdering">
 						description = <"*(en) Severity of condition.">
 					>
 					["gt0008"] = (TERM) <
-						text = <"*(en) Total score">
+						text = <"Total poäng">
 						description = <"*(en) Sum of all factors. Last question not included.">
 					>
 					["gt0009"] = (TERM) <
-						text = <"*(en) Set IPSS Assessment to mild">
+						text = <"Ange IPSS utvärdering till lindrig">
 					>
 					["gt0010"] = (TERM) <
-						text = <"*(en) Set IPSS Assessment to moderate">
+						text = <"Ange IPSS utvärdering till måttlig">
 					>
 					["gt0011"] = (TERM) <
-						text = <"*(en) Set IPSS Assessment to severe">
+						text = <"Ange IPSS utvärdering till svår">
 					>
 					["gt0012"] = (TERM) <
+						text = <"Subjektiva känsla av vattenkastningsbesvärens påverkan på livskvalitet">
+						description = <"*(en) Additional question, not included in total score.">
 					>
 					["gt0013"] = (TERM) <
+						text = <"Livskvalitet på grund av urinvägsbesvär">
+						description = <"*(en) Assessment of question 8 which stands alone on a 0-6 point scale and is reported on its own.">
 					>
 					["gt0014"] = (TERM) <
+						text = <"Ange känsla av livskvalitet">
 					>
 				>
 			>

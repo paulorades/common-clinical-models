@@ -25,6 +25,7 @@ Higher scores are indicative of better nutritional status. Maximum score possibl
 If greater specificity is desired consider 10 points or below as possible malnutrition.">
 			>
 			["sv"] = (RESOURCE_DESCRIPTION_ITEM) <
+				copyright = <"© Cambio Healthcare Systems">
 				keywords = <"MNA", "Mini", "Nutritional", "Näring", "Undernäring", "Risk", "Senior Alert">
 				purpose = <"För att beräkna den totala poängen för Mini Nutritional Assessment.">
 				use = <"Används på geriatriska patienter i åldern 65 eller över.">
@@ -319,73 +320,73 @@ Ref.4: Kaiser MJ, Bauer JM, Ramsch C, et al.  Validation of the Mini Nutritional
 						description = <"Mini Nutritional Assessment (MNA) är ett verktyg för riskbedömning av undernäring. Verktyget är validerat och hjälper upptäcka geriatriska patienter i åldern 65 år och äldre som är undernärda eller löper risk för att utveckla undernäring.">
 					>
 					["gt0003"] = (TERM) <
-						text = <"*Has food intake declined over the past 3 months due to loss of appetite, digestive problems, chewing or swallowing difficulties? (en)">
+						text = <"Har födointaget minskat de senaste tre månaderna på grund av försämrad aptit, matsmältningsproblem, tugg- eller sväljproblem?">
 						description = <"** (en)">
 					>
 					["gt0004"] = (TERM) <
-						text = <"*Weight loss during the last 3 months (en)">
+						text = <"Viktförlust under de senaste tre månaderna">
 						description = <"** (en)">
 					>
 					["gt0005"] = (TERM) <
-						text = <"*Mobility (en)">
+						text = <"Rörlighet">
 						description = <"** (en)">
 					>
 					["gt0006"] = (TERM) <
-						text = <"*Has suffered psychological stress or acute disease in the past 3 months? (en)">
+						text = <"Psykisk stress eller akut sjukdom under de senaste tre månaderna?">
 						description = <"** (en)">
 					>
 					["gt0007"] = (TERM) <
-						text = <"*Neuropsychological problems (en)">
+						text = <"Neuropsykologiska problem">
 						description = <"** (en)">
 					>
 					["gt0009"] = (TERM) <
-						text = <"*(en) Body Mass Index">
+						text = <" Body Mass Index">
 					>
 					["gt0011"] = (TERM) <
-						text = <"*A. Has food intake declined over the past 3 months due to loss of appetite, digestive problems, chewing or swallowing difficulties? (en)">
+						text = <"A. Har födointaget minskat de senaste tre månaderna på grund av försämrad aptit, matsmältningsproblem, tugg- eller sväljproblem?">
 						description = <"** (en)">
 					>
 					["gt0012"] = (TERM) <
-						text = <"*B. Weight loss during the last 3 months (en)">
+						text = <"B. Viktförlust under de senaste tre månaderna">
 						description = <"** (en)">
 					>
 					["gt0013"] = (TERM) <
-						text = <"*C. Mobility (en)">
+						text = <"C. Rörlighet">
 						description = <"** (en)">
 					>
 					["gt0014"] = (TERM) <
-						text = <"*D. Has suffered psychological stress or acute disease in the past 3 months? (en)">
+						text = <"D. Psykisk stress eller akut sjukdom under de senaste tre månaderna?">
 						description = <"** (en)">
 					>
 					["gt0015"] = (TERM) <
-						text = <"*E. Neuropsychological problems (en)">
+						text = <"E. Neuropsykologiska problem">
 						description = <"** (en)">
 					>
 					["gt0016"] = (TERM) <
-						text = <"*F. Body Mass Index (kg/m2) (en)">
+						text = <"F. BMI (kg/m2)">
 						description = <"** (en)">
 					>
 					["gt0017"] = (TERM) <
-						text = <"*MNA score (en)">
+						text = <"Screeningresultat">
 						description = <"** (en)">
 					>
 					["gt0033"] = (TERM) <
 						text = <"Räkna ut totalpoäng utan BMI">
 					>
 					["gt0034"] = (TERM) <
-						text = <"*Calf circumference (CC) (en)">
+						text = <"Vadomkrets (CC)">
 						description = <"** (en)">
 					>
 					["gt0035"] = (TERM) <
-						text = <"*Cannot calculate BMI (en)">
+						text = <"Kan ej räkna ut BMI">
 						description = <"*If BMI cannot be calculated, refer to the question on calf circumference. (en)">
 					>
 					["gt0036"] = (TERM) <
-						text = <"*F2 Calf circumference (CC) (en)">
+						text = <"F2 vadomkrets (CC)">
 						description = <"** (en)">
 					>
 					["gt0037"] = (TERM) <
-						text = <"*Cannot calculate BMI (en)">
+						text = <"Kan ej räkna ut BMI">
 						description = <"*If BMI cannot be calculated, refer to the question on calf circumference. (en)">
 					>
 					["gt0038"] = (TERM) <
@@ -422,7 +423,7 @@ Ref.4: Kaiser MJ, Bauer JM, Ramsch C, et al.  Validation of the Mini Nutritional
 						text = <"Ange vadomkrets (CC)">
 					>
 					["gt0051"] = (TERM) <
-						text = <"*Set BMI (en)">
+						text = <"Ange BMI">
 					>
 					["gt0052"] = (TERM) <
 						text = <"Ange kan ej räkna ut BMI">

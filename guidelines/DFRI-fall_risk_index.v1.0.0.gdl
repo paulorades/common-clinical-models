@@ -135,7 +135,7 @@ Downton Risk Index är en etablerad metod och inkluderar väldokumenterade riskf
 						path = <"/data[at0001]/items[at0003]">
 					>
 				>
-				predicates = <"/data[at0001]/items[at0002.1] is_a local::gt0024|Previous fall diagnosis code|", "max(/data[at0001]/items[at0003])">
+				predicates = <"/data[at0001]/items[at0002.1] is_a local::gt0024|Tidigare fallolyckor diagnoskod|", "max(/data[at0001]/items[at0003])">
 				template_id = <"diagnosis">
 			>
 			["gt0025"] = (ARCHETYPE_BINDING) <
@@ -149,7 +149,7 @@ Downton Risk Index är en etablerad metod och inkluderar väldokumenterade riskf
 						path = <"/activities[at0001]/description[openEHR-EHR-ITEM_TREE.medication.v1]/items[at0018]/items[at0032]">
 					>
 				>
-				predicates = <"/activities[at0001]/description[openEHR-EHR-ITEM_TREE.medication.v1]/items[at0012] is_a local::gt0026|Tranquilizers/sedatives/neuroleptics prescription code|", "max(/activities[at0001]/description[openEHR-EHR-ITEM_TREE.medication.v1]/items[at0018]/items[at0019])">
+				predicates = <"/activities[at0001]/description[openEHR-EHR-ITEM_TREE.medication.v1]/items[at0012] is_a local::gt0026|Lugnande/sömnmedel/neuroleptika förskrivningskod|", "max(/activities[at0001]/description[openEHR-EHR-ITEM_TREE.medication.v1]/items[at0018]/items[at0019])">
 				template_id = <"medication">
 			>
 			["gt0028"] = (ARCHETYPE_BINDING) <
@@ -163,7 +163,7 @@ Downton Risk Index är en etablerad metod och inkluderar väldokumenterade riskf
 						path = <"/activities[at0001]/description[openEHR-EHR-ITEM_TREE.medication.v1]/items[at0018]/items[at0032]">
 					>
 				>
-				predicates = <"/activities[at0001]/description[openEHR-EHR-ITEM_TREE.medication.v1]/items[at0012] is_a local::gt0029|Diuretics prescription code|", "max(/activities[at0001]/description[openEHR-EHR-ITEM_TREE.medication.v1]/items[at0018]/items[at0019])">
+				predicates = <"/activities[at0001]/description[openEHR-EHR-ITEM_TREE.medication.v1]/items[at0012] is_a local::gt0029|Diuretika förskrivningskod|", "max(/activities[at0001]/description[openEHR-EHR-ITEM_TREE.medication.v1]/items[at0018]/items[at0019])">
 				template_id = <"medication">
 			>
 			["gt0031"] = (ARCHETYPE_BINDING) <
@@ -177,7 +177,7 @@ Downton Risk Index är en etablerad metod och inkluderar väldokumenterade riskf
 						path = <"/activities[at0001]/description[openEHR-EHR-ITEM_TREE.medication.v1]/items[at0018]/items[at0032]">
 					>
 				>
-				predicates = <"/activities[at0001]/description[openEHR-EHR-ITEM_TREE.medication.v1]/items[at0012] is_a local::gt0032|Antihypertensives (other than diuretics) prescription code|", "max(/activities[at0001]/description[openEHR-EHR-ITEM_TREE.medication.v1]/items[at0018]/items[at0019])">
+				predicates = <"/activities[at0001]/description[openEHR-EHR-ITEM_TREE.medication.v1]/items[at0012] is_a local::gt0032|Antihypertensiva (annat än diuretika) förskrivningskod|", "max(/activities[at0001]/description[openEHR-EHR-ITEM_TREE.medication.v1]/items[at0018]/items[at0019])">
 				template_id = <"medication">
 			>
 			["gt0034"] = (ARCHETYPE_BINDING) <
@@ -191,7 +191,7 @@ Downton Risk Index är en etablerad metod och inkluderar väldokumenterade riskf
 						path = <"/activities[at0001]/description[openEHR-EHR-ITEM_TREE.medication.v1]/items[at0018]/items[at0032]">
 					>
 				>
-				predicates = <"/activities[at0001]/description[openEHR-EHR-ITEM_TREE.medication.v1]/items[at0012] is_a local::gt0035|Antiparkinsonian drugs prescription code|", "max(/activities[at0001]/description[openEHR-EHR-ITEM_TREE.medication.v1]/items[at0018]/items[at0019])">
+				predicates = <"/activities[at0001]/description[openEHR-EHR-ITEM_TREE.medication.v1]/items[at0012] is_a local::gt0035|Antiparkinson läkemedel förskrivningskod|", "max(/activities[at0001]/description[openEHR-EHR-ITEM_TREE.medication.v1]/items[at0018]/items[at0019])">
 				template_id = <"medication">
 			>
 			["gt0037"] = (ARCHETYPE_BINDING) <
@@ -205,7 +205,7 @@ Downton Risk Index är en etablerad metod och inkluderar väldokumenterade riskf
 						path = <"/activities[at0001]/description[openEHR-EHR-ITEM_TREE.medication.v1]/items[at0018]/items[at0032]">
 					>
 				>
-				predicates = <"/activities[at0001]/description[openEHR-EHR-ITEM_TREE.medication.v1]/items[at0012] is_a local::gt0038|Antidepressants prescription code|", "max(/activities[at0001]/description[openEHR-EHR-ITEM_TREE.medication.v1]/items[at0018]/items[at0019])">
+				predicates = <"/activities[at0001]/description[openEHR-EHR-ITEM_TREE.medication.v1]/items[at0012] is_a local::gt0038|Antidepressiva läkemedel förskrivningskod|", "max(/activities[at0001]/description[openEHR-EHR-ITEM_TREE.medication.v1]/items[at0018]/items[at0019])">
 				template_id = <"medication">
 			>
 		>
@@ -658,8 +658,12 @@ Downton Risk Index är en etablerad metod och inkluderar väldokumenterade riskf
 						text = <"Ange fallrisk till låg">
 					>
 					["gt0055"] = (TERM) <
+						text = <"Tidigare fallolyckor inledningsdatum">
+						description = <"*(en) The date that the problem began causing symptoms or signs">
 					>
 					["gt0056"] = (TERM) <
+						text = <"Granskning datum/tid">
+						description = <"*(en) *">
 					>
 				>
 			>

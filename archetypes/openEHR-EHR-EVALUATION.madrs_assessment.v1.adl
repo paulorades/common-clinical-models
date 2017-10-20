@@ -2,7 +2,7 @@ archetype (adl_version=1.4)
 	openEHR-EHR-EVALUATION.madrs_assessment.v1
 
 concept
-	[at0000]	-- MADRS Assessment
+	[at0000]	-- MADRS Utvärdering för depression
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
@@ -21,12 +21,6 @@ description
 		["date"] = <"2017-09-18">
 	>
 	details = <
-		["sv"] = <
-			language = <[ISO_639-1::sv]>
-			purpose = <"Ärketypen kan med fördel användas för bedömning av depression eller depressiva symtom samt för att följa förloppet vid depression.">
-			use = <"Används för att bedöma en patients grad av depression enligt fyra nivåer. ">
-			misuse = <"">
-		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"Assessment of MADRS score.">
@@ -51,6 +45,13 @@ The rating should be based on a clinical interview moving from broadly phrased q
 			misuse = <"Do not use to evaluate the self-assessment scale (MADRS-S)">
 			copyright = <"© Cambio Healthcare Systems">
 		>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			purpose = <"Ärketypen kan med fördel användas för bedömning av depression eller depressiva symtom samt för att följa förloppet vid depression.">
+			use = <"Används för att bedöma en patients grad av depression enligt fyra nivåer. ">
+			misuse = <"">
+			copyright = <"">
+		>
 	>
 	lifecycle_state = <"AuthorDraft">
 	other_contributors = <>
@@ -60,29 +61,29 @@ The rating should be based on a clinical interview moving from broadly phrased q
 Snaith RP, Harrop FM, Newby TD, Teale C. Grade scores of the Montgomery-Åsberg Depression and the Clinical Anxiety Scales. The British journal of psychiatry. 1986 May.
 
 Williams JB, Kobak KA. Development and reliability of a structured interview guide for the Montgomery–Åsberg Depression Rating Scale (SIGMA). The British Journal of Psychiatry. 2008 Jan 1;192(1):52-8.">
-		["MD5-CAM-1.0.1"] = <"7CBDF51AC90317A9B630FCB91590C03F">
+		["MD5-CAM-1.0.1"] = <"D9569D414E93B85E2AA049EDF1598F2A">
 	>
 
 definition
-	EVALUATION[at0000] matches {	-- MADRS Assessment
+	EVALUATION[at0000] matches {	-- MADRS Utvärdering för depression
 		data matches {
-			ITEM_TREE[at0001] matches {	-- Tree
+			ITEM_TREE[at0001] matches {	-- *Tree(en)
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0006] occurrences matches {0..1} matches {	-- Grade of depression
+					ELEMENT[at0006] occurrences matches {0..1} matches {	-- Nivå av depression
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
 									[local::
-									at0007, 	-- No depression
-									at0008, 	-- Mild depression
-									at0009, 	-- Moderate depression
-									at0011; 	-- Severe depression
+									at0007, 	-- Ingen eller mycket lätt depression
+									at0008, 	-- Lätt depression
+									at0009, 	-- Måttlig depression
+									at0011; 	-- Svår depression
 									at0007]	-- assumed value
 								}
 							}
 						}
 					}
-					ELEMENT[at0012] occurrences matches {0..1} matches {	-- Comment
+					ELEMENT[at0012] occurrences matches {0..1} matches {	-- Kommentar
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -161,8 +162,8 @@ ontology
 					description = <"*">
 				>
 				["at0012"] = <
-					text = <"*New element(en)">
-					description = <"**(en)">
+					text = <"Kommentar">
+					description = <"Ev. tillägg">
 				>
 			>
 		>

@@ -2,9 +2,17 @@ archetype (adl_version=1.4)
 	openEHR-EHR-EVALUATION.mews_assessment.v0
 
 concept
-	[at0000]	-- Modified Early Warning Score (MEWS) Assessment
+	[at0000]	-- Modified Early Warning Score (MEWS) Utvärdering
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+				["name"] = <"">
+			>
+		>
+	>
 description
 	original_author = <
 		["name"] = <"Eneimi Allwell-Brown">
@@ -33,6 +41,26 @@ Several hospitals use locally modified versions of the instrument including urin
 			misuse = <"">
 			copyright = <"© Cambio Healthcare Systems">
 		>
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			purpose = <"För att utvärdera en summa baserad på kategorisering av fysiologiska avläsningar och observationer, som en enkel metod för att stödja objektiv bedömning av graden av sjukdom hos en sjuk patient.">
+			use = <"För att utvärdera MEWS, som en enkel metod för att stödja objektiv bedömning av graden av sjukdom hos en sjuk patient.
+
+Modified Early Warning Score (MEWS) baseras på fem parametrar som enkelt kontrolleras genom klinisk undersökning:
+
+- Andningsfrekvens (0 -3 poänger)
+- Systoliskt blodtryck (0 -3 poänger)
+- Hjärtfrekvens (0 -3 poänger)
+- Medvetandegrad [AVPU] (0 -3 poänger)
+- Kroppstemperatur (0 -2 poänger)
+
+Total poäng ≥4, eller nåt fysiologiskt tecken med poäng på 3, kan betyder högre möjlighet att dö eller att överföras till intensivvårdsavdelning.
+
+Flertalet sjukhus använder lokalt anpassade versioner av MEWS där diures inkluderas - denna modell kan enkelt justeras för att tillmötesgå specifika önskemål.">
+			keywords = <"sjukdomsgrad", "vitaltecken", "modified early warning">
+			misuse = <"Får ej användas för att utvärdera National Early Warning Score (NEWS).">
+			copyright = <"© Cambio Healthcare Systems">
+		>
 	>
 	lifecycle_state = <"AuthorDraft">
 	other_contributors = <>
@@ -40,38 +68,38 @@ Several hospitals use locally modified versions of the instrument including urin
 		["references"] = <"Subbe CP, Kruger M, Rutherford P, et al. Validation of a modified early warning score in medical admissions. Q J Med 2001;94:521–6.
 
 Gardner-Thorpe J,  Love N,  Wrightson J,  Walsh S,  Keeling N. The value of Modified Early Warning Score (MEWS) in surgical in-patients: a prospective observational study, Ann R Coll Surg Engl 2006;88:571-5">
-		["MD5-CAM-1.0.1"] = <"A2AD1B17277F17127C7F5E370B4D1B96">
+		["MD5-CAM-1.0.1"] = <"D601668A3F0158E4C7D6B3370DE2DCB5">
 	>
 
 definition
-	EVALUATION[at0000] matches {	-- Modified Early Warning Score (MEWS) Assessment
+	EVALUATION[at0000] matches {	-- Modified Early Warning Score (MEWS) Utvärdering
 		data matches {
-			ITEM_TREE[at0001] matches {	-- Tree
+			ITEM_TREE[at0001] matches {	-- *Tree(en)
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0002] occurrences matches {0..1} matches {	-- MEWS assessment
+					ELEMENT[at0002] occurrences matches {0..1} matches {	-- MEWS utvärdering
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
 									[local::
-									at0003, 	-- Lower risk of deterioration or death
-									at0004]	-- Increased likelihood of deterioration or death
+									at0003, 	-- Mindre risk av att försämras eller dö
+									at0004]	-- Storre risk av att försämras eller dö
 								}
 							}
 						}
 					}
-					ELEMENT[at0005] occurrences matches {0..1} matches {	-- Recommendation
+					ELEMENT[at0005] occurrences matches {0..1} matches {	-- Rekommendation
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
 									[local::
-									at0010, 	-- Continue routine monitoring
-									at0009, 	-- Consider increased frequency of monitoring and inform nurse in charge
-									at0007]	-- Consider higher level of care (ICU or HDU) and inform critical care team
+									at0010, 	-- Fortsätta med kontroll som vanligt
+									at0009, 	-- Betänk att gör kontroll mer ofta och rapportera situationen till huvudsjuksköterska
+									at0007]	-- Betänk att överföra till intensivvårdsavdelning (IVA) och rapportera situationen till intensivvårdsgrupp
 								}
 							}
 						}
 					}
-					ELEMENT[at0008] occurrences matches {0..1} matches {	-- Comment
+					ELEMENT[at0008] occurrences matches {0..1} matches {	-- Kommentar
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -123,6 +151,50 @@ ontology
 				>
 				["at0010"] = <
 					text = <"Continue routine monitoring">
+					description = <"MEWS <1">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"Modified Early Warning Score (MEWS) Utvärdering">
+					description = <"Modified Early Warning Score (MEWS) används för att baserat på kliniska parametrar identifiera patienter med hög risk att försämras och med hjälp av denna information vidta adekvata förebyggande åtgärder. Poänger tilldelades på detta sätt: systolisk blodstryck (0 -3 poänger), hjärtfrekvens (0-3 poänger), andningsfrekvens (0-3 poänger), kroppstemperatur (0-2 poänger) and AVPU (som mäter vakenhet, 0-3 poänger). Total poäng ≥4, eller nåt fysiologiskt tecken med poäng på 3, kan betyder högre möjlighet att dö eller att överföras till intensivvårdsavdelning.">
+				>
+				["at0001"] = <
+					text = <"*Tree(en)">
+					description = <"*@ internal @(en)">
+				>
+				["at0002"] = <
+					text = <"MEWS utvärdering">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Mindre risk av att försämras eller dö">
+					description = <"MEWS <4">
+				>
+				["at0004"] = <
+					text = <"Storre risk av att försämras eller dö">
+					description = <"MEWS ≥4">
+				>
+				["at0005"] = <
+					text = <"Rekommendation">
+					description = <"*">
+				>
+				["at0007"] = <
+					text = <"Betänk att överföra till intensivvårdsavdelning (IVA) och rapportera situationen till intensivvårdsgrupp">
+					description = <"MEWS ≥4">
+				>
+				["at0008"] = <
+					text = <"Kommentar">
+					description = <"Ev tillägg">
+				>
+				["at0009"] = <
+					text = <"Betänk att gör kontroll mer ofta och rapportera situationen till huvudsjuksköterska">
+					description = <"MEWS 1-3">
+				>
+				["at0010"] = <
+					text = <"Fortsätta med kontroll som vanligt">
 					description = <"MEWS <1">
 				>
 			>

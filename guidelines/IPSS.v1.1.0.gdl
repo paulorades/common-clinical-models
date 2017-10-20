@@ -194,47 +194,50 @@ Formuläret avslutas sedan med en övergripande fråga kring påverkan på livsk
 ">
 					>
 					["gt0005"] = (TERM) <
-						text = <"*(en) How often have you had the sensation of not emptying your bladder?">
+						text = <"Hur ofta har du haft en känsla av att blåsan inte tömts helt och hållet vid vattenkastning?">
 						description = <"*(en) Sensation of incomplete emptying.">
 					>
 					["gt0006"] = (TERM) <
-						text = <"*(en) How often have you had to urinate less than every two hours?">
+						text = <"Hur ofta har du varit tvungen att kasta vatten mindre än två timmar efter senaste tömning?">
 						description = <"*(en) Frequency of urination.">
 					>
 					["gt0007"] = (TERM) <
-						text = <"*(en) How often have you found you stopped and started again several times when urinating?">
+						text = <"Hur ofta har du haft ett avbrott i urinflödet, dvs urinflödet satte igång, stannade upp och satte igång igen?">
 						description = <"*(en) Intermittency of urination.">
 					>
 					["gt0008"] = (TERM) <
-						text = <"*(en) How often have you found it difficult to postpone urination?">
+						text = <"Hur ofta har du haft svårt att vänta med att kasta vatten efter att du känt behov att tömma blåsan?">
 						description = <"*(en) Feeling of urgency.">
 					>
 					["gt0009"] = (TERM) <
-						text = <"*(en) How often have you had a weak urinary stream?">
+						text = <"Hur ofta har du upplevt att strålen varit svag?">
 						description = <"*(en) Weak stream of urine.">
 					>
 					["gt0010"] = (TERM) <
-						text = <"*(en) How often have you had to strain to start urination?">
+						text = <"Hur ofta har du haft behov av att krysta eller ta i för att komma igång med vattenkastningen?">
 						description = <"*(en) Need to strain in order to start urination.">
 					>
 					["gt0011"] = (TERM) <
-						text = <"*(en) How many times did you typically get up at night to urinate?">
+						text = <"Hur ofta har du vanligtvis behövt gå upp för att kasta vatten från att du lägger dig på kvällen tills du stiger upp på morgonen?">
 						description = <"*(en) Frequency of nocturia.">
 					>
 					["gt0012"] = (TERM) <
-						text = <"*(en) If you were to spend the rest of your life with your urinary condition just the way it is not, how would you feel about that?">
+						text = <"Om dina nuvarande vattenkastningsbesvär skulle vara oförändrade under resten av ditt liv, hur skulle du uppleva det?">
 						description = <"*(en) Additional question, not included in total score.">
 					>
 					["gt0022"] = (TERM) <
-						text = <"*(en) Total score">
+						text = <"Total poäng">
 						description = <"*(en) Sum of all factors. Last question not included.">
 					>
 					["gt0032"] = (TERM) <
-						text = <"*(en) Calculate total score">
+						text = <"Beräkna Total poäng">
 					>
 					["gt0035"] = (TERM) <
+						text = <"Subjektiva känsla av vattenkastningsbesvärens påverkan på livskvalitet">
+						description = <"*(en) Additional question, not included in total score.">
 					>
 					["gt0036"] = (TERM) <
+						text = <"Ange känsla av livskvalitet">
 					>
 				>
 			>

@@ -249,16 +249,25 @@ Seymour CW, Liu VX, Iwashyna TJ, et al. Assessment of Clinical Criteria for Seps
 						text = <"Sätt risknivå till hög risk">
 					>
 					["gt0022"] = (TERM) <
+						text = <"Ange GCS total poäng">
+						description = <"*(en) The sum of the ordinal scores recorded for each of the three component responses.">
 					>
 					["gt0024"] = (TERM) <
+						text = <"Andningsfrekvens">
+						description = <"*(en) Rate of respiration.">
 					>
 					["gt0026"] = (TERM) <
+						text = <"Systolisk BP">
+						description = <"*(en) Peak systemic arterial blood pressure  - measured in systolic or contraction phase of the heart cycle.">
 					>
 					["gt0027"] = (TERM) <
+						text = <"Ange andningsfrekvens">
 					>
 					["gt0028"] = (TERM) <
+						text = <"Ange systolisk BP">
 					>
 					["gt0029"] = (TERM) <
+						text = <"Ange förändrad medvetandegrad">
 					>
 				>
 			>

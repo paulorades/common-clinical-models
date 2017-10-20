@@ -22,6 +22,21 @@ The 6 items include:
 Higher scores are indicative of better nutritional status. Maximum score possible is 14, and a score of ≥12 points = normal (no need for further assessment), score 8 - 11 = at risk of malnutrition and score <8 = malnourished. A score <12 requires further assessment and possible intervention.
 If greater specificity is desired consider 10 points or below as possible malnutrition.">
 			>
+			["sv"] = (RESOURCE_DESCRIPTION_ITEM) <
+				copyright = <"© Cambio Healthcare Systems">
+				keywords = <"MNA", "näring", "undernäring">
+				purpose = <"För att utvärdera den totala poängen för Mini Nutritional Assessment">
+				use = <"Används på geriatriska patienter i åldern 65 eller över.
+The 6 items include:
+ - food intake in the last 3 months (score 0-2), 
+ - weight loss in the last 3 months (score 0-3), 
+ - mobility (0-2), 
+ - psychological stress/acute diseas in the last 3 months (0-2), 
+ - neuropsychological problems (0-2) and 
+ - body mass index (or calf circumference, 0-3)
+Higher scores are indicative of better nutritional status. Maximum score possible is 14, and a score of ≥12 points = normal (no need for further assessment), score 8 - 11 = at risk of malnutrition and score <8 = malnourished. A score <12 requires further assessment and possible intervention.
+If greater specificity is desired consider 10 points or below as possible malnutrition.">
+			>
 		>
 		lifecycle_state = <"Author draft">
 		original_author = <
@@ -99,6 +114,31 @@ Kaiser MJ, Bauer JM, Ramsch C, et al.  Validation of the Mini Nutritional Assess
 					>
 					["gt0008"] = (TERM) <
 						text = <"Set normal">
+					>
+				>
+			>
+			["sv"] = (TERM_DEFINITION) <
+				terms = <
+					["gt0001"] = (TERM) <
+						text = <"Mini Nutritional Assessment - Short Form (MNA-SF)">
+						description = <"Mini Nutritional Assessment (MNA) är ett verktyg för riskbedömning av undernäring. Verktyget är validerat och hjälper upptäcka geriatriska patienter i åldern 65 år och äldre som är undernärda eller löper risk för att utveckla undernäring.">
+					>
+					["gt0003"] = (TERM) <
+						text = <"Total poäng">
+						description = <"*(en) *">
+					>
+					["gt0005"] = (TERM) <
+						text = <"MNA-SF utvärdering">
+						description = <"*(en) *">
+					>
+					["gt0006"] = (TERM) <
+						text = <"Ange undernäring">
+					>
+					["gt0007"] = (TERM) <
+						text = <"Ange med risk för undernäring">
+					>
+					["gt0008"] = (TERM) <
+						text = <"Ange normal">
 					>
 				>
 			>

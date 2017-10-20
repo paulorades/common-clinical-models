@@ -19,7 +19,8 @@ Stage 3 (moderate reduction in GFR), 30 - 59 ml/min/1.73 m2
 Stage 4 (severe reduction in GFR), 15 - 29 ml/min/1.73 m2
 Stage 5 (kidney failure) <15 ml/min/1.73 m2 (or patient on dialysis)">
 			>
-			["se"] = (RESOURCE_DESCRIPTION_ITEM) <
+			["sv"] = (RESOURCE_DESCRIPTION_ITEM) <
+				copyright = <"© Cambio Healthcare Systems">
 				keywords = <"GFR", "CKD", "Njursjukdom", "Njure">
 				purpose = <" Att klassificera en patients njurfunktion med hjälp av GFR.">
 				use = <"Diagnosen CKD kräver två prover minst 90 dagars mellanrum. Historiska värden kan användas.">
@@ -119,7 +120,7 @@ Stage 5 (kidney failure) <15 ml/min/1.73 m2 (or patient on dialysis)">
 					>
 				>
 			>
-			["se"] = (TERM_DEFINITION) <
+			["sv"] = (TERM_DEFINITION) <
 				terms = <
 					["gt0001"] = (TERM) <
 						text = <"Stadier för kronisk njursjukdom">

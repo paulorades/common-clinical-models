@@ -26,6 +26,25 @@ A total score of ≥4p (or 3p in any one parameter) should result in higher leve
 
 Several hospitals use locally modified versions of the instrument including urine output - the model can be adjusted to accommodate specific requests.">
 			>
+			["sv"] = (RESOURCE_DESCRIPTION_ITEM) <
+				copyright = <"© Cambio Healthcare Systems">
+				keywords = <"modified early warning score", "MEWS", "vitaltecken">
+				misuse = <"Får ej användas för att utvärdera National Early Warning Score (NEWS).">
+				purpose = <"För att utvärdera en summa baserad på kategorisering av fysiologiska avläsningar och observationer, som en enkel metod för att stödja objektiv bedömning av graden av sjukdom hos en sjuk patient.">
+				use = <"För att utvärdera MEWS, som en enkel metod för att stödja objektiv bedömning av graden av sjukdom hos en sjuk patient.
+
+Modified Early Warning Score (MEWS) baseras på fem parametrar som enkelt kontrolleras genom klinisk undersökning:
+
+- Andningsfrekvens (0 -3 poänger)
+- Systoliskt blodtryck (0 -3 poänger)
+- Hjärtfrekvens (0 -3 poänger)
+- Medvetandegrad [AVPU] (0 -3 poänger)
+- Kroppstemperatur (0 -2 poänger)
+
+Total poäng ≥4, eller nåt fysiologiskt tecken med poäng på 3, kan betyder högre möjlighet att dö eller att överföras till intensivvårdsavdelning.
+
+Flertalet sjukhus använder lokalt anpassade versioner av MEWS där diures inkluderas - denna modell kan enkelt justeras för att tillmötesgå specifika önskemål.">
+			>
 		>
 		lifecycle_state = <"Author draft">
 		original_author = <
@@ -110,6 +129,36 @@ Gardner-Thorpe J,  Love N,  Wrightson J,  Walsh S,  Keeling N. The value of Modi
 					["gt0013"] = (TERM) <
 						text = <"Any single score of 3">
 						description = <"Any single physiological parameter scored +3">
+					>
+				>
+			>
+			["sv"] = (TERM_DEFINITION) <
+				terms = <
+					["gt0001"] = (TERM) <
+						text = <"Modified Early Warning Score (MEWS) Utvärdering">
+						description = <"Modified Early Warning Score (MEWS) används för att baserat på kliniska parametrar identifiera patienter med hög risk att försämras och med hjälp av denna information vidta adekvata förebyggande åtgärder. Poänger tilldelades på detta sätt: systolisk blodstryck (0 -3 poänger), hjärtfrekvens (0-3 poänger), andningsfrekvens (0-3 poänger), kroppstemperatur (0-2 poänger) and AVPU (som mäter vakenhet, 0-3 poänger). Total poäng ≥4, eller nåt fysiologiskt tecken med poäng på 3, kan betyder högre möjlighet att dö eller att överföras till intensivvårdsavdelning.">
+					>
+					["gt0003"] = (TERM) <
+						text = <"Total poäng">
+						description = <"*(en) *">
+					>
+					["gt0005"] = (TERM) <
+						text = <"MEWS utvärdering">
+						description = <"*(en) *">
+					>
+					["gt0006"] = (TERM) <
+						text = <"Rekommendation">
+						description = <"*(en) *">
+					>
+					["gt0007"] = (TERM) <
+						text = <"Ange MEWS poänger 1-3">
+					>
+					["gt0008"] = (TERM) <
+						text = <"Ange MEWS poänger ≥4">
+					>
+					["gt0013"] = (TERM) <
+						text = <"Nåt fysiologiskt tecken med poäng på 3">
+						description = <"*(en) Any single physiological parameter scored +3">
 					>
 				>
 			>

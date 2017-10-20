@@ -275,13 +275,18 @@ Stern AF. The hospital anxiety and depression scale. Occupational Medicine. 2014
 						description = <"*(en) *">
 					>
 					["gt0022"] = (TERM) <
-						text = <"Sätt totalsumma depression">
+						text = <"Beräkna depression total poäng">
 					>
 					["gt0053"] = (TERM) <
+						text = <"Ångest total poäng">
+						description = <"*(en) *">
 					>
 					["gt0054"] = (TERM) <
+						text = <"Depression total poäng">
+						description = <"*(en) *">
 					>
 					["gt0071"] = (TERM) <
+						text = <"Beräkna ångest total poäng">
 					>
 				>
 			>

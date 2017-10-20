@@ -2,7 +2,7 @@ archetype (adl_version=1.4)
 	openEHR-EHR-OBSERVATION.raads_14_questionnaire.v1
 
 concept
-	[at0000]	-- Ritvo Autism and Asperger Diagnostic Scale 14 (RAADS-14) - questionnaire
+	[at0000]	-- Ritvo Autism and Asperger Diagnostic Scale 14 - frågeformulär
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
@@ -58,150 +58,150 @@ Resultatet tolkas enligt:
 3-Andersen LMJ, Näswall K, Manouilenko I, Nylander L, Edgar J, Ritvo RA, Ritvo E, Bejerot S: The Swedish version of the Ritvo Autism and Asperger Diagnostic Scale: revised (RAADS-R). A validation study of a rating scale for adults. J Autism Dev Disord. 2011, 41: 1635-1645. 10.1007/s10803-011-1191-3.
 
 4-Hoekstra RA, Vinkhuyzen AAE, Wheelwright S, Bartels M, Boomsma DI, Baron-Cohen S, Posthuma D, van der Sluis S: The construction and validation of an abridged version of the Autism-Spectrum Quotient (AQ-Short). J Autism Dev Disord. 2011, 41: 589-596. 10.1007/s10803-010-1073-0.">
-		["MD5-CAM-1.0.1"] = <"CE7F48E3BD12991CD925A2CEBAC9C82E">
+		["MD5-CAM-1.0.1"] = <"7F2687CB7DD94910A8C24D948B91741F">
 	>
 
 definition
-	OBSERVATION[at0000] matches {	-- Ritvo Autism and Asperger Diagnostic Scale 14 (RAADS-14) - questionnaire
+	OBSERVATION[at0000] matches {	-- Ritvo Autism and Asperger Diagnostic Scale 14 - frågeformulär
 		data matches {
-			HISTORY[at0001] matches {	-- Event Series
+			HISTORY[at0001] matches {	-- *Event Series(en)
 				events cardinality matches {1..*; unordered} matches {
-					EVENT[at0002] occurrences matches {0..1} matches {	-- Any event
+					EVENT[at0002] occurrences matches {0..1} matches {	-- *Any event(en)
 						data matches {
-							ITEM_TREE[at0003] matches {	-- Tree
+							ITEM_TREE[at0003] matches {	-- *Tree(en)
 								items cardinality matches {0..*; unordered} matches {
-									CLUSTER[at0004] occurrences matches {0..1} matches {	-- Mentalizing Deficits
+									CLUSTER[at0004] occurrences matches {0..1} matches {	-- Mentaliseringssvårigheter
 										items cardinality matches {1..*; unordered} matches {
-											ELEMENT[at0007] occurrences matches {0..1} matches {	-- It is difficult for me to understand how other people are feeling when we are talking.
+											ELEMENT[at0007] occurrences matches {0..1} matches {	-- När jag talar med andra har jag svårt för att förstå hur de känner sig.
 												value matches {
-													0|[local::at0137], 	-- Never true
-													1|[local::at0138], 	-- True only when I was younger than 16 years
-													2|[local::at0139], 	-- True only now
-													3|[local::at0140]  	-- True now and when I was young
+													0|[local::at0137], 	-- Aldrig sant
+													1|[local::at0138], 	-- Bara sant när jag var <16 år gammal
+													2|[local::at0139], 	-- Bara sant för närvarande
+													3|[local::at0140]  	-- Nu är det sant samt när jag var yngre
 												}
 											}
-											ELEMENT[at0012] occurrences matches {0..1} matches {	-- It is difficult to figure out what other people expect of me.
+											ELEMENT[at0012] occurrences matches {0..1} matches {	-- Det är svårt att föreställa sig vad andra förväntar sig av mig.
 												value matches {
-													0|[local::at0137], 	-- Never true
-													1|[local::at0138], 	-- True only when I was younger than 16 years
-													2|[local::at0139], 	-- True only now
-													3|[local::at0140]  	-- True now and when I was young
+													0|[local::at0137], 	-- Aldrig sant
+													1|[local::at0138], 	-- Bara sant när jag var <16 år gammal
+													2|[local::at0139], 	-- Bara sant för närvarande
+													3|[local::at0140]  	-- Nu är det sant samt när jag var yngre
 												}
 											}
-											ELEMENT[at0016] occurrences matches {0..1} matches {	-- When talking to someone, I have a hard time telling when it is my turn to talk or to listen.
+											ELEMENT[at0016] occurrences matches {0..1} matches {	-- I samtal med någon har jag svårt att veta när det är min tur att tala eller lyssna.
 												value matches {
-													0|[local::at0137], 	-- Never true
-													1|[local::at0138], 	-- True only when I was younger than 16 years
-													2|[local::at0139], 	-- True only now
-													3|[local::at0140]  	-- True now and when I was young
+													0|[local::at0137], 	-- Aldrig sant
+													1|[local::at0138], 	-- Bara sant när jag var <16 år gammal
+													2|[local::at0139], 	-- Bara sant för närvarande
+													3|[local::at0140]  	-- Nu är det sant samt när jag var yngre
 												}
 											}
-											ELEMENT[at0021] occurrences matches {0..1} matches {	-- It can be very hard to read someone’s face, hand, and body movements when we are talking.
+											ELEMENT[at0021] occurrences matches {0..1} matches {	-- Det kan vara väldigt svårt att avläsa en persons ansiktsuttryck, gester eller kroppsspråk samtidigt som personen talar.
 												value matches {
-													0|[local::at0137], 	-- Never true
-													1|[local::at0138], 	-- True only when I was younger than 16 years
-													2|[local::at0139], 	-- True only now
-													3|[local::at0140]  	-- True now and when I was young
+													0|[local::at0137], 	-- Aldrig sant
+													1|[local::at0138], 	-- Bara sant när jag var <16 år gammal
+													2|[local::at0139], 	-- Bara sant för närvarande
+													3|[local::at0140]  	-- Nu är det sant samt när jag var yngre
 												}
 											}
-											ELEMENT[at0026] occurrences matches {0..1} matches {	-- I focus on details rather than the overall idea.
+											ELEMENT[at0026] occurrences matches {0..1} matches {	-- Jag fokuserar mer på detaljerna än på helheten.
 												value matches {
-													0|[local::at0137], 	-- Never true
-													1|[local::at0138], 	-- True only when I was younger than 16 years
-													2|[local::at0139], 	-- True only now
-													3|[local::at0140]  	-- True now and when I was young
+													0|[local::at0137], 	-- Aldrig sant
+													1|[local::at0138], 	-- Bara sant när jag var <16 år gammal
+													2|[local::at0139], 	-- Bara sant för närvarande
+													3|[local::at0140]  	-- Nu är det sant samt när jag var yngre
 												}
 											}
-											ELEMENT[at0032] occurrences matches {0..1} matches {	-- I take things too literally, so I often miss what people are trying to say.
+											ELEMENT[at0032] occurrences matches {0..1} matches {	-- Jag uppfattar saker för bokstavligt vilket gör att jag ofta missförstår vad andra menar.
 												value matches {
-													0|[local::at0137], 	-- Never true
-													1|[local::at0138], 	-- True only when I was younger than 16 years
-													2|[local::at0139], 	-- True only now
-													3|[local::at0140]  	-- True now and when I was young
+													0|[local::at0137], 	-- Aldrig sant
+													1|[local::at0138], 	-- Bara sant när jag var <16 år gammal
+													2|[local::at0139], 	-- Bara sant för närvarande
+													3|[local::at0140]  	-- Nu är det sant samt när jag var yngre
 												}
 											}
-											ELEMENT[at0036] occurrences matches {0..1} matches {	-- I get extremely upset when the way I like to do things is suddenly changed.
+											ELEMENT[at0036] occurrences matches {0..1} matches {	-- Jag blir extremt upprörd när det sätt som jag föredrar att göra saker och ting på, plötsligt ändras.
 												value matches {
-													0|[local::at0137], 	-- Never true
-													1|[local::at0138], 	-- True only when I was younger than 16 years
-													2|[local::at0139], 	-- True only now
-													3|[local::at0140]  	-- True now and when I was young
+													0|[local::at0137], 	-- Aldrig sant
+													1|[local::at0138], 	-- Bara sant när jag var <16 år gammal
+													2|[local::at0139], 	-- Bara sant för närvarande
+													3|[local::at0140]  	-- Nu är det sant samt när jag var yngre
 												}
 											}
 										}
 									}
-									CLUSTER[at0041] occurrences matches {0..1} matches {	-- Social Anxiety
+									CLUSTER[at0041] occurrences matches {0..1} matches {	-- Social ångest
 										items cardinality matches {1..*; unordered} matches {
-											ELEMENT[at0043] occurrences matches {0..1} matches {	-- It is very difficult for me to work and function in groups.
+											ELEMENT[at0043] occurrences matches {0..1} matches {	-- Jag har väldigt svårt för att klara grupparbeten och att fungera i grupp.
 												value matches {
-													0|[local::at0137], 	-- Never true
-													1|[local::at0138], 	-- True only when I was younger than 16 years
-													2|[local::at0139], 	-- True only now
-													3|[local::at0140]  	-- True now and when I was young
+													0|[local::at0137], 	-- Aldrig sant
+													1|[local::at0138], 	-- Bara sant när jag var <16 år gammal
+													2|[local::at0139], 	-- Bara sant för närvarande
+													3|[local::at0140]  	-- Nu är det sant samt när jag var yngre
 												}
 											}
-											ELEMENT[at0047] occurrences matches {0..1} matches {	-- I often don’t know how to act in social situations.
+											ELEMENT[at0047] occurrences matches {0..1} matches {	-- Jag vet ofta inte hur jag ska bete mig i sociala situationer.
 												value matches {
-													0|[local::at0137], 	-- Never true
-													1|[local::at0138], 	-- True only when I was younger than 16 years
-													2|[local::at0139], 	-- True only now
-													3|[local::at0140]  	-- True now and when I was young
+													0|[local::at0137], 	-- Aldrig sant
+													1|[local::at0138], 	-- Bara sant när jag var <16 år gammal
+													2|[local::at0139], 	-- Bara sant för närvarande
+													3|[local::at0140]  	-- Nu är det sant samt när jag var yngre
 												}
 											}
-											ELEMENT[at0052] occurrences matches {0..1} matches {	-- I can chat and make small talk with people.
+											ELEMENT[at0052] occurrences matches {0..1} matches {	-- Jag är bra på att smäprata och kallprata med folk.
 												value matches {
-													0|[local::at0137], 	-- Never true
-													1|[local::at0138], 	-- True only when I was younger than 16 years
-													2|[local::at0139], 	-- True only now
-													3|[local::at0140]  	-- True now and when I was young
+													0|[local::at0137], 	-- Aldrig sant
+													1|[local::at0138], 	-- Bara sant när jag var <16 år gammal
+													2|[local::at0139], 	-- Bara sant för närvarande
+													3|[local::at0140]  	-- Nu är det sant samt när jag var yngre
 												}
 											}
-											ELEMENT[at0057] occurrences matches {0..1} matches {	-- How to make friends and socialize is a mystery to me.
+											ELEMENT[at0057] occurrences matches {0..1} matches {	-- Hur man skaffar sig vänner och hur man umgås socialt är obegripligt för mig.
 												value matches {
-													0|[local::at0137], 	-- Never true
-													1|[local::at0138], 	-- True only when I was younger than 16 years
-													2|[local::at0139], 	-- True only now
-													3|[local::at0140]  	-- True now and when I was young
+													0|[local::at0137], 	-- Aldrig sant
+													1|[local::at0138], 	-- Bara sant när jag var <16 år gammal
+													2|[local::at0139], 	-- Bara sant för närvarande
+													3|[local::at0140]  	-- Nu är det sant samt när jag var yngre
 												}
 											}
 										}
 									}
-									CLUSTER[at0063] occurrences matches {0..1} matches {	-- Sensory Reactivity
+									CLUSTER[at0063] occurrences matches {0..1} matches {	-- Sensorisk reaktivitet
 										items cardinality matches {1..*; unordered} matches {
-											ELEMENT[at0064] occurrences matches {0..1} matches {	-- Some ordinary textures that do not bother others feel very offensive when they touch my skin.
+											ELEMENT[at0064] occurrences matches {0..1} matches {	-- Vissa vardagliga material (som inte stör andra) upplever jag som väldigt obehagliga när de berör huden.
 												value matches {
-													0|[local::at0137], 	-- Never true
-													1|[local::at0138], 	-- True only when I was younger than 16 years
-													2|[local::at0139], 	-- True only now
-													3|[local::at0140]  	-- True now and when I was young
+													0|[local::at0137], 	-- Aldrig sant
+													1|[local::at0138], 	-- Bara sant när jag var <16 år gammal
+													2|[local::at0139], 	-- Bara sant för närvarande
+													3|[local::at0140]  	-- Nu är det sant samt när jag var yngre
 												}
 											}
-											ELEMENT[at0068] occurrences matches {0..1} matches {	-- When I feel overwhelmed by my senses, I have to isolate myself to shut them down.
+											ELEMENT[at0068] occurrences matches {0..1} matches {	-- När jag känner mig överväldigad av intryck behöver jag få vara för mig själv och stänga dem ute.
 												value matches {
-													0|[local::at0137], 	-- Never true
-													1|[local::at0138], 	-- True only when I was younger than 16 years
-													2|[local::at0139], 	-- True only now
-													3|[local::at0140]  	-- True now and when I was young
+													0|[local::at0137], 	-- Aldrig sant
+													1|[local::at0138], 	-- Bara sant när jag var <16 år gammal
+													2|[local::at0139], 	-- Bara sant för närvarande
+													3|[local::at0140]  	-- Nu är det sant samt när jag var yngre
 												}
 											}
-											ELEMENT[at0073] occurrences matches {0..1} matches {	-- Sometimes I have to cover my ears to block out painful noises (like vacuum cleaners or people talking too much or too loudly).
+											ELEMENT[at0073] occurrences matches {0..1} matches {	-- Ibland måste jag hålla för öronen för att utestänga obehagliga ljud ( tex. dammsugare eller för mycket prat eller för högljudda samtal).
 												value matches {
-													0|[local::at0137], 	-- Never true
-													1|[local::at0138], 	-- True only when I was younger than 16 years
-													2|[local::at0139], 	-- True only now
-													3|[local::at0140]  	-- True now and when I was young
+													0|[local::at0137], 	-- Aldrig sant
+													1|[local::at0138], 	-- Bara sant när jag var <16 år gammal
+													2|[local::at0139], 	-- Bara sant för närvarande
+													3|[local::at0140]  	-- Nu är det sant samt när jag var yngre
 												}
 											}
 										}
 									}
-									ELEMENT[at0079] occurrences matches {0..1} matches {	-- Total score
+									ELEMENT[at0079] occurrences matches {0..1} matches {	-- Total poäng
 										value matches {
 											DV_COUNT matches {
 												magnitude matches {|>=0|}
 											}
 										}
 									}
-									ELEMENT[at0080] occurrences matches {0..1} matches {	-- Comment
+									ELEMENT[at0080] occurrences matches {0..1} matches {	-- Kommentar
 										value matches {
 											DV_TEXT matches {*}
 										}
@@ -401,7 +401,7 @@ ontology
 				>
 				["at0063"] = <
 					text = <"Sensorisk reaktivitet">
-					description = <"**(en)">
+					description = <"*">
 				>
 				["at0064"] = <
 					text = <"Vissa vardagliga material (som inte stör andra) upplever jag som väldigt obehagliga när de berör huden.">
@@ -416,28 +416,28 @@ ontology
 					description = <"*">
 				>
 				["at0079"] = <
-					text = <"*New element(en)">
-					description = <"**(en)">
+					text = <"Total poäng">
+					description = <"*">
 				>
 				["at0080"] = <
-					text = <"*New element(en)">
-					description = <"**(en)">
+					text = <"Kommentar">
+					description = <"Ev tillägg">
 				>
 				["at0137"] = <
-					text = <"*new ordinal(en)">
-					description = <"**(en)">
+					text = <"Aldrig sant">
+					description = <"*">
 				>
 				["at0138"] = <
-					text = <"*new ordinal(en)">
-					description = <"**(en)">
+					text = <"Bara sant när jag var <16 år gammal">
+					description = <"*">
 				>
 				["at0139"] = <
-					text = <"*new ordinal(en)">
-					description = <"**(en)">
+					text = <"Bara sant för närvarande">
+					description = <"*">
 				>
 				["at0140"] = <
-					text = <"*new ordinal(en)">
-					description = <"**(en)">
+					text = <"Nu är det sant samt när jag var yngre">
+					description = <"*">
 				>
 			>
 		>

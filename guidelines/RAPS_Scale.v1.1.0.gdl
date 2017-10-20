@@ -239,48 +239,48 @@ En total poäng om 31 eller mindre indikerar hög risk för utveckling av trycks
 						description = <"Som del av Senior Alert-registret utgör RAPS-skalan ett kliniskt användbart verktyg för bedömning av risk för utveckling av trycksår. Skalan har särskilt hög prediktiv validitet för patienter som genomgår behandling på medicinsk eller infektionsavdelning. Individuell bedömning bör alltid tillämpas då predisponerade individer kan ha hög risk trots en total poäng över 31. Används med försiktighet på kirurgiska och ortopediska patienter.">
 					>
 					["gt0010"] = (TERM) <
-						text = <"*General condition (en)">
+						text = <"Allmäntillstånd">
 						description = <"** (en)">
 					>
 					["gt0011"] = (TERM) <
-						text = <"*Physical activity (en)">
+						text = <"Fysisk aktivitet">
 						description = <"** (en)">
 					>
 					["gt0012"] = (TERM) <
-						text = <"*Mobility (en)">
+						text = <"Rörelseförmåga">
 						description = <"** (en)">
 					>
 					["gt0013"] = (TERM) <
-						text = <"*The degree to which the skin is exposed to moisture (en)">
+						text = <"I vilken grad huden utsätts för fukt">
 						description = <"** (en)">
 					>
 					["gt0014"] = (TERM) <
-						text = <"*Food intake (en)">
+						text = <"Födointag">
 						description = <"** (en)">
 					>
 					["gt0015"] = (TERM) <
-						text = <"*Fluid intake (en)">
+						text = <"Vätskeintag">
 						description = <"** (en)">
 					>
 					["gt0016"] = (TERM) <
-						text = <"*Sensory ability (en)">
+						text = <"Känsel">
 						description = <"** (en)">
 					>
 					["gt0017"] = (TERM) <
-						text = <"*Friction and shear (en)">
+						text = <"Friktion och skjuvning">
 						description = <"*3. Moves freely in bed and chair. Has sufficient muscle strength to lift up completely during move.
 2. Somewhat motionless, need some assistance in moving, slipping to some extent against sheets, chair cushions, etc. when moving.  (en)">
 					>
 					["gt0018"] = (TERM) <
-						text = <"*Body temperature (en)">
+						text = <"Kroppstemperatur">
 						description = <"** (en)">
 					>
 					["gt0024"] = (TERM) <
-						text = <"*S-albumin (en)">
+						text = <"S-albumin">
 						description = <"** (en)">
 					>
 					["gt0025"] = (TERM) <
-						text = <"*RAPS Score (en)">
+						text = <"RAPS Score">
 						description = <"** (en)">
 					>
 					["gt0036"] = (TERM) <
@@ -290,12 +290,17 @@ En total poäng om 31 eller mindre indikerar hög risk för utveckling av trycks
 						text = <"Beräkna total poäng">
 					>
 					["gt0041"] = (TERM) <
+						text = <"S-albumin">
+						description = <"*(en) Serum albumin level in this specimen.">
 					>
 					["gt0042"] = (TERM) <
+						text = <"Ange S-albumin 25-30 g/L">
 					>
 					["gt0043"] = (TERM) <
+						text = <"Ange S-albumin >30 and ≤35 g/L">
 					>
 					["gt0044"] = (TERM) <
+						text = <"Ange S-albumin >35 g/L">
 					>
 				>
 			>

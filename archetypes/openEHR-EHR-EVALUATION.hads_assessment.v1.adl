@@ -2,9 +2,17 @@ archetype (adl_version=1.4)
 	openEHR-EHR-EVALUATION.hads_assessment.v1
 
 concept
-	[at0000]	-- HADS assessment
+	[at0000]	-- HADS utvärdering
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+				["name"] = <"?">
+			>
+		>
+	>
 description
 	original_author = <
 		["name"] = <"Joana Vicente">
@@ -12,6 +20,22 @@ description
 		["organisation"] = <"Cambio Healthcare Systems">
 	>
 	details = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			purpose = <"Att upptäcka och värdera nivå av ångest och/eller depression hos patienter i somatisk vård. Skalan är avsedd att användas som screening och är ej att betrakta som diagnostisk.">
+			use = <"Använd som screening för att utvärdera patientens sinnesstämning genom bedömning av potentiell ångest och depression. 
+
+Hospital Anxiety and Depression Scale (HADS) utvecklades av Zigmond and Snaith (1983). Skalan värderar ångest och depression med hjälp av ett självskattningsformulär om totalt 14 frågor. Hälften av frågorna är relaterade till ångest och depression vardera, och bedöms separat för respektive tillstånd. Varje enskild fråga kan ge mellan noll och tre poäng, varför maximal summa uppgår till 21 för vardera tillstånd. Totala poängen bedöms enligt:
+
+0-7 poäng - ångest/depression är ej sannolikt.
+8-10 poäng - potentiell förekomst av ångest/depression.
+≥11 poäng - ångest/depression föreligger sannolikt.
+
+Skalan är avsedd att användas som screening och är ej att betrakta som diagnostisk.">
+			keywords = <"HADS skala", "ångest", "depression">
+			misuse = <"Använd ej för annat än ovan beskrivna tillämpning. Skalan är avsedd att användas som screening och är ej att betrakta som diagnostisk.">
+			copyright = <"© Cambio Healthcare Systems">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"Hospital Anxiety and Depression Scale (HADS) was originally developed by Zigmond and Snaith (1983).  
@@ -37,26 +61,26 @@ Then the points are categorised as already mentioned.">
 
 Ref.2: Bjelland, I; et al. (2002). \"The validity of the Hospital Anxiety and Depression Scale. An updated literature review\". Journal of Psychosomatic Research 52 (2): 69–77. doi:10.1016/s0022-3999(01)00296-3. PMID 11832252.
 ">
-		["MD5-CAM-1.0.1"] = <"378B157F75F6E087EA781A9E4C983F3D">
+		["MD5-CAM-1.0.1"] = <"33BA866ED3E8159D61C2704E283339E7">
 	>
 
 definition
-	EVALUATION[at0000] matches {	-- HADS assessment
+	EVALUATION[at0000] matches {	-- HADS utvärdering
 		data matches {
-			ITEM_TREE[at0001] matches {	-- Tree
+			ITEM_TREE[at0001] matches {	-- *Tree(en)
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0002] occurrences matches {0..1} matches {	-- Depression assessment
+					ELEMENT[at0002] occurrences matches {0..1} matches {	-- Utvärdering av depression
 						value matches {
-							0|[local::at0004], 	-- No depression
-							1|[local::at0005], 	-- Possible depression
-							2|[local::at0006]  	-- Definite depression
+							0|[local::at0004], 	-- Depression är ej sannolikt
+							1|[local::at0005], 	-- Potentiell förekomst av depression
+							2|[local::at0006]  	-- Depression föreligger sannolikt
 						}
 					}
-					ELEMENT[at0003] occurrences matches {0..1} matches {	-- Anxiety assessment
+					ELEMENT[at0003] occurrences matches {0..1} matches {	-- Utvärdering av ångest
 						value matches {
-							0|[local::at0007], 	-- No anxiety
-							1|[local::at0008], 	-- Possible anxiety
-							2|[local::at0009]  	-- Definite anxiety
+							0|[local::at0007], 	-- Ångest är ej sannolikt
+							1|[local::at0008], 	-- Potentiell förekomst av ångest
+							2|[local::at0009]  	-- Ångest föreligger sannolikt
 						}
 					}
 				}
@@ -107,6 +131,50 @@ ontology
 				["at0009"] = <
 					text = <"Definite anxiety">
 					description = <">= 11 points">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"HADS utvärdering">
+					description = <"Hospital Anxiety and Depression Scale utgörs av ett självskattningsformulär om totalt 14 frågor, och används i klinik som screening för upptäckt och värdering av ångest och/eller depression hos patienter i somatisk vård. Tillstånden har sju frågor vardera vilka genererar ett maximum om 21 poäng. Potentiell förekomst av ångest/depression föreligger vid 8-10 poäng, medan ≥11 poäng indikerar att ångest/depression sannolikt föreligger. Skalan är avsedd att användas som screening och är ej att betrakta som diagnostisk.">
+				>
+				["at0001"] = <
+					text = <"*Tree(en)">
+					description = <"*@ internal @(en)">
+				>
+				["at0002"] = <
+					text = <"Utvärdering av depression">
+					description = <"*From the total score of 21 derived from the  HADS scale calculation, each category of depression is indicated.(en)">
+				>
+				["at0003"] = <
+					text = <"Utvärdering av ångest">
+					description = <"*From the total score of 21 derived from the  HADS scale calculation, each category of anxiety is indicated.(en)">
+				>
+				["at0004"] = <
+					text = <"Depression är ej sannolikt">
+					description = <"0-7 poäng">
+				>
+				["at0005"] = <
+					text = <"Potentiell förekomst av depression">
+					description = <"8-10 poäng">
+				>
+				["at0006"] = <
+					text = <"Depression föreligger sannolikt">
+					description = <">= 11 poäng">
+				>
+				["at0007"] = <
+					text = <"Ångest är ej sannolikt">
+					description = <"0-7 poäng">
+				>
+				["at0008"] = <
+					text = <"Potentiell förekomst av ångest">
+					description = <"8-10 poäng">
+				>
+				["at0009"] = <
+					text = <"Ångest föreligger sannolikt">
+					description = <">= 11 poäng">
 				>
 			>
 		>

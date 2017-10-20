@@ -2,7 +2,7 @@ archetype (adl_version=1.4)
 	openEHR-EHR-EVALUATION.centor_criteria_assessment.v1
 
 concept
-	[at0000]	-- Centor Criteria Assessment
+	[at0000]	-- Centorkriterierna Utvärdering
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
@@ -65,28 +65,28 @@ Chiappini E, Regoli M, Bonsignori F, et al. Analysis of different recommendation
 
 Handläggning av faryngotonsilliter i öppen vård – ny rekommendation. Information från Läkemedelsverket. 2012;6:18-25
 (https://lakemedelsverket.se/malgrupp/Halso---sjukvard/Behandlingsrekommendationer-arkiv/Behandlingsrekommendation---arkivlista/Faryngotonsilliter/)">
-		["MD5-CAM-1.0.1"] = <"F83F61D433C9D77A56DEAF0E1F8D541A">
+		["MD5-CAM-1.0.1"] = <"FFBA89D5714F490DAE8BDA2C7889900F">
 	>
 
 definition
-	EVALUATION[at0000] matches {	-- Centor Criteria Assessment
+	EVALUATION[at0000] matches {	-- Centorkriterierna Utvärdering
 		data matches {
-			ITEM_TREE[at0001] matches {	-- Tree
+			ITEM_TREE[at0001] matches {	-- *Tree(en)
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0002] occurrences matches {0..1} matches {	-- Recommendation
+					ELEMENT[at0002] occurrences matches {0..1} matches {	-- Rekommendation
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
 									[local::
-									at0012, 	-- No further testing required, give symptomatic treatment only
-									at0013, 	-- Perform throat culture/RADT, give antibiotics only if positive
-									at0014; 	-- Perform throat culture/RADT, give empirical antibiotic treatment
+									at0012, 	-- Ingen provtagning eller behandling 
+									at0013, 	-- Snabbtest för GAS eller svalgodling. Gör behandling om positiv 
+									at0014; 	-- Snabbtest för GAS eller svalgodling. Gör empirisk behandling 
 									at0012]	-- assumed value
 								}
 							}
 						}
 					}
-					ELEMENT[at0011] occurrences matches {0..1} matches {	-- Comment
+					ELEMENT[at0015] occurrences matches {0..1} matches {	-- Kommentar
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -112,10 +112,6 @@ ontology
 					text = <"Recommendation">
 					description = <"Recommended management of suspected pharyngitis based on Centor/McIsaac score">
 				>
-				["at0011"] = <
-					text = <"Comment">
-					description = <"Any additional information">
-				>
 				["at0012"] = <
 					text = <"No further testing required, give symptomatic treatment only">
 					description = <"*">
@@ -127,6 +123,10 @@ ontology
 				["at0014"] = <
 					text = <"Perform throat culture/RADT, give empirical antibiotic treatment">
 					description = <"*">
+				>
+				["at0015"] = <
+					text = <"Comment">
+					description = <"Additional information about this recording">
 				>
 			>
 		>
@@ -144,21 +144,21 @@ ontology
 					text = <"Rekommendation">
 					description = <"**(en)">
 				>
-				["at0011"] = <
-					text = <"*New element(en)">
-					description = <"**(en)">
-				>
 				["at0012"] = <
-					text = <"*Do not test, Do not treat(en)">
+					text = <"Ingen provtagning eller behandling ">
 					description = <"**(en)">
 				>
 				["at0013"] = <
-					text = <"*Do culture or RADT and treat if positive(en)">
+					text = <"Snabbtest för GAS eller svalgodling. Gör behandling om positiv ">
 					description = <"**(en)">
 				>
 				["at0014"] = <
-					text = <"*Do culture or RADT and treat empirically(en)">
+					text = <"Snabbtest för GAS eller svalgodling. Gör empirisk behandling ">
 					description = <"**(en)">
+				>
+				["at0015"] = <
+					text = <"Kommentar">
+					description = <"Mer information om den här dokumentationen">
 				>
 			>
 		>

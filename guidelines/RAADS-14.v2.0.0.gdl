@@ -255,6 +255,8 @@ Resultatet tolkas enligt:
 						text = <"Räkna totalsumma">
 					>
 					["gt0026"] = (TERM) <
+						text = <"Total poäng">
+						description = <"*(en) RAADS-14 screen score">
 					>
 				>
 			>

@@ -123,7 +123,7 @@ Ref. 2: Arroll B, Goodyear-Smith F, Crengle S, Gunn J, Kerse N, Fishman T, Fallo
 				priority = <9>
 			>
 			["gt0024"] = (RULE) <
-				when = <"$gt0023==0|local::at0015|Not at all|",...>
+				when = <"$gt0023==0|local::at0019|Not at all|",...>
 				then = <"$gt0022=local::at0013|Functionally, the patient does not report limitations due to their symptoms|",...>
 				priority = <1>
 			>
@@ -317,28 +317,43 @@ Ref. 2: Arroll B, Goodyear-Smith F, Crengle S, Gunn J, Kerse N, Fishman T, Fallo
 						text = <"CDS Q10 - 0">
 					>
 					["gt0022"] = (TERM) <
+						text = <"Funktionella svårigheter">
+						description = <"*(en) Degree of limitation as a result of depressive symptoms">
 					>
 					["gt0023"] = (TERM) <
+						text = <"Svårigheter med dessa problem">
+						description = <"*(en) How difficult have these problems made it for you to do your work, take care of things at home, or get along with other people? ">
 					>
 					["gt0024"] = (TERM) <
+						text = <"Ange inte alls">
 					>
 					["gt0025"] = (TERM) <
+						text = <"Ange vissa svårigheter">
 					>
 					["gt0026"] = (TERM) <
+						text = <"Ange stora svårigheter">
 					>
 					["gt0027"] = (TERM) <
+						text = <"Ange extrema svårigheter">
 					>
 					["gt0028"] = (TERM) <
+						text = <"Självmordstankar">
+						description = <"*(en) Thoughts that you would be better off dead, or thoughts of hurting yourself in some way ">
 					>
 					["gt0029"] = (TERM) <
+						text = <"Ange svår depression med självmordsrisk">
 					>
 					["gt0030"] = (TERM) <
+						text = <"Ange medelsvår depression med självmordsrisk">
 					>
 					["gt0031"] = (TERM) <
+						text = <"Ange måttlig depression med självmordsrisk">
 					>
 					["gt0032"] = (TERM) <
+						text = <"Ange lindrig depression med självmordsrisk">
 					>
 					["gt0033"] = (TERM) <
+						text = <"Ange minimal depression med självmordsrisk">
 					>
 				>
 			>

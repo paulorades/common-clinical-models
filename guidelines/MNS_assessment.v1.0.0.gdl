@@ -18,6 +18,17 @@
 15-19 = intermediate risk
 ≥20 = low risk">
 			>
+			["sv"] = (RESOURCE_DESCRIPTION_ITEM) <
+				copyright = <"© Cambio Healthcare Systems">
+				keywords = <"Norton skala", "sår", "trycksår">
+				misuse = <"Nortonskalan bör inte användas som ersättning till skicklig klinisk bedömning.">
+				purpose = <"För att utvärdera den totala poängen i MNS.">
+				use = <"Utvärdering av MNS som:
+≤9 = väldig hög risk
+10-14 = hög risk
+15-19 = mellan risk
+≥20 = låg risk">
+			>
 		>
 		lifecycle_state = <"Author draft">
 		original_author = <
@@ -101,6 +112,34 @@
 					>
 					["gt0009"] = (TERM) <
 						text = <"Set low risk">
+					>
+				>
+			>
+			["sv"] = (TERM_DEFINITION) <
+				terms = <
+					["gt0001"] = (TERM) <
+						text = <"Modified Norton Scale (MNS) Utvärdering">
+						description = <"Modified Norton Scale är ett specialinstrument för riskbedömning för att utvärdera om en person löper risk att utveckla trycksår. Maximal total poäng är 28 och minsta möjliga är 7, där lägre poäng innebär en större risk för en person för att utveckla trycksår. Observera att den modifierade Nortonskalan bör användas som ett komplement till den kliniska bedömningen.">
+					>
+					["gt0003"] = (TERM) <
+						text = <"Total poäng">
+						description = <"*(en) Sum of the scores: range from 0 to 28 where 0 relates to Not Available N/A">
+					>
+					["gt0005"] = (TERM) <
+						text = <"Risk utvärdering">
+						description = <"*(en) Risk of developing a pressure ulcer">
+					>
+					["gt0006"] = (TERM) <
+						text = <"Ange väldig hög risk">
+					>
+					["gt0007"] = (TERM) <
+						text = <"Ange hög risk">
+					>
+					["gt0008"] = (TERM) <
+						text = <"Ange mellan risk">
+					>
+					["gt0009"] = (TERM) <
+						text = <"Ange låg risk">
 					>
 				>
 			>
