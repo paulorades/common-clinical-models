@@ -108,7 +108,7 @@ Vikt anges i kg och längd i cm.">
 				>
 			>
 		>
-		pre_conditions = <"$gt0005.units=='kg'", "$gt0009.units=='umol/l'", "$gt0002.value<=($currentDateTime-18,a)">
+		pre_conditions = <"$gt0005.units=='kg'", "$gt0009.units=='umol/l'", "$gt0002.value<=($currentDateTime.value-18,a)">
 		rules = <
 			["gt0012"] = (RULE) <
 				when = <"!fired($gt0012)", "$gt0003==local::at0005|Male|">
