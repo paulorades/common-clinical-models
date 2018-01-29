@@ -11,6 +11,7 @@ language
 			author = <
 				["name"] = <"Dennis Forslund">
 				["organisation"] = <"Cambio Healthcare Systems">
+				["email"] = <"models@cambiocds.com">
 			>
 		>
 	>
@@ -40,15 +41,16 @@ Total score has a maximum of 12 points, and the result is associated with one of
 Sum 0-4 - low probability. Consider outpatient follow-up if unaltered general condition.
 Sum 5-8 - indeterminate group. Consider in-hospital active observation with rescoring and/or further examination in accordance with local tradition.
 Sum 9-12 - high probability. Consider surgical exploration.">
+			keywords = <"appendicitis", "AIR Score", "Appendicitis Inflammatory Response">
 			misuse = <"">
 			copyright = <"Cambio Healthcare Systems">
 		>
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
-			purpose = <"Att ge objektivt kliniskt understöd i bedömning av prognos och lämplig vårdnivå hos patienter med misstänkt akut appendicit.">
-			use = <"Använd som objektivt kliniskt understöd i bedömning av prognos och lämplig vårdnivå hos patienter med misstänkt akut appendicit.
+			purpose = <"Att utgöra objektivt kliniskt understöd vid bedömning av prognos och lämplig vårdnivå hos patienter med misstänkt akut appendicit.">
+			use = <"Använd som objektivt kliniskt understöd vid bedömning av prognos och lämplig vårdnivå hos patienter med misstänkt akut appendicit.
 
-AIR är en akronym för Appendicitis Inflammatory Response och består av sju faktorer som vardera bidrar till totala poängen (max.12) enligt; 
+AIR är en akronym för Appendicitis Inflammatory Response och består av sju faktorer som vardera bidrar till totala poängsumman (max.12) enligt; 
 - Förekomst av kräkning 0-1
 - Smärta i höger fossa 0-1
 - Släppömhet eller muskelförsvar 0-3
@@ -57,12 +59,11 @@ AIR är en akronym för Appendicitis Inflammatory Response och består av sju fa
 - Andel neutrofiler 0-2 
 - CRP 0-2
 
-Resultatet genererar en översiktlig prognos samt en rekommendation kring vidare åtgärd;
-0-4 poäng - låg sannolikhet. Överväg uppföljning polikliniskt om ej påverkat allmäntillstånd.
-5-8 poäng - intermediär sannolikhet. Överväg aktiv observation med upprepad testning och/eller vidare undersökning i enlighet med lokal tradition.
-9-12 poäng - hög sannolikhet. Överväg kirurgisk exploration.
-
-">
+Resultatet genererar riskstratifiering och rekommendation kring vidare åtgärd enligt;
+0-4 poäng - låg sannolikhet. Överväg uppföljning polikliniskt om opåverkat allmäntillstånd.
+5-8 poäng - sannolikhet går ej att säkerställa. Överväg aktiv observation med upprepad bedömning och/eller vidare undersökning i enlighet med lokal tradition.
+9-12 poäng - hög sannolikhet. Överväg kirurgisk exploration.">
+			keywords = <"appendicit", "Appendicitis Inflammatory Response", "AIR Score">
 			misuse = <"">
 			copyright = <"Cambio Healthcare Systems">
 		>
@@ -71,52 +72,52 @@ Resultatet genererar en översiktlig prognos samt en rekommendation kring vidare
 	other_contributors = <>
 	other_details = <
 		["references"] = <"Andersson M, Andersson RE. The appendicitis inflammatory response score: a tool for the diagnosis of acute appendicitis that outperforms the Alvarado score. World journal of surgery. 2008 Aug;32(8):1843–9.">
-		["MD5-CAM-1.0.1"] = <"E34E165F1E9F9202F15D7CB9DFB9A5B9">
+		["MD5-CAM-1.0.1"] = <"8774E0F77CCACBAC2DBF76524F9D1905">
 	>
 
 definition
 	OBSERVATION[at0000] matches {	-- AIR Score
 		data matches {
-			HISTORY[at0001] matches {	-- Event Series
+			HISTORY[at0001] matches {	-- *Event Series(en)
 				events cardinality matches {1..*; unordered} matches {
-					EVENT[at0002] occurrences matches {0..1} matches {	-- Any event
+					EVENT[at0002] occurrences matches {0..1} matches {	-- *Any event(en)
 						data matches {
-							ITEM_TREE[at0003] matches {	-- Tree
+							ITEM_TREE[at0003] matches {	-- *Tree(en)
 								items cardinality matches {0..*; unordered} matches {
-									ELEMENT[at0004] occurrences matches {0..1} matches {	-- Vomiting
+									ELEMENT[at0004] occurrences matches {0..1} matches {	-- Kräkning
 										value matches {
-											0|[local::at0005], 	-- Absent
-											1|[local::at0006]  	-- Present
+											0|[local::at0005], 	-- Nej
+											1|[local::at0006]  	-- Ja
 										}
 									}
-									ELEMENT[at0007] occurrences matches {0..1} matches {	-- Pain in right inferior fossa
+									ELEMENT[at0007] occurrences matches {0..1} matches {	-- Smärta höger fossa
 										value matches {
-											0|[local::at0005], 	-- Absent
-											1|[local::at0006]  	-- Present
+											0|[local::at0005], 	-- Nej
+											1|[local::at0006]  	-- Ja
 										}
 									}
-									ELEMENT[at0008] occurrences matches {0..1} matches {	-- Rebound tenderness or muscular defense
+									ELEMENT[at0008] occurrences matches {0..1} matches {	-- Släppömhet eller muskelförsvar
 										value matches {
-											0|[local::at0005], 	-- Absent
-											1|[local::at0009], 	-- Light
-											2|[local::at0010], 	-- Medium
-											3|[local::at0011]  	-- Strong
+											0|[local::at0005], 	-- Nej
+											1|[local::at0009], 	-- Lätt
+											2|[local::at0010], 	-- Måttlig
+											3|[local::at0011]  	-- Kraftig
 										}
 									}
-									ELEMENT[at0012] occurrences matches {0..1} matches {	-- Body temperature >= 38.5 (°C)
+									ELEMENT[at0012] occurrences matches {0..1} matches {	-- Kroppstemperatur >= 38.5 (°C)
 										value matches {
-											0|[local::at0005], 	-- Absent
-											1|[local::at0006]  	-- Present
+											0|[local::at0005], 	-- Nej
+											1|[local::at0006]  	-- Ja
 										}
 									}
-									ELEMENT[at0013] occurrences matches {0..1} matches {	-- Polymorphonuclear leukocytes (%)
+									ELEMENT[at0013] occurrences matches {0..1} matches {	-- Neutrofiler (%)
 										value matches {
 											0|[local::at0014], 	-- < 70%
 											1|[local::at0015], 	-- 70-84%
 											2|[local::at0016]  	-- >= 85%
 										}
 									}
-									ELEMENT[at0017] occurrences matches {0..1} matches {	-- White blood cell count (×10*9/L)
+									ELEMENT[at0017] occurrences matches {0..1} matches {	-- Leukocyter (×10*9/L)
 										value matches {
 											0|[local::at0018], 	-- < 10
 											1|[local::at0019], 	-- 10-14,9
@@ -130,7 +131,7 @@ definition
 											2|[local::at0023]  	-- >= 50
 										}
 									}
-									ELEMENT[at0024] occurrences matches {0..1} matches {	-- Total score
+									ELEMENT[at0024] occurrences matches {0..1} matches {	-- Poängsumma
 										value matches {
 											DV_COUNT matches {*}
 										}
@@ -254,7 +255,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"AIR Score">
-					description = <"AIR Score används som kliniskt understöd i bedömning av prognos och lämplig vårdnivå hos patienter med misstänkt akut appendicit. AIR är en akronym för Appendicitis Inflammatory Response och består av sju faktorer som vardera bidrar till totala poängen (max.12); förekomst av kräkning, smärta i höger fossa, släppömhet eller muskelförsvar, kroppstemperatur ≥38,5, leukocyter, andel neutrofiler och CRP. Resultatet genererar en översiktlig prognos samt en rekommendation kring vidare åtgärd.">
+					description = <"AIR Score används som kliniskt understöd i bedömning av prognos och lämplig vårdnivå hos patienter med misstänkt akut appendicit. AIR är en akronym för Appendicitis Inflammatory Response och består av sju faktorer som vardera bidrar till totala poängsumman (max.12); förekomst av kräkning, smärta i höger fossa, släppömhet eller muskelförsvar, kroppstemperatur ≥38,5, leukocyter, andel neutrofiler och CRP. Resultatet genererar riskstratifiering och rekommendation kring vidare åtgärd.">
 				>
 				["at0001"] = <
 					text = <"*Event Series(en)">
@@ -270,43 +271,43 @@ ontology
 				>
 				["at0004"] = <
 					text = <"Kräkning">
-					description = <"Kräkning utgör ett av symtomen">
+					description = <"Kräkning utgör ett av symtomen.">
 				>
 				["at0005"] = <
 					text = <"Nej">
-					description = <"**(en)">
+					description = <"*">
 				>
 				["at0006"] = <
 					text = <"Ja">
-					description = <"**(en)">
+					description = <"*">
 				>
 				["at0007"] = <
 					text = <"Smärta höger fossa">
-					description = <"Patienten upplever smärta i höger fossa">
+					description = <"Patienten upplever smärta i höger fossa.">
 				>
 				["at0008"] = <
 					text = <"Släppömhet eller muskelförsvar">
-					description = <"Släppömhet eller muskelförsvar påvisas i status">
+					description = <"Släppömhet eller muskelförsvar påvisas i status.">
 				>
 				["at0009"] = <
 					text = <"Lätt">
-					description = <"**(en)">
+					description = <"*">
 				>
 				["at0010"] = <
 					text = <"Måttlig">
-					description = <"**(en)">
+					description = <"*">
 				>
 				["at0011"] = <
 					text = <"Kraftig">
-					description = <"**(en)">
+					description = <"*">
 				>
 				["at0012"] = <
 					text = <"Kroppstemperatur >= 38.5 (°C)">
-					description = <"Kroppstemperatur över 38,5 grader">
+					description = <"Kroppstemperatur över 38,5 grader.">
 				>
 				["at0013"] = <
 					text = <"Neutrofiler (%)">
-					description = <"Provsvar - antal neutrofiler per liter">
+					description = <"Provsvar - andel neutrofiler.">
 				>
 				["at0014"] = <
 					text = <"< 70%">
@@ -322,7 +323,7 @@ ontology
 				>
 				["at0017"] = <
 					text = <"Leukocyter (×10*9/L)">
-					description = <"Provsvar - antal leukocyter per liter">
+					description = <"Provsvar - antal leukocyter per liter.">
 				>
 				["at0018"] = <
 					text = <"< 10">
@@ -330,27 +331,27 @@ ontology
 				>
 				["at0019"] = <
 					text = <"10-14,9">
-					description = <"**(en)">
+					description = <"*">
 				>
 				["at0020"] = <
 					text = <">= 15">
-					description = <"**(en)">
+					description = <"*">
 				>
 				["at0021"] = <
 					text = <"CRP (mg/L)">
-					description = <"Provsvar - C-Reaktivt Protein">
+					description = <"Provsvar - C-Reaktivt Protein.">
 				>
 				["at0022"] = <
 					text = <"10-49">
-					description = <"**(en)">
+					description = <"*">
 				>
 				["at0023"] = <
 					text = <">= 50">
-					description = <"**(en)">
+					description = <"*">
 				>
 				["at0024"] = <
-					text = <"Total poäng">
-					description = <"Summan av samtliga faktorer">
+					text = <"Poängsumma">
+					description = <"Summan av samtliga faktorer.">
 				>
 			>
 		>
