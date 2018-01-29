@@ -30,10 +30,10 @@ Sum 9-12 - high probability. Consider surgical exploration.">
 			["sv"] = (RESOURCE_DESCRIPTION_ITEM) <
 				copyright = <"Cambio Healthcare Systems">
 				keywords = <"AIR", "appendicit", "inflammatorisk", "inflammation", "respons", "score", "akut">
-				purpose = <"Att ge objektivt kliniskt understöd i bedömning av prognos och lämplig vårdnivå hos patienter med misstänkt akut appendicit.">
-				use = <"Använd som objektivt kliniskt understöd i bedömning av prognos och lämplig vårdnivå hos patienter med misstänkt akut appendicit.
+				purpose = <"Att utgöra objektivt kliniskt understöd vid bedömning av prognos och lämplig vårdnivå hos patienter med misstänkt akut appendicit.">
+				use = <"Använd som objektivt kliniskt understöd vid bedömning av prognos och lämplig vårdnivå hos patienter med misstänkt akut appendicit.
 
-AIR är en akronym för Appendicitis Inflammatory Response och består av sju faktorer som vardera bidrar till totala poängen (max.12) enligt; 
+AIR är en akronym för Appendicitis Inflammatory Response och består av sju faktorer som vardera bidrar till totala poängsumman (max.12) enligt; 
 - Förekomst av kräkning 0-1
 - Smärta i höger fossa 0-1
 - Släppömhet eller muskelförsvar 0-3
@@ -42,9 +42,9 @@ AIR är en akronym för Appendicitis Inflammatory Response och består av sju fa
 - Andel neutrofiler 0-2 
 - CRP 0-2
 
-Resultatet genererar en översiktlig prognos samt en rekommendation kring vidare åtgärd;
-0-4 poäng - låg sannolikhet. Överväg uppföljning polikliniskt om ej påverkat allmäntillstånd.
-5-8 poäng - intermediär sannolikhet. Överväg aktiv observation med upprepad testning och/eller vidare undersökning i enlighet med lokal tradition.
+Resultatet genererar riskstratifiering och rekommendation kring vidare åtgärd enligt;
+0-4 poäng - låg sannolikhet. Överväg uppföljning polikliniskt om opåverkat allmäntillstånd.
+5-8 poäng - sannolikhet går ej att säkerställa. Överväg aktiv observation med upprepad bedömning och/eller vidare undersökning i enlighet med lokal tradition.
 9-12 poäng - hög sannolikhet. Överväg kirurgisk exploration.">
 			>
 		>
@@ -315,55 +315,55 @@ Resultatet genererar en översiktlig prognos samt en rekommendation kring vidare
 				terms = <
 					["gt0001"] = (TERM) <
 						text = <"AIR Score">
-						description = <"AIR Score används som kliniskt understöd i bedömning av prognos och lämplig vårdnivå hos patienter med misstänkt akut appendicit. AIR är en akronym för Appendicitis Inflammatory Response och består av sju faktorer som vardera bidrar till totala poängen (max.12); förekomst av kräkning, smärta i höger fossa, släppömhet eller muskelförsvar, kroppstemperatur ≥38,5, leukocyter, andel neutrofiler och CRP. Resultatet genererar en översiktlig prognos samt en rekommendation kring vidare åtgärd.">
+						description = <"AIR Score används som kliniskt understöd i bedömning av prognos och lämplig vårdnivå hos patienter med misstänkt akut appendicit. AIR är en akronym för Appendicitis Inflammatory Response och består av sju faktorer som vardera bidrar till totala poängsumman (max.12); förekomst av kräkning, smärta i höger fossa, släppömhet eller muskelförsvar, kroppstemperatur ≥38,5, leukocyter, andel neutrofiler och CRP. Resultatet genererar riskstratifiering och rekommendation kring vidare åtgärd.">
 					>
 					["gt0003"] = (TERM) <
-						text = <"Totalpoäng">
-						description = <"*(en) Sum of all factors">
+						text = <"Poängsumma">
+						description = <"Summan av samtliga faktorer.">
 					>
 					["gt0004"] = (TERM) <
 						text = <"Kroppstemperatur >= 38.5 (°C)">
-						description = <"*(en) Body temperature above 38,5 degrees">
+						description = <"Kroppstemperatur över 38,5 grader.">
 					>
 					["gt0005"] = (TERM) <
 						text = <"Neutrofiler (%)">
-						description = <"*(en) Lab test - number of neutrophils per litre">
+						description = <"Provsvar - andel neutrofiler.">
 					>
 					["gt0006"] = (TERM) <
 						text = <"WBC (×10*9/L)">
-						description = <"*(en) Lab test - number of white blood cells per litre">
+						description = <"Provsvar - antal leukocyter per liter.">
 					>
 					["gt0007"] = (TERM) <
 						text = <"CRP (mg/L)">
-						description = <"*(en) Lab test - C-Reactive Protein">
+						description = <"Provsvar - C-Reaktivt Protein.">
 					>
 					["gt0009"] = (TERM) <
 						text = <"Kräkning">
-						description = <"*(en) Symptoms include vomiting">
+						description = <"Kräkning utgör ett av symtomen.">
 					>
 					["gt0010"] = (TERM) <
 						text = <"Smärta höger fossa">
-						description = <"*(en) The patient experience pain in the right inferior fossa.">
+						description = <"Patienten upplever smärta i höger fossa.">
 					>
 					["gt0011"] = (TERM) <
 						text = <"Släppömhet eller muskelförsvar">
-						description = <"*(en) The patient shows rebound tenderness or muscular defense">
+						description = <"Släppömhet eller muskelförsvar påvisas i status.">
 					>
 					["gt0013"] = (TERM) <
 						text = <"Leukocyter (×10*9/L)">
-						description = <"*(en) The number of white cells per litre">
+						description = <"Provsvar - antal leukocyter per liter.">
 					>
 					["gt0014"] = (TERM) <
 						text = <"Neutrofiler (%)">
-						description = <"*(en) The number of neutrophils per litre">
+						description = <"Provsvar - andel neutrofiler.">
 					>
 					["gt0016"] = (TERM) <
 						text = <"CRP resultat (mg/L)">
-						description = <"*(en) Test result - C-reactive protein">
+						description = <"Provsvar - C-Reaktivt Protein.">
 					>
 					["gt0018"] = (TERM) <
 						text = <"Kroppstemperatur (°C)">
-						description = <"*(en) The measured body temperature (as a surrogate for the whole body).">
+						description = <"Kroppstemperatur över 38,5 grader.">
 					>
 					["gt0019"] = (TERM) <
 						text = <"Ange kroppstemp till 0">
@@ -378,7 +378,7 @@ Resultatet genererar en översiktlig prognos samt en rekommendation kring vidare
 						text = <"Ange leukocyter till 2">
 					>
 					["gt0023"] = (TERM) <
-						text = <"Sätt leukocyter till 1">
+						text = <"Ange leukocyter till 1">
 					>
 					["gt0024"] = (TERM) <
 						text = <"Ange CRP till 2">
@@ -391,11 +391,11 @@ Resultatet genererar en översiktlig prognos samt en rekommendation kring vidare
 					>
 					["gt0028"] = (TERM) <
 						text = <"Sannolikhet">
-						description = <"*(en) Probability of appendicitis diagnosis. ">
+						description = <"Sannolikhet för appendicit.">
 					>
 					["gt0029"] = (TERM) <
 						text = <"Rekommendation">
-						description = <"*(en) Care level recommendation.">
+						description = <"Rekommendation av vårdnivå.">
 					>
 					["gt0030"] = (TERM) <
 						text = <"Ange sannolikhet till hög">
