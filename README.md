@@ -2,59 +2,61 @@
   <img src="http://www.cambio.se/wp-content/themes/cambio/images/logotype.png"> 
 </p>
 
-### Introduction
+### Introdução
 
-Welcome to the overview page of the clinical decision support (CDS) apps.
+Bem-vindo à visão geral sobre os aplicativos de suporte à decisão clínica (CDS).
 
-We've gathered all of the available applications in one place and organized them by medical specialty. Please note that the apps have been published for **demonstration purposes** only and should **NOT** be used to make medical decisions in their current state.
+Reunimos todos os aplicativos disponíveis em um só lugar e os organizamos por especialidade médica. Observe que os aplicativos foram publicados apenas para ** fins de demonstração ** e ** NÃO ** devem serem usados para tomar decisões médicas em seu estado atual.
 
-If you would like to test an app, simply click on "ENG" to access the English version, and "SWE" for the Swedish version. To view a detailed description of the app and its components, click on the application name.
+Se você deseja testar um aplicativo, basta clicar em "ENG" para acessar a versão em inglês, e "SWE" para a versão em sueco. Para visualizar uma descrição detalhada do aplicativo e seus componentes, clique no nome do aplicativo.
 
-### *Published Apps: 151*
+
+
+### *Aplicativos disponíveis: 151*
 
 ----------
 
-### Categories by specialty
+### Categoria por especilidades
 
-_Select a medical specialty below to view the available apps._
+_Escolha uma especialidade médica para visualizar as apps disponíveis._
 
-[Cardiology](https://github.com/gdl-lang/common-clinical-models#cardiology)
+[Cardiologia](https://github.com/gdl-lang/common-clinical-models#cardiology)
 
-[Clinical Chemistry](https://github.com/gdl-lang/common-clinical-models#clinical-chemistry)
+[Química Clínica](https://github.com/gdl-lang/common-clinical-models#clinical-chemistry)
 
-[Emergency Medicine](https://github.com/gdl-lang/common-clinical-models#emergency-medicine)
+[Emergência](https://github.com/gdl-lang/common-clinical-models#emergency-medicine)
 
-[Gastroenterology](https://github.com/gdl-lang/common-clinical-models#gastroenterology)
+[Gastroenterologia](https://github.com/gdl-lang/common-clinical-models#gastroenterology)
 
-[Geriatrics](https://github.com/gdl-lang/common-clinical-models#geriatrics)
+[Geriatria](https://github.com/gdl-lang/common-clinical-models#geriatrics)
 
-[Hematology](https://github.com/gdl-lang/common-clinical-models/wiki/CDS-Apps-Overview#hematology)
+[Hematologia](https://github.com/gdl-lang/common-clinical-models/wiki/CDS-Apps-Overview#hematology)
 
-[Intensive Care](https://github.com/gdl-lang/common-clinical-models#intensive-care)
+[Cuidados Intensivos](https://github.com/gdl-lang/common-clinical-models#intensive-care)
 
-[Neonatology](https://github.com/gdl-lang/common-clinical-models#neonatology)
+[Neonatologia](https://github.com/gdl-lang/common-clinical-models#neonatology)
 
-[Nephrology](https://github.com/gdl-lang/common-clinical-models#nephrology)
+[Nefrologia](https://github.com/gdl-lang/common-clinical-models#nephrology)
 
-[Neurology](https://github.com/gdl-lang/common-clinical-models#neurology)
+[Neurologia](https://github.com/gdl-lang/common-clinical-models#neurology)
 
-[Obstetrics](https://github.com/gdl-lang/common-clinical-models#obstetrics)
+[Obstetricia](https://github.com/gdl-lang/common-clinical-models#obstetrics)
 
-[Oncology](https://github.com/gdl-lang/common-clinical-models/wiki/Public-Guideline-Library#oncology)
+[Oncologia](https://github.com/gdl-lang/common-clinical-models/wiki/Public-Guideline-Library#oncology)
 
-[Orthopedic Surgery](https://github.com/gdl-lang/common-clinical-models#orthopedic-surgery)
+[Cirurgia Ortopedica](https://github.com/gdl-lang/common-clinical-models#orthopedic-surgery)
 
-[Pediatrics](https://github.com/gdl-lang/common-clinical-models#pediatrics) 
+[Pediatria](https://github.com/gdl-lang/common-clinical-models#pediatrics) 
 
-[Primary Care](https://github.com/gdl-lang/common-clinical-models#primary-care)
+[Atencção Primária](https://github.com/gdl-lang/common-clinical-models#primary-care)
 
-[Psychiatry](https://github.com/gdl-lang/common-clinical-models#psychiatry)
+[Psiquiatria](https://github.com/gdl-lang/common-clinical-models#psychiatry)
 
-[Pulmonology](https://github.com/gdl-lang/common-clinical-models#psychiatry)
+[Pulmonologia](https://github.com/gdl-lang/common-clinical-models#psychiatry)
 
-[Rheumatology](https://github.com/gdl-lang/common-clinical-models#rheumatology)
+[Reumatologia](https://github.com/gdl-lang/common-clinical-models#rheumatology)
 
-[Trauma Care](https://github.com/gdl-lang/common-clinical-models#trauma-care)
+[Traumas](https://github.com/gdl-lang/common-clinical-models#trauma-care)
 
 ----------
 
@@ -62,7 +64,7 @@ _Select a medical specialty below to view the available apps._
 
 ----------
 
-### Cardiology
+### Cardiologia
 
 ----------
 
@@ -110,7 +112,7 @@ _Select a medical specialty below to view the available apps._
 
 ----------
 
-### Clinical Chemistry
+### Química Clínica
 
 ----------
 * [Anion Gap](https://github.com/gdl-lang/common-clinical-models/wiki/Public-Guideline-Library#anion-gap) - ([_ENG_](https://common-clinical-models.cambiocds.com/km/views/execution/anion_gap.v1.dsv?token=616e696f6e5f6761702e7631:1524614400000:9152f99eb22f877d3cc9b1ef1c6767b6&language=en))/([_SWE_](https://common-clinical-models.cambiocds.com/km/views/execution/anion_gap.v1.dsv?token=616e696f6e5f6761702e7631:1524614400000:9152f99eb22f877d3cc9b1ef1c6767b6&language=sv))
@@ -127,7 +129,7 @@ _Select a medical specialty below to view the available apps._
 
 ----------
 
-### Emergency Medicine
+### Emergencia
 
 ----------
 
@@ -169,14 +171,14 @@ _Select a medical specialty below to view the available apps._
 
 ----------
 
-### Gastroenterology
+### Gastroenterologia
 ----------
 
 * [Model For End-Stage Liver Disease Score (MELD)](https://github.com/gdl-lang/common-clinical-models/wiki/Public-Guideline-Library#model-for-end-stage-liver-disease-score-meld) - ([_ENG_](https://common-clinical-models.cambiocds.com/km/views/execution/MELD.v1.dsv?token=4d454c442e7631:1546300799000:fe4879610a670690b829250a44e41cfc&language=en))/([_SWE_](https://common-clinical-models.cambiocds.com/km/views/execution/MELD.v1.dsv?token=4d454c442e7631:1546300799000:fe4879610a670690b829250a44e41cfc&language=sv))
 
 ----------
 
-### Geriatrics
+### Geriatria
 
 ----------
 * [Abbey Pain Scale (APS)](https://github.com/gdl-lang/common-clinical-models/wiki/Public-Guideline-Library#abbey-pain-scale-aps) - ([_ENG_](https://common-clinical-models.cambiocds.com/km/views/execution/APS.v1.dsv?token=4150532e7631:1546214400000:6fbae25e6c9c3fd58878a8d6290a8cfa&language=en))/([_SWE_](https://common-clinical-models.cambiocds.com/km/views/execution/APS.v1.dsv?token=4150532e7631:1546214400000:6fbae25e6c9c3fd58878a8d6290a8cfa&language=sv))
@@ -191,14 +193,14 @@ _Select a medical specialty below to view the available apps._
 
 ----------
 
-### Hematology
+### Hematologia
 ----------
 
 * [4Ts for Heparin Induced Thrombocytopenia (4Ts for HIT)](https://github.com/gdl-lang/common-clinical-models/wiki/Public-Guideline-Library#4-ts-for-heparin-inducerad-thrombocytopenia-4ts-for-hit)) - ([_ENG_](https://common-clinical-models.cambiocds.com/km/views/execution/4Ts_HIT.v1.dsv?token=3454735f4849542e7631:1546214400000:db06f312e51d51b8c29bb23bcc2d43a3&language=en))/([_SWE_](https://common-clinical-models.cambiocds.com/km/views/execution/4Ts_HIT.v1.dsv?token=3454735f4849542e7631:1546214400000:db06f312e51d51b8c29bb23bcc2d43a3&language=sv))
 
 ----------
 
-### Intensive Care
+### Cuidados Intensivos
 
 ----------
 
@@ -214,12 +216,12 @@ _Select a medical specialty below to view the available apps._
 
 ----------
 
-### Neonatology
+### Neonatologia
 ----------
 * [Apgar Score](https://github.com/gdl-lang/common-clinical-models/wiki/Public-Guideline-Library#apgar-score) - ([_ENG_](https://common-clinical-models.cambiocds.com/km/views/execution/Apgar.v1.dsv?token=41706761722e7631:1546300799000:31b1ecb5bc62d452374acffc78d48321&language=en))/([_SWE_](https://common-clinical-models.cambiocds.com/km/views/execution/Apgar.v1.dsv?token=41706761722e7631:1546300799000:31b1ecb5bc62d452374acffc78d48321&language=sv))
 
 ----------
-### Nephrology
+### Nefrologia
 
 ----------
 * [Albumin-Creatinine Ratio (ACR)](https://github.com/gdl-lang/common-clinical-models/wiki/Public-guideline-library#albumin-creatinine-ratio-acr) - ([_ENG_](https://common-clinical-models.cambiocds.com/km/views/execution/ACR.v1.dsv?token=4143522e7631:1546300799000:bdb8cfdc3f63a4868933dd208a31114b&language=en))/([_SWE_](https://common-clinical-models.cambiocds.com/km/views/execution/ACR.v1.dsv?token=4143522e7631:1546300799000:bdb8cfdc3f63a4868933dd208a31114b&language=sv))
@@ -236,7 +238,7 @@ _Select a medical specialty below to view the available apps._
 
 ----------
 
-### Neurology
+### Neurologia
 
 ----------
 * [ABCD2 Score](https://github.com/gdl-lang/common-clinical-models/wiki/Public-Guideline-Library#abcd2-score) - ([_ENG_](https://common-clinical-models.cambiocds.com/km/views/execution/ABCD2.v1.dsv?token=41424344322e7631:1546300799000:29d369f63178b61a114751bf08656db9&language=en))/([_SWE_](https://common-clinical-models.cambiocds.com/km/views/execution/ABCD2.v1.dsv?token=41424344322e7631:1546300799000:29d369f63178b61a114751bf08656db9&language=sv))
@@ -256,7 +258,7 @@ _Select a medical specialty below to view the available apps._
 * [Neuropathy Pain Scale (NPS)](https://github.com/gdl-lang/common-clinical-models/wiki/Public-guideline-library#neuropathy-pain-scale-nps) - ([_ENG_](https://common-clinical-models.cambiocds.com/km/views/execution/NPS.v1.dsv?token=4e50532e7631:1524614400000:34b41c8e21b390e506491a3e87cd331e&language=en))/([_SWE_](https://common-clinical-models.cambiocds.com/km/views/execution/NPS.v1.dsv?token=4e50532e7631:1524614400000:34b41c8e21b390e506491a3e87cd331e&language=sv))
 
 ----------
-### Obstetrics
+### Obstetricia
 
 ----------
 * [Bishop Score](https://github.com/gdl-lang/common-clinical-models/wiki/Public-Guideline-Library#bishop-score) - ([_ENG_](https://common-clinical-models.cambiocds.com/km/views/execution/Bishop.v1.dsv?token=426973686f702e7631:1546300799000:18109583a6a7953c861d8ed2aabb7ed4&language=en))/([_SWE_](https://common-clinical-models.cambiocds.com/km/views/execution/Bishop.v1.dsv?token=426973686f702e7631:1546300799000:18109583a6a7953c861d8ed2aabb7ed4&language=sv))
@@ -266,7 +268,7 @@ _Select a medical specialty below to view the available apps._
 * [VBAC Risk Score for Successful Vaginal Delivery (VBAC)](https://github.com/gdl-lang/common-clinical-models/wiki/Public-Guideline-Library#vbac-risk-score-for-successful-vaginal-delivery-vbac) - ([_ENG_](https://common-clinical-models.cambiocds.com/km/views/execution/VBAC.v1.dsv?token=564241432e7631:1546214400000:3fd443beaf253358af0b393e20d714ba&language=en))/([_SWE_](https://common-clinical-models.cambiocds.com/km/views/execution/VBAC.v1.dsv?token=564241432e7631:1546214400000:3fd443beaf253358af0b393e20d714ba&language=sv))
 ----------
 
-### Oncology
+### Oncologia
 
 ----------
 * [ECOG Performance Status](https://github.com/gdl-lang/common-clinical-models/wiki/Public-Guideline-Library#ecog-performance-status) - ([_ENG_](https://common-clinical-models.cambiocds.com/km/views/execution/ECOG_performance_status.v1.dsv?token=45434f475f706572666f726d616e63655f7374617475732e7631:1546214400000:bfbd0ac863c760bb7bbeb2e06d771bbb&language=en))/([_SWE_](https://common-clinical-models.cambiocds.com/km/views/execution/ECOG_performance_status.v1.dsv?token=45434f475f706572666f726d616e63655f7374617475732e7631:1546214400000:bfbd0ac863c760bb7bbeb2e06d771bbb&language=sv))
@@ -287,14 +289,14 @@ _Select a medical specialty below to view the available apps._
 
 ----------
 
-### Orthopedic Surgery
+### Cirurgia Otopedica
 
 ----------
 * [Kocher Criteria](https://github.com/gdl-lang/common-clinical-models/wiki/Public-Guideline-Library#kocher-criteria) - ([_ENG_](https://common-clinical-models.cambiocds.com/km/views/execution/Kocher_Criteria.v1.dsv?token=4b6f636865725f43726974657269612e7631:1546214400000:07cf4356d857fe3efdc021ec3c198b06&language=en))/([_SWE_](https://common-clinical-models.cambiocds.com/km/views/execution/Kocher_Criteria.v1.dsv?token=4b6f636865725f43726974657269612e7631:1546214400000:07cf4356d857fe3efdc021ec3c198b06&language=sv))
 
 ----------
 
-### Pediatrics
+### Pediatria
 
 ----------
 * [Asthma Predictive Index (API)](https://github.com/gdl-lang/common-clinical-models/wiki/Public-Guideline-Library#asthma-predictive-index-api) - ([_ENG_](https://common-clinical-models.cambiocds.com/km/views/execution/API.v1.dsv?token=4150492e7631:1546214400000:05e598a789fdbd4c09aabca5389d071e&language=en))/([_SWE_](https://common-clinical-models.cambiocds.com/km/views/execution/API.v1.dsv?token=4150492e7631:1546214400000:05e598a789fdbd4c09aabca5389d071e&language=sv))
@@ -316,7 +318,7 @@ _Select a medical specialty below to view the available apps._
 * [STRONGkids Nutritional Risk Screening](https://github.com/gdl-lang/common-clinical-models/wiki/Public-Guideline-Library#strongkids-nutritional-risk-screening) - ([_ENG_](https://common-clinical-models.cambiocds.com/km/views/execution/STRONGkids.v1.dsv?token=5354524f4e476b6964732e7631:1546214400000:10b69bfff0b6fc85d7b4a3c4f6120fc3&language=en))/([_SWE_](https://common-clinical-models.cambiocds.com/km/views/execution/STRONGkids.v1.dsv?token=5354524f4e476b6964732e7631:1546214400000:10b69bfff0b6fc85d7b4a3c4f6120fc3&language=sv))
 ----------
 
-### Primary care
+### Atenção Primaria
 
 ----------
 * [ACR EULAR Gout](https://github.com/gdl-lang/common-clinical-models/wiki/Public-Guideline-Library#acr-eular-gout) - ([_ENG_](https://common-clinical-models.cambiocds.com/km/views/execution/ACR_EULAR_Gout.v1.dsv?token=4143525f45554c41525f476f75742e7631:1546214400000:289da41d3ef45ac6d5b1c2cbd9525942&language=en))/([_SWE_](https://common-clinical-models.cambiocds.com/km/views/execution/ACR_EULAR_Gout.v1.dsv?token=4143525f45554c41525f476f75742e7631:1546214400000:289da41d3ef45ac6d5b1c2cbd9525942&language=sv))
@@ -359,7 +361,7 @@ _Select a medical specialty below to view the available apps._
 
 ----------
 
-### Psychiatry
+### Psiquiatria
 
 ----------
 * [Adult Self Rating Scale for ADHD (ASRS-ADHD)](https://github.com/gdl-lang/common-clinical-models/wiki/Public-guideline-library#adult-self-rating-scale-for-adhd-asrs-adhd) - ([_ENG_](https://common-clinical-models.cambiocds.com/km/views/execution/ASRS.v1.dsv?token=415352532e7631:1546300799000:09d486687c501bf1ecf8483064fbd19b&language=en))/([_SWE_](https://common-clinical-models.cambiocds.com/km/views/execution/ASRS.v1.dsv?token=415352532e7631:1546300799000:09d486687c501bf1ecf8483064fbd19b&language=sv))
@@ -408,7 +410,7 @@ _Select a medical specialty below to view the available apps._
 
 ----------
 
-### Pulmonology
+### Pulmonologia
 
 ----------
 
@@ -418,7 +420,7 @@ _Select a medical specialty below to view the available apps._
 
 ----------
 
-### Rheumatology
+### Reumatologia
 
 ----------
 * [ACR EULAR Rheumatoid Arthritis](https://github.com/gdl-lang/common-clinical-models/wiki/Public-guideline-library#acreular-rheumatoid-arthritis) - ([_ENG_](https://common-clinical-models.cambiocds.com/km/views/execution/ACR-EULAR.v1.dsv?token=4143522d45554c41522e7631:1546300799000:bc317e8e201f225676a018d70a525273&language=en))/([_SWE_](https://common-clinical-models.cambiocds.com/km/views/execution/ACR-EULAR.v1.dsv?token=4143522d45554c41522e7631:1546300799000:bc317e8e201f225676a018d70a525273&language=sv))
@@ -435,7 +437,7 @@ _Select a medical specialty below to view the available apps._
 
 ----------
 
-### Trauma Care
+### Traumas
 
 ----------
 * [ABC Score for massive transfusion](https://github.com/gdl-lang/common-clinical-models/wiki/Public-guideline-library#abc-score-for-massive-transfusion) - ([_ENG_](https://common-clinical-models.cambiocds.com/km/views/execution/ABC_massive_transfusion.v1.dsv?token=4142435f6d6173736976655f7472616e73667573696f6e2e7631:1546300799000:f116ac3223887878f943dbf44215e021&language=en))/([_SWE_](https://common-clinical-models.cambiocds.com/km/views/execution/ABC_massive_transfusion.v1.dsv?token=4142435f6d6173736976655f7472616e73667573696f6e2e7631:1546300799000:f116ac3223887878f943dbf44215e021&language=sv))
@@ -461,4 +463,4 @@ _Select a medical specialty below to view the available apps._
 ----------
 ### Disclaimer
 
-_The applications presented on this page have been published for **demonstration purposes** only and should **NOT** be used to make medical decisions in their current state. The apps are not intended to replace clinical judgement and all clinical information must be validated by the user prior to use. The user assumes sole responsibility for any decisions made or actions taken based on information generated by the CDS applications. Cambio Healthcare Systems and the individual authors of the published clinical models assume no liability of any kind._
+_As aplicações aqui apresentadas foram disponilizadas apenas para ** fins de demonstração ** e ** NÃO ** devem serem usadas para a tomada de decisões médicas no estado atual. Os aplicativos não se destinam a substituir o julgamento clínico e todas as informações clínicas devem ser validadas pelo usuário antes do uso. O usuário assume a responsabilidade exclusiva por quaisquer decisões tomadas ou ações tomadas com base nas informações geradas por estes aplicativos. Este é um trabalho de modelagem de arquétipos feito pela Cambio Healthcare Systems. Tanto a CHS como os autores e quaisquer outros envolvidos, não assumem qualquer tipo de responsabilidade._
