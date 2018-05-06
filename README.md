@@ -4,7 +4,7 @@
 
 ### Introdução
 
-Bem-vindo à visão geral sobre os aplicativos de suporte à decisão clínica (CDS).
+Esta é uma visão geral sobre aplicativos de suporte à decisão clínica (CDS). Todos os arquétipos, guides, guidelines e templates aqui utilizados e demonstrados foram modelados pelas equipes da CHS. Os tutoriais em idioma português brasileiro estão disponíveis.
 
 Reunimos todos os aplicativos disponíveis em um só lugar e os organizamos por especialidade médica. Observe que os aplicativos foram publicados apenas para ** fins de demonstração ** e ** NÃO ** devem serem usados para tomar decisões médicas em seu estado atual.
 
